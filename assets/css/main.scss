@@ -113,4 +113,23 @@
       display: block !important;
     }
   }
+
+  .header {
+    &__breadcrumb-wrap {
+      height: 32px;
+      line-height: 32px; 
+      position: fixed;
+      top: 62px;
+      width: 100%;
+      font-size: clamp(12px, 2vw, 16px);
+      color: rgb(92, 92, 92);
+      z-index: 10; 
+    }
+  
+    &__breadcrumb {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 12px;
+    }
+  }
   
