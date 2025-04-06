@@ -1,0 +1,116 @@
+@use "config";
+// =======================
+//  Media Queries
+// =======================
+@mixin sp {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  
+  @mixin tab {
+    @media (max-width: 820px) {
+      @content;
+    }
+  }
+  
+  @mixin pc {
+    @media (min-width: 1121px) {
+      @content;
+    }
+  }
+  // =======================
+  //  Show/Hide Utilities
+  // =======================
+  
+  // SP（スマホ）で非表示
+  .hide-sp {
+      @include sp {
+        display: none !important;
+      }
+    }
+    
+    // SP（スマホ）だけで表示
+    .only-sp {
+      display: none !important;
+      @include sp {
+        display: block !important;
+      }
+    }
+    
+    // タブレットで非表示
+    .hide-tab {
+      @include tab {
+        display: none !important;
+      }
+    }
+    
+    // タブレットだけで表示
+    .only-tab {
+      display: none !important;
+      @include tab {
+        display: block !important;
+      }
+    }
+    
+    // PCで非表示
+    .hide-pc {
+      @include pc {
+        display: none !important;
+      }
+    }
+    
+    // PCだけで表示
+    .only-pc {
+      display: none !important;
+      @include pc {
+        display: block !important;
+      }
+    }
+  
+
+@media (max-width: 600px) {
+    .hide-sp {
+      display: none !important;
+    }
+  }
+  
+  .only-sp {
+    display: none !important;
+  }
+  @media (max-width: 600px) {
+    .only-sp {
+      display: block !important;
+    }
+  }
+  
+  @media (max-width: 820px) {
+    .hide-tab {
+      display: none !important;
+    }
+  }
+  
+  .only-tab {
+    display: none !important;
+  }
+  @media (max-width: 820px) {
+    .only-tab {
+      display: block !important;
+    }
+  }
+  
+  @media (min-width: 1121px) {
+    .hide-pc {
+      display: none !important;
+    }
+  }
+  
+  .only-pc {
+    display: none !important;
+  }
+  @media (min-width: 1121px) {
+    .only-pc {
+      display: block !important;
+    }
+  }
+  
