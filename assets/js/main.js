@@ -1,84 +1,98 @@
+// JavaScript Document
 
-/*==================================================
-** top-top
-==================================================*/
-document.addEventListener("DOMContentLoaded", function () {
-  const topBtn = document.getElementById("pagetop-btn");
 
-  // 最初にボタンを非表示にする
-  topBtn.style.display = "none";
-
-  // スクロールイベント
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
-      topBtn.style.display = "block";
-    } else {
-      topBtn.style.display = "none";
-    }
-  });
-
-  // クリックイベントでトップへスクロール
-  topBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
+$(function () {
+    // スクロールでヘッダー固定＆白背景に変更
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 10) {
+        $("#header").addClass("fixed");
+      } else {
+        $("#header").removeClass("fixed");
+      }
     });
   });
+  
+
+/* === リンクscroll === */
+$(function() {
+    var headerHeight=$("#header").height();
+    var urlHash = location.hash;
+    if(urlHash) { // 別ページからの遷移時にヘッダーの高さ分アンカーを下げる
+        $('body,html').stop().scrollTop(0);
+        setTimeout(function(){
+            var target = $(urlHash);
+            var position = target.offset().top - headerHeight;
+            $('body,html').stop().animate({scrollTop:position}, 400);
+        }, 100);
+    }
+    // #で始まるアンカーをクリックした場合に処理
+    $('a').click(function() {
+        var speed = 400; // ミリ秒
+        var href = $(this).attr('href'); // アンカーの値取得
+        var target = $(href == '#' || href == '' ? 'html' : href); // 移動先を取得
+        var position = target.offset().top - headerHeight; // 移動先を数値で取得+ヘッダーの高さ分下げる
+        $('body,html').animate({ scrollTop: position }, speed, 'swing'); // スムーススクロール
+        return false;
+    });
 });
 
-
-/*==================================================
-** hamburger
-==================================================*/
-        document.getElementById("ham_icon").addEventListener("click", function() {
-            var menu = document.getElementById("menu");
-            var icon = document.getElementById("ham_icon");
-
-            if (menu.style.display === "none" || menu.style.display === "") {
-                // メニューを開く
-                menu.style.display = "block";
-                setTimeout(function() {
-                    menu.style.opacity = "1";
-                    menu.style.transform = "translateY(0)";
-                }, 10);
-                icon.src = "./assets/img/common/ham-close.png"; // アイコン変更（即時）
-            } else {
-                // メニューを閉じる
-                menu.style.opacity = "0";
-                menu.style.transform = "translateY(-10px)";
-                setTimeout(function() {
-                    menu.style.display = "none";
-                }, 500);
-                icon.src = "./assets/img/common/ham-open.png"; // アイコン変更（即時）
-            }
+    //ハンバーガーメニュー
+    $(document).ready(function () {
+        // ハンバーガーメニュー開閉
+        $('#hamburger .icon').on('click', function () {
+          let isOpen = $('#hamburger-nav').is(':visible');
+          if (!isOpen) {
+            // メニューが非表示のときに開く
+            $('#hamburger-nav').fadeIn(300);
+            $('.hamburger-icon.open').fadeOut(150);
+            setTimeout(() => {
+              $('.hamburger-icon.close').fadeIn(150);
+            }, 150);
+            
+            // メニューが開いた状態でもアコーディオンの状態をリセット（すべて閉じる）
+            $('.accordion-item').removeClass('active').find('.accordion-content').stop(true, true).slideUp(200);
+          } else {
+            // メニューが表示されているときに閉じる
+            $('#hamburger-nav').fadeOut(300);
+            $('.hamburger-icon.close').fadeOut(150);
+            setTimeout(() => {
+              $('.hamburger-icon.open').fadeIn(150);
+            }, 150);
+          }
         });
-
-        // 事業案内の▼をクリックしたときにサブメニューを表示/非表示
-        var submenuToggles = document.querySelectorAll(".submenu-toggle");
-
-        submenuToggles.forEach(function(toggle) {
-            toggle.addEventListener("click", function() {
-                var submenu = this.nextElementSibling;
-                if (submenu && submenu.classList.contains("submenu")) {
-                    if (submenu.classList.contains("open")) {
-                        // サブメニューを閉じる
-                        submenu.style.height = "0px";
-                        submenu.style.opacity = "0";
-                        submenu.style.marginTop = "0px";
-                        setTimeout(function() {
-                            submenu.classList.remove("open");
-                        }, 300);
-                    } else {
-                        // サブメニューを開く
-                        submenu.classList.add("open");
-                        setTimeout(function() {
-                            submenu.style.height = "100px";
-                            submenu.style.opacity = "1";
-                            submenu.style.marginTop = "10px";
-                        }, 10);
-                    }
-                }
-            });
+      
+        // アコーディオン開閉
+        $('.accordion-header').on('click', function () {
+          const parent = $(this).closest('.accordion-item'); // 親アイテムを選択
+      
+          // 他のアコーディオンを閉じる（閉じたアイテムの表示を更新）
+          $('.accordion-item').not(parent).removeClass('active').find('.accordion-content').stop(true, true).slideUp(200);
+      
+          // 現在クリックされたアイテムを開閉
+          parent.toggleClass('active');
+          parent.find('.accordion-content').stop(true, true).slideToggle(200);
         });
+      });
+      
+      
+      
+
+ 
+
+// * === タブ  ===
+document.querySelectorAll(".tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      const index = tab.getAttribute("data-index");
+  
+      // タブ切り替え
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+  
+      // コンテンツ切り替え
+      document.querySelectorAll(".content").forEach((c, i) => {
+        c.classList.toggle("show", i == index);
+      });
+    });
+  });
+  
 

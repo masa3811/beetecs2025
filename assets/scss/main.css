@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* CSS Document */
 body {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
@@ -30,7 +31,6 @@ body {
   margin-top: 32px;
 }
 
-/* CSS Document */
 /* 基本設定 */
 body {
   color: #333;
@@ -300,5 +300,4 @@ body {
   ul.menu {
     display: flex;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

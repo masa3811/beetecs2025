@@ -1,278 +1,137 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="email=no,telephone=no,address=no">
-  <title>ビーテクス</title>
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Cache-Control" content="no-cache">
-  <meta name="robots" content="none">
-  <meta name="description" content="<?php echo $des; ?>">
-  <meta property="og:type" content="website">
-  <meta property="og:title"
-    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
-  <meta property="og:description" content="<?php echo $des; ?>">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-  <link rel="stylesheet" href="assets/css/initialize.css">
-  <link rel="stylesheet" href="assets/css/main.css?20240405">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>TMP_2025</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
 </head>
-
-<body id="top">
-  <div id="sitewrap">
-    <!-- ===============================================
-                  header
-  ================================================ -->
-    <header class="header">
-      <div class="header__breadcrumb-wrap only-pc " style="visibility: hidden;">
-        <div class="header__breadcrumb">ホーム　＞　〇〇〇〇</div>
-      </div>
-      <div class="wrap">
-        <div class="header__top">
-          <h1 class="logo"><a href="./index.html"><img src="./assets/img/common/logo.svg" alt=""></a></h1>
-          <!-- /.logo -->
-          <nav class="main-nav" id="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="index.html">TOP</a></li>
-              <li class="main-nav__item"><a href="#">会社案内</a></li>
-              <li class="main-nav__item"><a href="#">ニュース</a></li>
-              <li class="main-nav__item"><a href="#">お問い合わせ</a></li>
+<body>
+    <header id="header">
+        <div class="wrap">
+          <div class="logo">
+            <a href="#"><img src="assets/images/common/logo.svg" alt="ロゴ"></a>
+          </div>
+    
+          <nav id="global-nav">
+            <ul id="menu">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">会社案内</a></li>
+              <li><a href="#">採用情報</a></li>
             </ul>
           </nav>
+    
+          <!-- ハンバーガー -->
+          <div id="hamburger">
+            <div class="icon">
+              <img src="assets/images/common/ham-open.png" alt="メニュー" class="hamburger-icon open" />
+              <img src="assets/images/common/ham-close.png" alt="閉じる" class="hamburger-icon close" />
+            </div>
+            <div id="hamburger-nav">
+                <ul class="menu">
+                  <li class="title"><a href="#">会社案内</a></li>
+                  <li><a href="#">会社概要</a></li>
+                  <li><a href="#">企業理念</a></li>
+                  <li class="accordion-item">
+                    <div class="accordion-header">
+                      事業案内<i class="fa fa-sort" aria-hidden="true"></i>
+                    </div>
+                    <div class="accordion-content">
+                      <a href="#">事業案内1</a>
+                      <a href="#">事業案内2</a>
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <div class="accordion-header">
+                      営業所<i class="fa fa-sort" aria-hidden="true"></i>
+                    </div>
+                    <div class="accordion-content">
+                      <a href="#">営業所1</a>
+                      <a href="#">営業所2</a>
+                    </div>
+                  </li>
+                  <li><a href="#">株式会社</a></li>
+                </ul>
+                <ul class="menu">
+                  <li class="title"><a href="#">ニュース</a></li>
+                  <li><a href="#">お知らせ</a></li>
+                  <li><a href="#">リクルート</a></li>
+                </ul>
+                <ul class="menu">
+                  <li class="title"><a href="#">お問い合わせ</a></li>
+                  <li><a href="#">採用</a></li>
+                  <li><a href="#">法人</a></li>
+                  <li><a href="#">一般</a></li>
+                </ul>
+                <ul class="menu">
+                  <li class="title"><a href="#">採用情報</a></li>
+                  <li><a href="#">会社概要</a></li>
+                </ul>
+              </div>
+              
+          </div>
         </div>
-        <!-- /.header__top -->
+      </header>
+    
+      
+      
 
+    <!-- ヒーローセクション -->
+    <section class="hero inner-1200">
+        <div class="hero-image">
+            <img src="assets/images/common/mv_img.jpg" alt="ヒーロー画像">
+        </div>
+        <h1>ようこそ、私たちのウェブサイトへ！</h1>
+        <p>ここで新しい冒険を始めましょう。</p>
+        <button>今すぐ始める</button>
+    </section>
 
-    <!-- ハンバーガーアイコン -->
-    <div class="button-hamburger">
-        <img id="ham_icon" src="./assets/img/common/ham-open.png" alt="ハンバーガーアイコン" width="40">
-    </div>
+    <!-- コンテンツセクション -->
+    <section class="content">
+        <div class="card">
+            <img src="assets/images/common/bg_hexagon-roll.png" alt="サービス1">
+            <h2>サービス1</h2>
+            <p>このサービスはすごいです！</p>
+        </div>
+        <div class="card">
+            <img src="assets/images/common/bg_hexagon.png" alt="サービス2">
+            <h2>サービス2</h2>
+            <p>これはもっとすごいです！</p>
+        </div>
+        <div class="card">
+            <img src="assets/images/common/bg_beetecs.png" alt="サービス3">
+            <h2>サービス3</h2>
+            <p>これも素晴らしいです！</p>
+        </div>
+    </section>
 
-    <!-- メニュー -->
-    <div id="menu" class="menu">
-        <ul>
-            <li>
-                <ul class="menu-item">
-                    <li>会社案内</li>
-                    <li>企業理念</li>
-                    <li>
-                        <span class="submenu-toggle">事業案内</span>
-                        <ul class="submenu">
-                            <li>事業案内1</li>
-                            <li>事業案内2</li>
-                        </ul>
-                        <span class="submenu-toggle">営業所</span>
-                        <ul class="submenu">
-                            <li>営業所1</li>
-                            <li>営業所2</li>
-                        </ul>
-                    </li>
-                  
-                </ul>
-            </li>
-            <li>
-                <span class="menu-item">ニュース</span>
-                <ul>
-                    <li>お知らせ</li>
-                    <li>リクルート</li>
-                </ul>
-            </li>
-            <li>
-                <span class="menu-item">お問い合わせ</span>
-                <ul>
-                    <li>採用</li>
-                    <li>法人</li>
-                </ul>
-            </li>
+    <section id="tab">
+        <ul class="tab-area">
+          <li class="tab active" data-index="1">タブ１</li>
+          <li class="tab" data-index="2">タブ２</li>
+          <li class="tab" data-index="3">タブ３</li>
         </ul>
-    </div>
-        
-
-      </div>
-      <!-- /.wrap -->
-    </header>
-
-
-      <!-- ===============================================
-                                  mv
-      ================================================ -->
-      <div class="mv">
-        <div class="wrap">
-          <img src="./assets/img/common/mv_img.jpg" alt="">
-        </div>
-      </div>
-      <!-- /.mv -->
-    <!-- ===============================================
-                                  main
-  ================================================ -->
-    <main class="main">
-      <!-- ===============================================
-                    banner
-  ================================================ -->
-      <div class="banner">
-        <div class="wrap">
-          <div class="banner__img">
-            <a href="https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?all=1&cmfrm=1&yid=23521773298964" target="_blank">
-              <img src="./assets/img/common/plan__banner-sp.png" alt="ご予約・ご宿泊プラン一覧はこちら" class="pc-none tab-none">
-              <img src="./assets/img/common/plan__banner@2x.png" alt="ご予約・ご宿泊プラン一覧はこちら" class="sp-none">
-            </a>
-          </div>
-          <!-- /.banner__img -->
-        </div>
-        <!-- /.wrap -->
-      </div>
-      <!-- /.banner -->
-
-      <!-- ===============================================
-        attraction
-    ================================================ -->
-      <section class="attraction">
-        <div class="wrap">
-          <div class="attraction__list">
-            <div class="attraction__item" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-              <div class="attraction__img">
-                <a href="./cuisine.html"><img src="./assets/img/top/attraction__img01@2x.jpg" alt="季節の香り・地の味覚"></a>
-              </div>
-              <!-- /.attraction__img -->
-              <div class="attraction__txt-box">
-                <a href="./cuisine.html">
-                  <div class="attraction__txt-box-content">
-                    <div class="attraction__txt-content-wrap">
-                      <h2 class="attraction__ttl">季節の香り・地の味覚</h2>
-                      <p class="attraction__txt">
-                        常連さんから長く愛され続けてきた信頼の味。<br>
-                        群馬県産の地の素材と季節の食材を生かした<br>
-                        お料理で真心を込めておもてなし。<br>
-                        どうぞ一品一品を心ゆくまでご堪能ください。
-                      </p>
-                    </div>
-                    <!-- /.attraction__txt-content-wrap -->
-                  </div>
-                </a>
-                <!-- /.attraction__content -->
-              </div>
-              <!-- /.attraction__txt-box -->
-            </div>
-            <!-- /.attraction__item -->
-            <div class="attraction__item reverse" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-              <div class="attraction__img">
-                <a href="./spa.html"><img src="./assets/img/top/attraction__img02@2x.jpg" alt="源泉かけ流しの贅沢"></a>
-              </div>
-              <!-- /.attraction__img -->
-              <div class="attraction__txt-box">
-                <a href="./spa.html">
-                  <div class="attraction__txt-box-content">
-                    <div class="attraction__txt-content-wrap">
-                      <h2 class="attraction__ttl">源泉かけ流しの贅沢</h2>
-                      <p class="attraction__txt">
-                        尾瀬　鎌田温泉は、ｐH値8.5のアルカリ性単純温泉。<br>
-                        美肌効果を期待できるお湯です。<br>
-                        心身共にリラックスしてください。
-                      </p>
-                    </div>
-                    <!-- /.attraction__txt-content-wrap -->
-                  </div>
-                  <!-- /.attraction__txt-box-content -->
-                </a>
-              </div>
-              <!-- /.attraction__txt-box -->
-            </div>
-            <!-- /.attraction__item -->
-            <div class="attraction__item" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-              <div class="attraction__img">
-                <a href="./facility.html"><img src="./assets/img/top/attraction__img03@2x.jpg" alt="和モダンな館内"></a>
-              </div>
-              <!-- /.attraction__img -->
-              <div class="attraction__txt-box">
-                <a href="./facility.html">
-                  <div class="attraction__txt-box-content">
-                    <div class="attraction__txt-box-wrap">
-                      <h2 class="attraction__ttl">和モダンな館内</h2>
-                      <p class="attraction__txt">
-                        落ち着いた雰囲気の館内やお部屋は、<br>
-                        大人のお客様に人気です。<br>
-                        気兼ねなく、ゆっくりとお寛ぎください。
-                      </p>
-                    </div>
-                    <!-- /.attraction__txt-box-wrap -->
-                  </div>
-                  <!-- /.attraction__txt-box-content -->
-                </a>
-              </div>
-              <!-- /.attraction__txt-box -->
-            </div>
-            <!-- /.attraction__item -->
-          </div>
-          <!-- /.attraction__list -->
-        </div>
-        <!-- /.wrap -->
+        <dl class="content-area">
+          <dd class="content show">タブ１の中身です</dd>
+          <dd class="content">タブ２の中身です</dd>
+          <dd class="content">タブ３の中身です</dd>
+        </dl>
       </section>
+      
+      
+      
 
-
-
-    </main>
-
-
-    <!-- ===============================================
-                                  footer
-  ================================================ -->
+    <!-- フッター -->
     <footer class="footer">
-      <div class="wrap">
-        <div class="footer__content">
-          <p class="footer__logo">
-            <img src="./assets/img/common/footer__logo.png" alt="妙宝乃湯ちぎらのロゴ">
-          </p>
-          <address class="footer__address">〒378-0415 群馬県利根郡片品村鎌田4085-2</address>
-          <ul class="footer__info-list">
-            <li class="footer__info-item"><a href="tel: 0278582601">TEL：0278-58-2601</a></li>
-            <li class="footer__info-item">／FAX：0278-58-2602</li>
-          </ul>
-          <ul class="footer__check-list">
-            <li class="footer__check-item">チェックイン：15:00～</li>
-            <li class="footer__check-item">／チェックアウト：～10：00</li>
-          </ul>
-        </div>
-        <!-- /.footer__content -->
-
-      </div><!-- /.wrap -->
+        <p>&copy; 2025 会社名. All rights reserved.</p>
     </footer>
 
-    <div class="footer__bottom">
-      <div class="wrap">
-        <small>&copy;BEETECS　All rights reserved.</small>
-      </div>
-      <!-- /.wrap -->
-    </div>
-
-
-    <!-- ===============================================
-          page-top
-          ================================================ -->
-<div class="pagetop-btn">
-  <div class="wrap">
-    <div class="page-top" id="pagetop-btn">
-      <a href="#" class="totop"><img src="./assets/img/common/to-top.png" alt="ページトップへ戻る"></a>
-    </div>
-  </div>
-</div>
-
-
-
-
-  </div>
-  <!-- /sitewrap -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.js"></script>
 </body>
-
 </html>
