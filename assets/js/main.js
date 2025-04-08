@@ -1,7 +1,7 @@
 // JavaScript Document
 
  // スクロールでヘッダー固定＆白背景に変更
- const header = document.querySelector('#header');
+ const header = document.querySelector('header');
  const scrollposition = 100; 
  
  window.addEventListener('scroll', () => {
@@ -37,27 +37,29 @@ $(function() {
 });
 
     //ハンバーガーメニュー
+      
     $(document).ready(function () {
       // ハンバーガーメニュー開閉
       $('#hamburger .icon').on('click', function () {
-        let isOpen = $('#hamburger-nav').is(':visible');
-    
+        let isOpen = $('#hamburger-nav').css('display') === 'flex'; // displayプロパティを確認
+        
         if (!isOpen) {
-          $('#hamburger-nav').stop(true, true).slideDown(500);
-          $('.hamburger-icon.open').fadeOut(150);
+          $('#hamburger-nav').css('display', 'flex').hide().fadeIn(500); // メニューを表示（fadeInを使用）
+          $('.hamburger-icon.open').fadeOut(150); // 開いたアイコンをフェードアウト
           setTimeout(() => {
-            $('.hamburger-icon.close').fadeIn(150);
+            $('.hamburger-icon.close').fadeIn(150); // 閉じたアイコンをフェードイン
           }, 150);
     
           // 👇 ハンバーガーを開いたときにアコーディオンをすべて閉じる
           $('.accordion-item').removeClass('active');
-          $('.accordion-content').hide();
-    
+          $('.accordion-content').stop(true, true).slideUp(300); // アコーディオンを全て閉じる
         } else {
-          $('#hamburger-nav').stop(true, true).slideUp(500);
-          $('.hamburger-icon.close').fadeOut(150);
+          $('#hamburger-nav').fadeOut(500, function () {
+            $(this).css('display', 'none'); // メニューを非表示
+          });
+          $('.hamburger-icon.close').fadeOut(150); // 閉じたアイコンをフェードアウト
           setTimeout(() => {
-            $('.hamburger-icon.open').fadeIn(150);
+            $('.hamburger-icon.open').fadeIn(150); // 開いたアイコンをフェードイン
           }, 150);
         }
       });
@@ -66,14 +68,13 @@ $(function() {
       $('.accordion-header').on('click', function () {
         const parent = $(this).closest('.accordion-item');
     
+        // アコーディオンメニューの切り替え
         $('.accordion-item').not(parent).removeClass('active').find('.accordion-content').stop(true, true).slideUp(300);
         parent.toggleClass('active');
         parent.find('.accordion-content').stop(true, true).slideToggle(300);
       });
     });
     
-      
-      
 
  
 

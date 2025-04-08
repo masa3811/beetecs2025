@@ -94,9 +94,22 @@ body {
   margin-right: 15%;
   margin-bottom: 0;
 }
+#header #global-nav ul li {
+  background-color: #fff;
+  color: #1a1a1a;
+  padding: 10px 20px; /* 上下に10px、左右に20pxの余白を追加 */
+  transition: background-color 0.3s, color 0.3s; /* スムーズな反転 */
+}
 #header #global-nav ul li a {
   text-decoration: none;
   color: #333;
+}
+#header #global-nav ul li:hover {
+  background-color: #333; /* 背景色を反転 */
+  color: #fff; /* 文字色を反転 */
+}
+#header #global-nav ul li:hover a {
+  color: #fff; /* リンクの文字色も反転 */
 }
 #header .recruit a img {
   width: 70px;
@@ -137,11 +150,15 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 998;
 }
+#header #hamburger-nav.active {
+  display: flex; /* .active クラスが追加された時に表示 */
+}
 #header #hamburger-nav .menu {
   list-style: none;
   margin: 0;
   padding: 10px 20px;
   display: flex;
+  flex-direction: column;
 }
 #header #hamburger-nav .menu li {
   padding: 10px 0;
