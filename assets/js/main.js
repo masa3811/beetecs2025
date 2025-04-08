@@ -1,17 +1,17 @@
 // JavaScript Document
 
+ // スクロールでヘッダー固定＆白背景に変更
+ const header = document.querySelector('#header');
+ const scrollposition = 100; 
+ 
+ window.addEventListener('scroll', () => {
+   if (window.scrollY > scrollposition) {
+     header.classList.add('fixed');
+   } else {
+     header.classList.remove('fixed');
+   }
+ });
 
-$(function () {
-    // スクロールでヘッダー固定＆白背景に変更
-    $(window).on("scroll", function () {
-      if ($(this).scrollTop() > 10) {
-        $("#header").addClass("fixed");
-      } else {
-        $("#header").removeClass("fixed");
-      }
-    });
-  });
-  
 
 /* === リンクscroll === */
 $(function() {
@@ -38,42 +38,40 @@ $(function() {
 
     //ハンバーガーメニュー
     $(document).ready(function () {
-        // ハンバーガーメニュー開閉
-        $('#hamburger .icon').on('click', function () {
-          let isOpen = $('#hamburger-nav').is(':visible');
-          if (!isOpen) {
-            // メニューが非表示のときに開く
-            $('#hamburger-nav').fadeIn(300);
-            $('.hamburger-icon.open').fadeOut(150);
-            setTimeout(() => {
-              $('.hamburger-icon.close').fadeIn(150);
-            }, 150);
-            
-            // メニューが開いた状態でもアコーディオンの状態をリセット（すべて閉じる）
-            $('.accordion-item').removeClass('active').find('.accordion-content').stop(true, true).slideUp(200);
-          } else {
-            // メニューが表示されているときに閉じる
-            $('#hamburger-nav').fadeOut(300);
-            $('.hamburger-icon.close').fadeOut(150);
-            setTimeout(() => {
-              $('.hamburger-icon.open').fadeIn(150);
-            }, 150);
-          }
-        });
-      
-        // アコーディオン開閉
-        $('.accordion-header').on('click', function () {
-          const parent = $(this).closest('.accordion-item'); // 親アイテムを選択
-      
-          // 他のアコーディオンを閉じる（閉じたアイテムの表示を更新）
-          $('.accordion-item').not(parent).removeClass('active').find('.accordion-content').stop(true, true).slideUp(200);
-      
-          // 現在クリックされたアイテムを開閉
-          parent.toggleClass('active');
-          parent.find('.accordion-content').stop(true, true).slideToggle(200);
-        });
+      // ハンバーガーメニュー開閉
+      $('#hamburger .icon').on('click', function () {
+        let isOpen = $('#hamburger-nav').is(':visible');
+    
+        if (!isOpen) {
+          $('#hamburger-nav').stop(true, true).slideDown(500);
+          $('.hamburger-icon.open').fadeOut(150);
+          setTimeout(() => {
+            $('.hamburger-icon.close').fadeIn(150);
+          }, 150);
+    
+          // 👇 ハンバーガーを開いたときにアコーディオンをすべて閉じる
+          $('.accordion-item').removeClass('active');
+          $('.accordion-content').hide();
+    
+        } else {
+          $('#hamburger-nav').stop(true, true).slideUp(500);
+          $('.hamburger-icon.close').fadeOut(150);
+          setTimeout(() => {
+            $('.hamburger-icon.open').fadeIn(150);
+          }, 150);
+        }
       });
-      
+    
+      // アコーディオン開閉
+      $('.accordion-header').on('click', function () {
+        const parent = $(this).closest('.accordion-item');
+    
+        $('.accordion-item').not(parent).removeClass('active').find('.accordion-content').stop(true, true).slideUp(300);
+        parent.toggleClass('active');
+        parent.find('.accordion-content').stop(true, true).slideToggle(300);
+      });
+    });
+    
       
       
 

@@ -4,8 +4,8 @@
 /* CSS Document */
 @use 'variables' as *;
 @use 'mixins' as *;
-@use 'common';
 
+*{ margin:0; padding:0;}
 /* 基本設定 */
 body {
   color: #333;
@@ -65,16 +65,27 @@ body {
 
 /* ヘッダー */
 #header {
+  height: 100px;
   position: relative;
   background-color: transparent;
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s ease; 
+
+  #header ul li {
+    display: inline-block;
+    padding: 30px 20px 25px 28px;
+  }
+  #header ul li a {
+    color: #2d2d2d;
+  }
 
   .wrap {
     width: 100%;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 20px;
+    height: inherit;
   }
 
   .logo img {
@@ -90,6 +101,9 @@ body {
       display: flex;
       gap: 20px;
       list-style: none;
+      padding: 0;
+      margin-right: 15%;
+      margin-bottom: 0;
 
       li a {
         text-decoration: none;
@@ -97,9 +111,14 @@ body {
       }
     }
   }
-
+  .recruit a img{
+    width: 70px;
+    position: absolute;
+    bottom: 0%;
+    right: 67px;
+    z-index: 999;
+  }
   #hamburger {
-    flex: 1;
     display: flex;
     justify-content: flex-end;
 
@@ -107,8 +126,12 @@ body {
       cursor: pointer;
 
       .hamburger-icon {
-        width: 30px;
+        width: 70px;
         display: none;
+        position: absolute;
+        bottom: -30%;
+        right: 1%;
+        z-index: 999;
 
         &.open {
           display: inline-block;
@@ -136,7 +159,7 @@ body {
       list-style: none;
       margin: 0;
       padding: 10px 20px;
-      display: flex; 
+      display: flex;
 
       li {
         padding: 10px 0;
@@ -184,6 +207,7 @@ body {
   }
 
   &.fixed {
+    width: 100%;
     position: fixed;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

@@ -1,10 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /* 基本設定 */
 body {
   color: #333;
@@ -60,7 +55,11 @@ body {
   height: 100px;
   position: relative;
   background-color: transparent;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+#header #header {
+  position: absolute;
+  top: 0;
 }
 #header #header ul li {
   display: inline-block;
@@ -69,6 +68,11 @@ body {
 #header #header ul li a {
   color: #2d2d2d;
 }
+@media (min-width: 768px) {
+  #header #header ul li a {
+    color: #2d2d2d;
+  }
+}
 #header .wrap {
   width: 100%;
   position: relative;
@@ -76,7 +80,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  height: inherit;
 }
 #header .logo img {
   height: 40px;
@@ -180,7 +183,6 @@ body {
   height: auto;
 }
 #header.fixed {
-  width: 100%;
   position: fixed;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -298,5 +300,4 @@ body {
   ul.menu {
     display: flex;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
