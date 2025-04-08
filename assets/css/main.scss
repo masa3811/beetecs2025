@@ -180,9 +180,7 @@ body {
         background-color: #fff;
         color: #1a1a1a;
         padding: 10px 20px;
-        /* 上下に10px、左右に20pxの余白を追加 */
         transition: background-color 0.3s, color 0.3s;
-        /* スムーズな反転 */
 
         a {
           text-decoration: none;
@@ -314,6 +312,7 @@ body {
             background: #eee;
             position: relative;
             transition: background 0.3s;
+            color: white; // 文字色も白にする
           
             &:hover {
               background: #ddd;
@@ -321,13 +320,14 @@ body {
           
             &::after {
               content: "\f078";
-              font-family: "Font Awesome 5 Free";
+              font-family: "Font Awesome 6 Free";
               font-weight: 900;
               font-size: 14px;
               position: absolute;
               right: 10px;
               top: 50%;
               transform: translateY(-50%);
+              color: white; // ← アイコンの色
             }
           
             &.active::after {

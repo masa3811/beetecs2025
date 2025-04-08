@@ -164,9 +164,7 @@ body {
   background-color: #fff;
   color: #1a1a1a;
   padding: 10px 20px;
-  /* 上下に10px、左右に20pxの余白を追加 */
   transition: background-color 0.3s, color 0.3s;
-  /* スムーズな反転 */
 }
 #header #global-nav ul li a {
   text-decoration: none;
@@ -277,19 +275,21 @@ body {
   background: #eee;
   position: relative;
   transition: background 0.3s;
+  color: white;
 }
 #header #hamburger-nav .menu li .accordion-item .accordion-header:hover {
   background: #ddd;
 }
 #header #hamburger-nav .menu li .accordion-item .accordion-header::after {
   content: "\f078";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 14px;
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+  color: white;
 }
 #header #hamburger-nav .menu li .accordion-item .accordion-header.active::after {
   content: "\f077";
