@@ -37,24 +37,24 @@ $(function() {
 });
 
     //ハンバーガーメニュー
-      
     $(document).ready(function () {
+      // 初期状態でアコーディオンの内容はすべて非表示にする
+      $('.accordion-content').hide();
+    
       // ハンバーガーメニュー開閉
       $('#hamburger .icon').on('click', function () {
         let isOpen = $('#hamburger-nav').css('display') === 'flex'; // displayプロパティを確認
         
         if (!isOpen) {
-          $('#hamburger-nav').css('display', 'flex').hide().fadeIn(500); // メニューを表示（fadeInを使用）
+          // メニューを表示 (最初に display: none; から display: flex; に変更)
+          $('#hamburger-nav').css('display', 'flex').hide().slideDown(500);
           $('.hamburger-icon.open').fadeOut(150); // 開いたアイコンをフェードアウト
           setTimeout(() => {
             $('.hamburger-icon.close').fadeIn(150); // 閉じたアイコンをフェードイン
           }, 150);
-    
-          // 👇 ハンバーガーを開いたときにアコーディオンをすべて閉じる
-          $('.accordion-item').removeClass('active');
-          $('.accordion-content').stop(true, true).slideUp(300); // アコーディオンを全て閉じる
         } else {
-          $('#hamburger-nav').fadeOut(500, function () {
+          // メニューを非表示
+          $('#hamburger-nav').slideUp(500, function () {
             $(this).css('display', 'none'); // メニューを非表示
           });
           $('.hamburger-icon.close').fadeOut(150); // 閉じたアイコンをフェードアウト
@@ -67,9 +67,8 @@ $(function() {
       // アコーディオン開閉
       $('.accordion-header').on('click', function () {
         const parent = $(this).closest('.accordion-item');
-    
-        // アコーディオンメニューの切り替え
-        $('.accordion-item').not(parent).removeClass('active').find('.accordion-content').stop(true, true).slideUp(300);
+        
+        // クリックしたアコーディオン項目をトグル（開く/閉じる）
         parent.toggleClass('active');
         parent.find('.accordion-content').stop(true, true).slideToggle(300);
       });
