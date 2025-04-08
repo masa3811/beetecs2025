@@ -43,11 +43,11 @@ $(function() {
     
       // ハンバーガーメニュー開閉
       $('#hamburger .icon').on('click', function () {
-        let isOpen = $('#hamburger-nav').css('display') === 'flex'; // displayプロパティを確認
+        let isOpen = $('#hamburger-nav').css('display') === 'block'; // displayプロパティを確認
         
         if (!isOpen) {
           // メニューを表示 (最初に display: none; から display: flex; に変更)
-          $('#hamburger-nav').css('display', 'flex').hide().slideDown(500);
+          $('#hamburger-nav').css('display', 'block').hide().slideDown(500);
           $('.hamburger-icon.open').fadeOut(150); // 開いたアイコンをフェードアウト
           setTimeout(() => {
             $('.hamburger-icon.close').fadeIn(150); // 閉じたアイコンをフェードイン
