@@ -110,7 +110,6 @@ div {
 
 .section-ttl {
   padding: 2px 12px;
-  border-left: 1px solid #333333;
   font-size: 28px;
   display: inline-block;
 }
@@ -145,7 +144,6 @@ div {
 }
 .section-sub-ttl__section-ttl {
   padding: 4px 16px;
-  border-left: 4px solid #e2cdb6;
   font-size: 24px;
   display: inline-block;
 }
@@ -961,12 +959,18 @@ body {
   top: 25%;
 }
 .mv .mv-cnt h1 {
-  width: 55%;
+  width: 50%;
+  background-color: #000;
+  padding: 20px;
+  font-size: 50px;
 }
 .mv .mv-cnt p {
   width: 80%;
-  margin-top: 60px;
-  margin-left: 190px;
+  margin-top: 30px;
+  margin-left: 140px;
+  color: #000;
+  font-size: 55px;
+  font-weight: bold;
 }
 
 .banner-cnt {
