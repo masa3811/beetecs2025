@@ -845,9 +845,7 @@ body {
 #header #hamburger-nav .menu li .accordion-item {
   position: relative;
   display: flex;
-  /* 親要素がflexで縦並びにする */
   flex-direction: column;
-  /* アイテムが縦に並ぶようにする */
 }
 #header #hamburger-nav .menu li .accordion-item .accordion-header {
   cursor: pointer;
@@ -866,7 +864,7 @@ body {
   font-weight: 900;
   font-size: 14px;
   position: absolute;
-  right: 10px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
   color: white;
@@ -1022,4 +1020,91 @@ body {
 #tab .content-area .content.show {
   display: block;
 }
-/*# sourceMappingURL=style.css.map */
+
+table.table {
+  width: 100%;
+  text-align: left;
+  /*border-collapse: separate; */
+  border-spacing: 10px;
+  background-color: #FFF;
+}
+table.table th {
+  padding: 1em 0 1em 4em;
+  border: 1px #727171 dotted;
+  border-width: 1px 0 1px 0;
+  line-height: 180%;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: normal;
+  width: 35%;
+}
+table.table td {
+  padding: 1em 0;
+  border: 1px #727171 dotted;
+  border-width: 1px 0 1px 0;
+  line-height: 180%;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: #FFF;
+  word-break: break-all;
+  font-size: 16px;
+}
+table.table tr th a {
+  text-decoration: none;
+  color: #888888;
+}
+
+.news .tab-area {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.news .tab-area .tab {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.news .tab-area .tab:hover {
+  background: #ccc;
+}
+.news .tab-area .tab.active {
+  background: #999;
+  color: #fff;
+  font-weight: bold;
+}
+.news .content-area .content {
+  display: none;
+}
+.news .content-area .content.show {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.news .content-area .content .news-cnt table.news {
+  width: 100%;
+  border-collapse: collapse;
+}
+.news .content-area .content .news-cnt table.news thead {
+  background-color: #f5f5f5;
+}
+.news .content-area .content .news-cnt table.news thead th {
+  padding: 0.75rem;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+.news .content-area .content .news-cnt table.news tbody td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+.news .content-area .content .news-cnt table.news tbody td a {
+  color: #333;
+  text-decoration: none;
+}
+.news .content-area .content .news-cnt table.news tbody td a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

@@ -93,4 +93,33 @@ document.querySelectorAll(".tab").forEach(tab => {
     });
   });
   
+  $(function () {
+    var tabs = $(".tab"); 
+    $(".tab").on("click", function () { 
+      $(".active").removeClass("active"); 
+      $(this).addClass("active"); 
+      var index = tabs.index(this);
+      $(".content").removeClass("show").eq(index).addClass("show"); 
+    });
+  });
+
+
+
+
+  $(function () {
+    var tabs = $(".tab");
+    var contents = $(".content");
+
+    tabs.on("click", function () {
+      // タブの見た目切り替え
+      tabs.removeClass("active");
+      $(this).addClass("active");
+
+      // 該当のコンテンツだけ表示
+      var index = $(this).index();
+      contents.removeClass("show").eq(index).addClass("show");
+    });
+  });
+
+
 
