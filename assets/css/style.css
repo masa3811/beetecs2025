@@ -976,7 +976,9 @@ body {
 .banner-cnt {
   display: flex;
 }
-
+.arrow-cnt {
+  margin-top: 20px;
+}
 .arrow-cnt a {
   width: 100%;
   display: flex;
@@ -988,6 +990,8 @@ body {
 }
 .arrow-cnt a p {
   text-decoration: none;
+      margin-left: 50px;
+    font-weight: bold;
 }
 
 #tab {
