@@ -9,40 +9,6 @@ body {
 }
 
 
-p {
-  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-}
-
-a {
-  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-  color: #333333;
-}
-a:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  vertical-align: top;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-}
-
-th,
-td {
-  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-}
-
-div {
-  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-}
 
 .pc-block {
   display: block;
@@ -589,10 +555,6 @@ select {
   list-style: disc;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
 .inner {
   max-width: 1000px;
@@ -1105,4 +1067,7 @@ table.table tr th a {
 }
 .news .content-area .content .news-cnt table.news tbody td a:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=style.css.map */
+}
+
+
+
