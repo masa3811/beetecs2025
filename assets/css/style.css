@@ -868,31 +868,28 @@ select {
 .banner-item {
   
 }
-.banner-img {
-  max-width: 500px;
-}
-.banner-img:first-of-type {
+.banner-item:first-of-type {
   margin-right: 0.875rem;
 }
-.banner-img:last-of-type {
+.banner-item:last-of-type {
   margin-left: 0.875rem;
 }
-.arrow-cnt {
-  margin-top: 20px;
+.banner-img {
+  max-width: 1100px;
 }
-.arrow-cnt a {
-  width: 100%;
+
+.arrow-cnt {
   display: flex;
   align-items: center;
-  text-decoration: none;
+  margin-top: 1.25rem;
 }
-.arrow-cnt a img {
-  width: 10%;
+.arrow-cnt img {
+  max-width: 35px;
+  padding-right: 0.625rem;
 }
-.arrow-cnt a p {
-  text-decoration: none;
-      margin-left: 50px;
-    font-weight: bold;
+
+.arrow-cnt p {
+
 }
 
 

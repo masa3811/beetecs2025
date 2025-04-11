@@ -133,6 +133,11 @@ button {
   width: 100%;
   margin: 0 auto;
 }
+.inner-1350 {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 /* コンテンツセクション */
 .content {
@@ -162,22 +167,6 @@ button {
   margin-top: 10px;
 }
 
-/* === フレックスボックス === */
-.flex {
-  display: flex;
-}
-
-.flex.wrap {
-  flex-wrap: wrap;
-}
-
-.flex.no-wrap {
-  flex-wrap: nowrap;
-}
-
-.flex.justify-between {
-  justify-content: space-between;
-}
 
 .w-50 {
   width: 50%;
@@ -229,76 +218,6 @@ button {
   }
 }
 
-/* === フレックスの調整 === */
-.flex.flex-end {
-  justify-content: flex-end;
-}
-
-.flex.flex-center {
-  justify-content: center;
-}
-
-.flex.space-around {
-  justify-content: space-around;
-}
-
-.flex.space-between {
-  justify-content: space-between;
-}
-
-.flex.align-start {
-  align-items: flex-start;
-}
-
-.flex.align-end {
-  align-items: flex-end;
-}
-
-.flex.align-center {
-  align-items: center;
-}
-
-.flex.align-baseline {
-  align-items: baseline;
-}
-
-@media (min-width: 768px) {
-  .flex.wrap-p {
-    flex-wrap: wrap;
-  }
-
-  .flex.flex-end-p {
-    justify-content: flex-end;
-  }
-
-  .flex.flex-center-p {
-    justify-content: center;
-  }
-
-  .flex.space-around-p {
-    justify-content: space-around;
-  }
-
-  .flex.space-between-p {
-    justify-content: space-between;
-  }
-
-  .flex.align-start-p {
-    align-items: flex-start;
-  }
-
-  .flex.align-end-p {
-    align-items: flex-end;
-  }
-
-  .flex.align-center-p {
-    align-items: center;
-  }
-
-  .flex.align-baseline-p {
-    align-items: baseline;
-  }
-}
 
 /* === レイアウトのカラム設定 === */
 ul.flex, dl.flex {
@@ -422,21 +341,17 @@ ul.flex, dl.flex {
 
 
 /* === フォントサイズ === */
-.fz-xxxs { font-size: clamp(0.625rem, 0.5vw + 0.4rem, 0.75rem); } /* 10px〜12px */
-.fz-xxs  { font-size: clamp(0.75rem, 0.5vw + 0.5rem, 0.875rem); } /* 12px〜14px */
-.fz-xs   { font-size: clamp(0.875rem, 0.5vw + 0.75rem, 1rem); } /* 14px〜16px */
-.fz-s    { font-size: clamp(1rem, 1vw + 0.8rem, 1.6rem); } /* 16px〜25.6px */
-.fz-sm   { font-size: clamp(1.125rem, 1vw + 1rem, 1.375rem); } /* 18px〜22px */
-.fz-m    { font-size: clamp(1.6rem, 1vw + 1.2rem, 2rem); } /* 25.6px〜32px */
-.fz-l    { font-size: clamp(2rem, 1vw + 1.5rem, 2.5rem); } /* 32px〜40px */
-.fz-xl   { font-size: clamp(2.5rem, 1vw + 2rem, 3rem); } /* 40px〜48px */
-.fz-xxl  { font-size: clamp(3rem, 1vw + 2.5rem, 4rem); } /* 48px〜64px */
-.fz-xxxl  { font-size: clamp(3rem, 1vw + 2.5rem, 5rem); } /* 48px〜64px */
+.fz-16  { font-size: clamp(0.875rem, 0.5vw + 0.625rem, 1rem); }
+.fz-20  { font-size: clamp(1.125rem, 0.8vw + 0.75rem, 1.25rem); }
+.fz-22  { font-size: clamp(1.25rem, 1vw + 0.75rem, 1.375rem); }
+.fz-40  { font-size: clamp(2rem, 1vw + 1.5rem, 2.5rem); }
+.fz-60  { font-size: clamp(3rem, 1vw + 2.5rem, 3.75rem); }
+.fz-65  { font-size: clamp(3.25rem, 1vw + 2.75rem, 4.0625rem); }
 
 
 /* === 強調スタイル === */
-.font-weight-bold   { font-weight: bold; }
-.font-weight-normal { font-weight: normal; }
+.font-wb   { font-weight: bold; }
+.font-wn { font-weight: normal; }
 .underline          { text-decoration: underline; }
 .underline-none     { text-decoration: none; }
 
