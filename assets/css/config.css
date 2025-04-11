@@ -5,17 +5,21 @@
 html {
   font-size: 62.5%; /* 1rem = 10px */
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1.2rem, 2vw + 1rem, 2rem); 
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
 
-html, body {
+* {
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-size: 1.6rem; /* = 16px */
-}
-
-/* === リセット === */
 a:hover {
   opacity: 0.7;
 }
@@ -142,7 +146,7 @@ button {
 }
 .content .card h2 {
   font-size: 1.5rem;
-  color: #fff;
+  color: #333;
 }
 .content .card p {
   font-size: 1rem;
@@ -406,7 +410,6 @@ ul.flex, body dl.flex {
   }
 }
 
-/* === マージン・パディング設定 === */
 /* === マージン（margin-top） === */
 .mt0 { margin-top: 0; }
 .mt0_5 { margin-top: 0.5rem; }  /* = 5px */
@@ -426,3 +429,25 @@ ul.flex, body dl.flex {
 .mb2_5 { margin-bottom: 2.5rem; }
 .mb3 { margin-bottom: 3rem; }
 .mb4 { margin-bottom: 4rem; }
+
+/* === フォントサイズ === */
+.fz1_2 { font-size: clamp(1rem, 2vw + 1rem, 1.2rem); } /* 12px */
+.fz1_3 { font-size: clamp(1.1rem, 2vw + 1.1rem, 1.3rem); } /* 13px */
+.fz1_4 { font-size: clamp(1.2rem, 2vw + 1.2rem, 1.4rem); } /* 14px */
+.fz1_5 { font-size: clamp(1.3rem, 2vw + 1.3rem, 1.5rem); } /* 15px */
+.fz1_6 { font-size: clamp(1.4rem, 2vw + 1.4rem, 1.6rem); } /* 16px */
+.fz1_8 { font-size: clamp(1.6rem, 2vw + 1.6rem, 1.8rem); } /* 18px */
+.fz2 { font-size: clamp(1.8rem, 2vw + 1.8rem, 2rem); }     /* 20px */
+
+/* === 文字揃え === */
+.txt-left { text-align: left; }
+.txt-center { text-align: center; }
+.txt-right { text-align: right; }
+
+/* === 行間調整（必要なら）=== */
+.lh1 { line-height: 1; }
+.lh1_2 { line-height: 1.2; }
+.lh1_5 { line-height: 1.5; }
+.lh2 { line-height: 2; }
+
+
