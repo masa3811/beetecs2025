@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
 body {
-	font-family:'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
-	/*font-family: -apple-system, BlinkMacSystemFont, 'Josefin Sans', "Noto Sans Japanese", "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;*/
-	/*font-family: 'Monda',"Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;*/
+  font-family: 'Arial', 'Helvetica Neue', 'メイリオ', 'Meiryo', 'Verdana', sans-serif;
+/*  font-family: 'Times New Roman', 'ヒラギノ明朝 Pro', 'Hiragino Mincho Pro', 'MS PMincho', 'MS Mincho', serif;*/
+}
+
   color: #333333;
   line-height: 1.8;
 }
-
-
 
 .pc-block {
   display: block;
@@ -1016,7 +1015,15 @@ table.table tr th a {
   text-decoration: none;
   color: #888888;
 }
-
+.news {
+position: relative;
+background-image:url("../img/common/bg_hexagon.png");
+width: 100%;
+background-position: center top;/*  x,y*/
+background-repeat: no-repeat;
+background-size: cover;
+aspect-ratio: 1880/484;
+}
 .news .tab-area {
   display: flex;
   margin-bottom: 1rem;
