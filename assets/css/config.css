@@ -52,20 +52,20 @@ button {
   margin: 0;
 }
 
-.wrapper {
+.wrap {
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (max-width: 767.98px) {
-  .wrapper {
+  .wrap {
     max-width: 90%;
   }
 }
 
 @media (min-width: 768px) {
-  .wrapper {
-    max-width: 870px;
+  .wrap {
+    max-width: 100%;
   }
 }
 .inner {
@@ -419,105 +419,7 @@ ul.flex, dl.flex {
   }
 }
 
-/* === マージン（margin-top） === */
-.mt0 { margin-top: 0; }
-.mt0_5 { margin-top: 0.5rem; }  /* = 5px */
-.mt1 { margin-top: 1rem; }      /* = 10px */
-.mt1_5 { margin-top: 1.5rem; }  /* = 15px */
-.mt2 { margin-top: 2rem; }      /* = 20px */
-.mt2_5 { margin-top: 2.5rem; }  /* = 25px */
-.mt3 { margin-top: 3rem; }      /* = 30px */
-.mt4 { margin-top: 4rem; }      /* = 40px */
 
-/* === マージン（margin-bottom） === */
-.mb0 { margin-bottom: 0; }
-.mb0_5 { margin-bottom: 0.5rem; }
-.mb1 { margin-bottom: 1rem; }
-.mb1_5 { margin-bottom: 1.5rem; }
-.mb2 { margin-bottom: 2rem; }
-.mb2_5 { margin-bottom: 2.5rem; }
-.mb3 { margin-bottom: 3rem; }
-.mb4 { margin-bottom: 4rem; }
-
-/* === マージン（margin-left） === */
-.ml0 { margin-left: 0; }
-.ml0_5 { margin-left: 0.5rem; }
-.ml1 { margin-left: 1rem; }
-.ml1_5 { margin-left: 1.5rem; }
-.ml2 { margin-left: 2rem; }
-.ml2_5 { margin-left: 2.5rem; }
-.ml3 { margin-left: 3rem; }
-.ml4 { margin-left: 4rem; }
-
-/* === マージン（margin-right） === */
-.mr0 { margin-right: 0; }
-.mr0_5 { margin-right: 0.5rem; }
-.mr1 { margin-right: 1rem; }
-.mr1_5 { margin-right: 1.5rem; }
-.mr2 { margin-right: 2rem; }
-.mr2_5 { margin-right: 2.5rem; }
-.mr3 { margin-right: 3rem; }
-.mr4 { margin-right: 4rem; }
-
-/* === マージン（全方向） === */
-.m0 { margin: 0; }
-.m0_5 { margin: 0.5rem; }
-.m1 { margin: 1rem; }
-.m1_5 { margin: 1.5rem; }
-.m2 { margin: 2rem; }
-.m2_5 { margin: 2.5rem; }
-.m3 { margin: 3rem; }
-.m4 { margin: 4rem; }
-
-/* === パディング（padding-top） === */
-.pt0 { padding-top: 0; }
-.pt0_5 { padding-top: 0.5rem; }  /* = 5px */
-.pt1 { padding-top: 1rem; }      /* = 10px */
-.pt1_5 { padding-top: 1.5rem; }  /* = 15px */
-.pt2 { padding-top: 2rem; }      /* = 20px */
-.pt2_5 { padding-top: 2.5rem; }  /* = 25px */
-.pt3 { padding-top: 3rem; }      /* = 30px */
-.pt4 { padding-top: 4rem; }      /* = 40px */
-
-/* === パディング（padding-bottom） === */
-.pb0 { padding-bottom: 0; }
-.pb0_5 { padding-bottom: 0.5rem; }
-.pb1 { padding-bottom: 1rem; }
-.pb1_5 { padding-bottom: 1.5rem; }
-.pb2 { padding-bottom: 2rem; }
-.pb2_5 { padding-bottom: 2.5rem; }
-.pb3 { padding-bottom: 3rem; }
-.pb4 { padding-bottom: 4rem; }
-
-/* === パディング（padding-left） === */
-.pl0 { padding-left: 0; }
-.pl0_5 { padding-left: 0.5rem; }
-.pl1 { padding-left: 1rem; }
-.pl1_5 { padding-left: 1.5rem; }
-.pl2 { padding-left: 2rem; }
-.pl2_5 { padding-left: 2.5rem; }
-.pl3 { padding-left: 3rem; }
-.pl4 { padding-left: 4rem; }
-
-/* === パディング（padding-right） === */
-.pr0 { padding-right: 0; }
-.pr0_5 { padding-right: 0.5rem; }
-.pr1 { padding-right: 1rem; }
-.pr1_5 { padding-right: 1.5rem; }
-.pr2 { padding-right: 2rem; }
-.pr2_5 { padding-right: 2.5rem; }
-.pr3 { padding-right: 3rem; }
-.pr4 { padding-right: 4rem; }
-
-/* === パディング（全方向） === */
-.p0 { padding: 0; }
-.p0_5 { padding: 0.5rem; }
-.p1 { padding: 1rem; }
-.p1_5 { padding: 1.5rem; }
-.p2 { padding: 2rem; }
-.p2_5 { padding: 2.5rem; }
-.p3 { padding: 3rem; }
-.p4 { padding: 4rem; }
 
 /* === フォントサイズ === */
 .fz-xxxs { font-size: clamp(0.625rem, 0.5vw + 0.4rem, 0.75rem); } /* 10px〜12px */
@@ -529,6 +431,7 @@ ul.flex, dl.flex {
 .fz-l    { font-size: clamp(2rem, 1vw + 1.5rem, 2.5rem); } /* 32px〜40px */
 .fz-xl   { font-size: clamp(2.5rem, 1vw + 2rem, 3rem); } /* 40px〜48px */
 .fz-xxl  { font-size: clamp(3rem, 1vw + 2.5rem, 4rem); } /* 48px〜64px */
+.fz-xxxl  { font-size: clamp(3rem, 1vw + 2.5rem, 5rem); } /* 48px〜64px */
 
 
 /* === 強調スタイル === */

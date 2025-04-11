@@ -1,7 +1,7 @@
 // JavaScript Document
 
  // スクロールでヘッダー固定＆白背景に変更
- const header = document.querySelector('header');
+ const header = document.querySelector('#header .wrap');
  const scrollposition = 100; 
  
  window.addEventListener('scroll', () => {
