@@ -78,21 +78,6 @@ $(function() {
  
 
 // * === タブ  ===
-document.querySelectorAll(".tab").forEach(tab => {
-    tab.addEventListener("click", () => {
-      const index = tab.getAttribute("data-index");
-  
-      // タブ切り替え
-      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-      tab.classList.add("active");
-  
-      // コンテンツ切り替え
-      document.querySelectorAll(".content").forEach((c, i) => {
-        c.classList.toggle("show", i == index);
-      });
-    });
-  });
-  
   $(function () {
     var tabs = $(".tab"); 
     $(".tab").on("click", function () { 
