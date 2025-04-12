@@ -68,19 +68,7 @@ body {
     padding-left: 0;
   }
 }
-/*
 
-.section-ttl {
-  padding: 2px 12px;
-  font-size: 28px;
-  display: flex;
-}
-.section-ttl img {
-  max-width: 60px;
-  height: 100%;
-  margin-right: 1.875rem;
-}
-*/
 .section-ttl {
     display: flex;
     align-items: center;
@@ -88,25 +76,6 @@ body {
     color: #333333;
 }
 
-/*
-.section-ttl::before {
-    max-width: 3.75rem;
-    height: 100%;
-    background-image:url("../img/common/section_ttl_icon.png");
-    content: '';
-}
-*/
-/*
-
-.section-ttl {
-    text-align: left;
-    padding-left: 70px; 
-    background-image:url("../img/common/section_ttl_icon.png");
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-size: 3.75rem;
-}
-*/
 .section-ttl {
     text-align: left;
     padding-left: 4.5rem; 
@@ -989,17 +958,21 @@ aspect-ratio: 1880/484;
   margin-top: 2.5rem;
   padding: 4.375rem 0;
 }
+.news .tab-cnt {
+  margin-top: 1.875rem;
+}
 .news .tab-area {
   display: flex;
   margin-bottom: 1rem;
 }
 .news .tab-area .tab {
-  max-width: 
+  width: 150px;
   padding: 0.5rem 1rem;
   background: #fff;
   cursor: pointer;
   transition: background 0.3s;
   border: 1px solid #1a1a1a;
+  text-align: center;
 }
 .news .tab-area .tab:hover {
   background: #ccc;
@@ -1020,18 +993,18 @@ aspect-ratio: 1880/484;
   width: 100%;
   border-collapse: collapse;
 }
-.news .content-area .content .news-cnt table.news thead {
-  background-color: #f5f5f5;
-}
-.news .content-area .content .news-cnt table.news thead th {
+
+
+.news .content-area .content .news-cnt table.news tbody th {
+  display: block;
   padding: 0.75rem;
   font-weight: bold;
   text-align: left;
-  border-bottom: 2px solid #ddd;
 }
 .news .content-area .content .news-cnt table.news tbody td {
+  display: block;
   padding: 0.75rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #1a1a1a;
 }
 .news .content-area .content .news-cnt table.news tbody td a {
   color: #333;
@@ -1040,6 +1013,25 @@ aspect-ratio: 1880/484;
 .news .content-area .content .news-cnt table.news tbody td a:hover {
   text-decoration: underline;
 }
+.news-item {
+  display: flex;
+  align-items: flex-start; /* 上揃え */
+  gap: 1rem; /* 画像とテキストの間隔 */
+  margin-bottom: 1.5rem;
+}
 
+.news-icon img {
+  width: 1.5rem;
+  height: auto;
+}
 
+.news-th {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.news-td a {
+  text-decoration: none;
+  color: #333;
+}
 

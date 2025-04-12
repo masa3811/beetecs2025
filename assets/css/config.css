@@ -52,22 +52,6 @@ button {
   margin: 0;
 }
 
-.wrap {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (max-width: 767.98px) {
-  .wrap {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 768px) {
-  .wrap {
-    max-width: 100%;
-  }
-}
 .inner {
   max-width: 1000px;
   width: 100%;
@@ -138,6 +122,25 @@ button {
   width: 100%;
   margin: 0 auto;
 }
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inline-block {
+  display: inline-block;
+}
 
 /* コンテンツセクション */
 .content {
@@ -167,22 +170,6 @@ button {
   margin-top: 10px;
 }
 
-
-.w-50 {
-  width: 50%;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.inline-block {
-  display: inline-block;
-}
 
 /* === 改行 === */
 /* SP: 〜767.98px */
@@ -217,18 +204,6 @@ button {
     display: none;
   }
 }
-
-
-/* === レイアウトのカラム設定 === */
-ul.flex, dl.flex {
-  list-style: none;
-  padding: 0;
-}
-
-.w-100 {
-  width: 100%;
-}
-
 
 
 /* === フォントサイズ === */
