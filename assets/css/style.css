@@ -746,7 +746,7 @@ select {
   margin-left: 10%;
   margin-top: 3.125rem;
 }
-
+/* banner */
 .banner-cnt {
   display: flex;
   margin-top: 3.125rem;
@@ -774,55 +774,15 @@ select {
   padding-right: 0.625rem;
 }
 
-.arrow-cnt p {
-
-}
-
-
-
-table.table {
-  width: 100%;
-  text-align: left;
-  /*border-collapse: separate; */
-  border-spacing: 10px;
-  background-color: #FFF;
-}
-table.table th {
-  padding: 1em 0 1em 4em;
-  border: 1px #727171 dotted;
-  border-width: 1px 0 1px 0;
-  line-height: 180%;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: top;
-  font-size: 16px;
-  font-weight: normal;
-  width: 35%;
-}
-table.table td {
-  padding: 1em 0;
-  border: 1px #727171 dotted;
-  border-width: 1px 0 1px 0;
-  line-height: 180%;
-  text-align: left;
-  text-decoration: none;
-  vertical-align: middle;
-  background-color: #FFF;
-  word-break: break-all;
-  font-size: 16px;
-}
-table.table tr th a {
-  text-decoration: none;
-  color: #888888;
-}
 .news {
 position: relative;
 background-image:url("../img/common/bg_hexagon.png");
 width: 100%;
-background-position: center top;/*  x,y*/
+background-position: center center;/*  x,y*/
 background-repeat: no-repeat;
-background-size: cover;
+background-size: contain;
 aspect-ratio: 1880/484;
+background-color: #fbf6f4;
 margin-top: 2.5rem;
 padding: 4.375rem 0;
 }
@@ -902,3 +862,18 @@ padding: 4.375rem 0;
   border-bottom: 2px solid #333; 
 }
 
+.company {
+  margin-top: 160px;
+  position: relative;
+background-image:url("../img/common/bg_hexagon.png");
+width: 100%;
+background-position: center top;/*  x,y*/
+background-repeat: no-repeat;
+background-size: contain;
+aspect-ratio: 1880/484;
+margin-top: 2.5rem;
+padding: 4.375rem 0;
+}
+.company-cnt {
+  margin-top: 3.125rem;
+}
