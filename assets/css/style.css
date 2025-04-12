@@ -616,36 +616,32 @@ select {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
-#header #hamburger-nav .menu li .accordion-item {
+.accordion-item {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-#header #hamburger-nav .menu li .accordion-item .accordion-header {
-  cursor: pointer;
-  padding: 10px 40px 10px 10px;
-  background: #eee;
+
+.accordion-header {
   position: relative;
-  transition: background 0.3s;
-  color: white;
+  padding-right: 30px;
+  cursor: pointer;
 }
-#header #hamburger-nav .menu li .accordion-item .accordion-header:hover {
-  background: #ddd;
-}
-#header #hamburger-nav .menu li .accordion-item .accordion-header::after {
-  content: "\f078";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  font-size: 14px;
+
+.accordion-header::after {
+  content: '';
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
   position: absolute;
-  left: 10px;
   top: 50%;
-  transform: translateY(-50%);
-  color: white;
+  right: 200px;
+  transform: translateY(-50%) rotate(135deg); 
+  transition: transform 0.3s ease;
 }
-#header #hamburger-nav .menu li .accordion-item .accordion-header.active::after {
-  content: "\f077";
-}
+
 #header #hamburger-nav .menu li .accordion-item .accordion-content {
   visibility: hidden;
   opacity: 0;
@@ -657,8 +653,9 @@ select {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-top: 1px solid #ddd;
 }
-#header #hamburger-nav .menu li .accordion-item .accordion-content a {
-  padding: 10px 0;
+.accordion-content a {
+ display: block;
+  margin: 10px 0;
 }
 #header #hamburger-nav .menu li .accordion-item .accordion-item.active .accordion-content {
   visibility: visible;
@@ -739,12 +736,9 @@ select {
   background-color: #000;
 }
 .mv .mv-cnt p {
-  max-width: 1450px;
   color: #000;
-  font-size: 55px;
-  font-weight: bold;
-  margin-left: 10%;
   margin-top: 3.125rem;
+    transform: skewX(-10deg);
 }
 /* banner */
 .banner-cnt {
@@ -836,11 +830,19 @@ padding: 4.375rem 0;
 .news-cnt:not(:last-child) .news-item {
   border-bottom: 1px solid #1a1a1a;
 }
+
 .news-icon img {
   width: 1.875rem;
   height: auto;
+  transition: transform 0.3s ease; /* スムーズなアニメーション */
 }
 
+.news-icon img:hover {
+  transform: translateX(5px); /* 右に5px移動 */
+}
+.news-icon img:hover {
+  
+}
 .news-th {
   font-weight: bold;
   margin-bottom: 0.3rem;
@@ -876,4 +878,12 @@ padding: 4.375rem 0;
 }
 .company-cnt {
   margin-top: 3.125rem;
+}
+.company-cnt h2 {
+  padding: 3.125rem 0;
+  transform: skewX(-10deg);
+}
+.company .desc-cnt {
+  padding: 3.75rem 0;
+  background-color: #f1e0da;
 }
