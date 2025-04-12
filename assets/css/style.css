@@ -504,7 +504,7 @@ select {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  color: white;
+  color: #fff;
   text-align: center;
   flex-direction: column;
   z-index: 1;
@@ -516,7 +516,6 @@ select {
 .mv .mv-img img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 .mv .mv-cnt {
   width: 100%;
@@ -672,32 +671,50 @@ select {
 }
 .detail-item-01, .detail-item-02, .detail-item-03 {
   position: relative;
-  margin-top: -100px;
+  width: 100%;
+}
+.detail-img img {}
+.detail-item-01 > .detail-img > img {
+  transform: translateY(-100px);
 }
 .item-01 {
-display: flex;
-position: absolute;
+  position: absolute;
+  top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .item-02 {
-display: flex;
-position: absolute;
+  position: absolute;
+  top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.item-03  {
-display: flex;
-position: absolute;
+.item-03 {
+  position: absolute;
+  top: -1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
 .item-img img {
-  width: 370px;
+  width: clamp(200px, calc(370 / 1920 * 100vw), 370px);
+  height: auto;
   margin-right: 3.125rem;
 }
+.item-txt {
+  width: 100%;
+  max-width: 500px;
+}
 .item-txt img {
-  width: 350px;
+  width: clamp(300px, calc(480 / 1920 * 100vw), 480px);
+  height: 100px;
+  object-fit: contain;
+  
+    
 }
 .item-txt p {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
   transform: skewX(-10deg);
 }
-
-
-
