@@ -106,7 +106,56 @@ button {
 .inline-block {
   display: inline-block;
 }
+
+/* === メディアクエリ === */
+.sp-only,
+.tab-only,
+.pc-only {
+  display: none;
+}
+
+/* スマホ用：〜767.98px */
+@media (max-width: 767.98px) {
+  .sp-only {
+    display: block;
+  }
+  .tab-only,
+  .pc-only {
+    display: none;
+  }
+}
+
+/* タブレット用：768px〜1024.98px */
+@media (min-width: 768px) and (max-width: 1024.98px) {
+  .tab-only {
+    display: block;
+  }
+  .sp-only,
+  .pc-only {
+    display: none;
+  }
+}
+
+/* PC用：1025px〜 */
+@media (min-width: 1025px) {
+  .pc-only {
+    display: block;
+  }
+  .sp-only,
+  .tab-only {
+    display: none;
+  }
+}
+
+
+
 /* === 改行 === */
+br.sp,
+br.tab,
+br.pc {
+  display: none;
+}
+
 /* SP: 〜767.98px */
 @media (max-width: 767.98px) {
   br.sp {
