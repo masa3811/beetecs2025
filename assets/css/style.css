@@ -240,6 +240,8 @@ body {
     left: -18px;
   }
 }
+
+/*button*/
 .btn-cnt {
   text-align: center;
   margin: 60px 0 0;
@@ -268,23 +270,29 @@ body {
   vertical-align: middle;
 }
 
+.btn-02 {
+  width: 22.5rem;
+  padding: 1.875rem 0;
+  display: inline-block;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.375rem;
+  border-radius: 3px;
+  text-align:center;
+}
+.btn-02::before {
+  content: "";
+  display: inline-block;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0 20px 0 0;
+  background: url("../img/common/link_arrow-1.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
 
-.sub-page-top__breadcrumb-list-wrap {
-  background-color: #fbf8f5;
-}
-.sub-page-top__breadcrumb-list {
-  display: block;
-  max-width: 920px;
-  margin: 0 auto 40px;
-  font-size: 14px;
-  color: #897650;
-  padding: 0 0 0 12px;
-}
-.pager-style {
-  text-align: center;
-  padding: 0 12px;
-}
-
+/*パンくず*/
 .wp-pagenavi {
   clear: both;
   text-align: center;
@@ -887,3 +895,18 @@ padding: 4.375rem 0;
   padding: 3.75rem 0;
   background-color: #f1e0da;
 }
+.detail-cnt {
+
+}
+.detail-item {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.detail-item .item-01 img {
+  width: 370px;
+}
+.detail-item .item-02 img {
+  width: 350px;
+}
+
