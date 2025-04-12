@@ -98,7 +98,12 @@ body {
   background: url("../img/common/link_arrow-1.png") no-repeat;
   background-size: contain;
   vertical-align: middle;
+    transition: transform 0.3s ease;
 }
+.btn-02:hover::before {
+  transform: translateX(5px);
+}
+
 /*パンくず*/
 .wp-pagenavi {
   clear: both;
@@ -621,13 +626,20 @@ select {
   height: auto;
   transition: transform 0.3s ease;
 }
-.news-icon img:hover {
+.news-icon img .news-cnt:hover {
   transform: translateX(5px);
 }
 .news-icon img:hover {}
 .news-th {
   font-weight: bold;
   margin-bottom: 0.3rem;
+}
+.news-icon img {
+  transition: transform 0.3s ease; /* アニメーションをスムーズに */
+}
+
+.news-cnt:hover .news-icon img {
+  transform: translateX(5px); /* 右に5px移動 */
 }
 .news-td a {
   text-decoration: none;
@@ -680,6 +692,7 @@ select {
 .item-01 {
   position: absolute;
   top: 5rem;
+  left: 25%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -687,6 +700,7 @@ select {
 .item-02 {
   position: absolute;
   top: 2rem;
+    left: 25%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -694,6 +708,7 @@ select {
 .item-03 {
   position: absolute;
   top: -1rem;
+    left: 25%;
   display: flex;
   flex-direction: row;
   align-items: center;
