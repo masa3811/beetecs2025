@@ -1,12 +1,10 @@
 @charset "UTF-8";
-
 body {
   font-family: 'Arial', 'Helvetica Neue', 'メイリオ', 'Meiryo', 'Verdana', sans-serif;
-/*  font-family: 'Times New Roman', 'ヒラギノ明朝 Pro', 'Hiragino Mincho Pro', 'MS PMincho', 'MS Mincho', serif;*/
+  /*  font-family: 'Times New Roman', 'ヒラギノ明朝 Pro', 'Hiragino Mincho Pro', 'MS PMincho', 'MS Mincho', serif;*/
   color: #333333;
   line-height: 1.8;
 }
-
 .pc-block {
   display: block;
 }
@@ -15,7 +13,6 @@ body {
     display: none;
   }
 }
-
 .sp-block {
   display: none;
 }
@@ -24,37 +21,31 @@ body {
     display: block;
   }
 }
-
 .section-ttl {
-    display: flex;
-    align-items: center;
-    gap: 0 7px;
-    color: #333333;
+  display: flex;
+  align-items: center;
+  gap: 0 7px;
+  color: #333333;
 }
-
 .section-ttl {
-    text-align: left;
-    padding-left: 4.5rem; 
-    background-image: url("../img/common/section_ttl_icon.png");
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-size: 3.75rem; 
+  text-align: left;
+  padding-left: 4.5rem;
+  background-image: url("../img/common/section_ttl_icon.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 3.75rem;
 }
-
 @media (max-width: 600px) {
-    .section-ttl {
-        padding-left: 3.5rem; 
-        background-size: 2.5rem; 
-    }
+  .section-ttl {
+    padding-left: 3.5rem;
+    background-size: 2.5rem;
+  }
 }
-
-
 /*button*/
 .btn-cnt {
   text-align: center;
   margin: 60px 0 0;
 }
-
 .btn-01 {
   width: 22.5rem;
   padding: 1.875rem 0;
@@ -69,7 +60,6 @@ body {
   position: relative;
   transition: all 0.3s ease;
 }
-
 .btn-01::before {
   content: "";
   display: inline-block;
@@ -79,16 +69,15 @@ body {
   background: url("../img/common/link_arrow-1.png") no-repeat;
   background-size: contain;
   vertical-align: middle;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 .btn-01:hover {
-  opacity: 1 !important; 
-  cursor: pointer; 
+  opacity: 1 !important;
+  cursor: pointer;
 }
 .btn-01:hover::before {
-  transform: translateX(5px); 
+  transform: translateX(5px);
 }
-
 .btn-02 {
   width: 22.5rem;
   padding: 1.25rem 0;
@@ -98,7 +87,7 @@ body {
   font-weight: bold;
   font-size: 1.375rem;
   border-radius: 3px;
-  text-align:center;
+  text-align: center;
 }
 .btn-02::before {
   content: "";
@@ -110,13 +99,11 @@ body {
   background-size: contain;
   vertical-align: middle;
 }
-
 /*パンくず*/
 .wp-pagenavi {
   clear: both;
   text-align: center;
 }
-
 .wp-pagenavi a, .wp-pagenavi span {
   color: #795548;
   background-color: #FFFFFF;
@@ -133,18 +120,15 @@ body {
     padding: 2px 6px;
   }
 }
-
 .wp-pagenavi a:hover {
   color: #fff;
   background-color: #795548;
 }
-
 .wp-pagenavi span.current {
   color: #fff;
   background-color: #795548;
   font-size: 14px;
 }
-
 .pagenation-single {
   position: relative;
   margin: 0 auto 40px;
@@ -166,7 +150,6 @@ body {
   right: auto !important;
   transform: translateX(-50%) !important;
 }
-
 .fade-in-js {
   transform: scale(0.9);
   transition: all 0.5s 0s linear;
@@ -176,7 +159,6 @@ body {
   transform: scale(1);
   opacity: 1;
 }
-
 select {
   background-color: transparent;
   border: none;
@@ -184,11 +166,10 @@ select {
   outline: none;
   padding: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: #000;
 }
-
 select {
   background-color: transparent;
   border: none;
@@ -196,8 +177,8 @@ select {
   outline: none;
   padding: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: #000;
   font-family: "ヒラギノ角ゴシック";
   font-size: 16px;
@@ -214,7 +195,6 @@ select {
   background-size: 16px 16px;
   cursor: pointer;
 }
-
 .slick-prev:before {
   background: url(../img/top/main-visual-arrow_l.png) !important;
   background-size: contain !important;
@@ -222,7 +202,6 @@ select {
   font-size: 36px;
   opacity: 1 !important;
 }
-
 .slick-next:before {
   background: url(../img/top/main-visual-arrow_r.png) !important;
   background-size: contain !important;
@@ -230,21 +209,17 @@ select {
   font-size: 36px;
   opacity: 1 !important;
 }
-
 .slick-dots li {
   width: 10px;
 }
-
 .slick-dots li.slick-active button:before {
   color: #ad9667 !important;
   opacity: 1 !important;
   font-size: 10px;
 }
-
 .slick-dots li button:before {
   font-size: 10px;
 }
-
 .page-style__block {
   margin: 0 0 60px;
 }
@@ -293,9 +268,6 @@ select {
 .page-style ul li {
   list-style: disc;
 }
-
-
-
 /* ヘッダー */
 #header {
   height: 100px;
@@ -303,7 +275,6 @@ select {
   background-color: transparent;
   transition: background-color 0.3s ease;
 }
-
 #header #header ul li {
   display: inline-block;
   padding: 30px 20px 25px 28px;
@@ -448,13 +419,11 @@ select {
   display: flex;
   flex-direction: column;
 }
-
 .accordion-header {
   position: relative;
   padding-right: 30px;
   cursor: pointer;
 }
-
 .accordion-header::after {
   content: '';
   border-top: solid 2px #fff;
@@ -465,10 +434,9 @@ select {
   position: absolute;
   top: 50%;
   right: 200px;
-  transform: translateY(-50%) rotate(135deg); 
+  transform: translateY(-50%) rotate(135deg);
   transition: transform 0.3s ease;
 }
-
 #header #hamburger-nav .menu li .accordion-item .accordion-content {
   visibility: hidden;
   opacity: 0;
@@ -481,7 +449,7 @@ select {
   border-top: 1px solid #ddd;
 }
 .accordion-content a {
- display: block;
+  display: block;
   margin: 10px 0;
 }
 #header #hamburger-nav .menu li .accordion-item .accordion-item.active .accordion-content {
@@ -496,7 +464,6 @@ select {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .footer {
   background-color: #000;
 }
@@ -526,13 +493,11 @@ select {
 .footer__link a:hover {
   text-decoration: underline;
 }
-
 .link-cnt a {
   color: #fff;
   text-decoration: none;
   padding-right: 20px;
 }
-
 /* mv */
 .mv {
   display: flex;
@@ -565,16 +530,14 @@ select {
 .mv .mv-cnt p {
   color: #000;
   margin-top: 3.125rem;
-    transform: skewX(-10deg);
+  transform: skewX(-10deg);
 }
 /* banner */
 .banner-cnt {
   display: flex;
   margin-top: 3.125rem;
 }
-.banner-item {
-  
-}
+.banner-item {}
 .banner-item:first-of-type {
   margin-right: 0.875rem;
 }
@@ -584,7 +547,6 @@ select {
 .banner-img {
   max-width: 1100px;
 }
-
 .arrow-cnt {
   display: flex;
   align-items: center;
@@ -594,18 +556,17 @@ select {
   max-width: 35px;
   padding-right: 0.625rem;
 }
-
 .news {
-position: relative;
-background-image:url("../img/common/bg_hexagon.png");
-width: 100%;
-background-position: center center;/*  x,y*/
-background-repeat: no-repeat;
-background-size: contain;
-aspect-ratio: 1880/484;
-background-color: #fbf6f4;
-margin-top: 2.5rem;
-padding: 4.375rem 0;
+  position: relative;
+  background-image: url("../img/common/bg_hexagon.png");
+  width: 100%;
+  background-position: center center; /*  x,y*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 1880/484;
+  background-color: #fbf6f4;
+  margin-top: 2.5rem;
+  padding: 4.375rem 0;
 }
 .news .tab-cnt {
   margin-top: 1.875rem;
@@ -632,7 +593,7 @@ padding: 4.375rem 0;
 }
 .news .content-area {
   border: 1px solid #1a1a1a;
-  border-width:  1px 0;
+  border-width: 1px 0;
   padding: 0 1.25rem;
   background-color: #fff;
 }
@@ -649,37 +610,30 @@ padding: 4.375rem 0;
 }
 .news-item {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 1rem;
   padding: 1.25rem 0;
-
 }
 .news-cnt:not(:last-child) .news-item {
   border-bottom: 1px solid #1a1a1a;
 }
-
 .news-icon img {
   width: 1.875rem;
   height: auto;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
-
 .news-icon img:hover {
   transform: translateX(5px);
 }
-.news-icon img:hover {
-  
-}
+.news-icon img:hover {}
 .news-th {
   font-weight: bold;
   margin-bottom: 0.3rem;
 }
-
 .news-td a {
   text-decoration: none;
   color: #333;
 }
-
 .news.content {
   display: none;
 }
@@ -688,20 +642,19 @@ padding: 4.375rem 0;
 }
 .news.tab.active {
   font-weight: bold;
-  border-bottom: 2px solid #333; 
+  border-bottom: 2px solid #333;
 }
-
 .company {
   margin-top: 160px;
   position: relative;
-background-image:url("../img/common/bg_hexagon.png");
-width: 100%;
-background-position: center top;/*  x,y*/
-background-repeat: no-repeat;
-background-size: contain;
-aspect-ratio: 1880/484;
-margin-top: 2.5rem;
-padding: 4.375rem 0;
+  background-image: url("../img/common/bg_hexagon.png");
+  width: 100%;
+  background-position: center top; /*  x,y*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 1880/484;
+  margin-top: 2.5rem;
+  padding: 4.375rem 0;
 }
 .company-cnt {
   margin-top: 3.125rem;
@@ -715,31 +668,36 @@ padding: 4.375rem 0;
   background-color: #f1e0da;
 }
 .detail-cnt {
+  position: relative;
+}
+.detail-item-01, .detail-item-02, .detail-item-03 {
+  position: relative;
+  margin-top: -100px;
+}
+.item-01 {
+display: flex;
+position: absolute;
+}
+.item-02 {
+display: flex;
+position: absolute;
+}
+.item-03  {
+display: flex;
+position: absolute;
+}
 
-}
-.detail-item {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 6.25rem;
-}
-.detail-item:nth-of-type(1) {
-  background-color: red;
-}
-.detail-item:nth-of-type(2) {
-  background-color: blue;
-}
-.detail-item:nth-of-type(3) {
-  background-color: pink;
-}
-.detail-item .item-01 img {
+.item-img img {
   width: 370px;
   margin-right: 3.125rem;
 }
-.detail-item .item-02 img {
+.item-txt img {
   width: 350px;
 }
-.detail-item p {
+.item-txt p {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
-    transform: skewX(-10deg);
+  transform: skewX(-10deg);
 }
+
+
 
