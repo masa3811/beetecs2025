@@ -634,6 +634,46 @@ select {
   padding-left: 1.5625vw;
   transform: skewX(-10deg);
 }
+
+
+/* kv */
+.kv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.kv .kv-img {
+  width: 100%;
+  margin-top: -100px;
+}
+.kv .kv-img img {
+  width: 100%;
+  height: auto;
+}
+.kv .kv-cnt {
+  width: 100%;
+  position: absolute;
+  top: 10rem;
+}
+.kv .kv-cnt h1 {
+  width: 50%;
+  max-width: 990px;
+  font-size: 3.125vw;
+  background-color: #000;
+}
+.kv .kv-cnt p {
+  font-size: 3.3854vw;
+  color: #000;
+  margin-top: 1.0416vw;
+  padding-left: 1.5625vw;
+  transform: skewX(-10deg);
+}
+
 /* banner */
 .banner-cnt {
   display: flex;
