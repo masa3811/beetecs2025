@@ -13,6 +13,17 @@
  });
 
 
+//トップに戻る
+$(document).ready(function () {
+  // トップに戻る動作
+  $('.to-top').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 600);
+  });
+});
+
+
+
 /* === リンクscroll === */
 $(function() {
     var headerHeight=$("#header").height();

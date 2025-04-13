@@ -496,9 +496,8 @@ select {
 /*------------------------*/
 
 
-
-
 #footer {
+  position: relative; /* 必須！ */
   color: #fff;
   background-color: #1a1a1a;
   height: 100%;
@@ -574,6 +573,25 @@ select {
 }
 /*-----------------------*/
 
+
+.to-top {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  cursor: pointer;
+  z-index: 999;
+  display: block;
+}
+
+.to-top img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*-----------------------*/
 .link-cnt a {
   color: #fff;
   text-decoration: none;
