@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+.office-sec {
+  
+}
+.office-sec .office-sec-cnt {
+  
+}
+.office-sec .office-sec-lead {
+  
+}
+.office-sec .office-sec-img {
+  
+}
+
+.office-sec .detail-cnt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+} 
+.office-sec .detail-item {
+  width: calc(100% / 3 );
+}
+.office-sec .item-01 {
+  position: relative;
+  display: flex;
+}
+.office-sec .item-img {
+  width: 11.5625vw;
+  
+}
+.office-sec .item-txt h3 {
+  
+}
+  

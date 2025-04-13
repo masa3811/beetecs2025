@@ -638,6 +638,7 @@ select {
 
 /* kv */
 .kv {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -658,15 +659,17 @@ select {
 .kv .kv-cnt {
   width: 100%;
   position: absolute;
-  top: 10rem;
+  top: 7rem;
 }
 .kv .kv-cnt h1 {
   width: 50%;
   max-width: 990px;
   font-size: 3.125vw;
   background-color: #000;
+  margin-top: 2.2083vw;
 }
 .kv .kv-cnt p {
+  width: 70%;
   font-size: 3.125vw;
   color: #1a1a1a;
 }
@@ -817,19 +820,19 @@ select {
   padding: 3.75rem 0;
   background-color: #f1e0da;
 }
-.detail-cnt {
+.company .detail-cnt {
   position: relative;
   margin-top: -8.3333vw;
 }
-.detail-item-01, .detail-item-02, .detail-item-03 {
+.company .detail-item-01, .detail-item-02, .detail-item-03 {
   position: relative;
   width: 100%;
 }
-.detail-img img {}
-.detail-item-03 > .detail-img > img {
+.company .detail-img img {}
+.company .detail-item-03 > .detail-img > img {
   transform: translateY(150px);
 }
-.item-01 {
+.company .item-01 {
   position: absolute;
   top: 50%;
   left: 30%;
@@ -837,7 +840,7 @@ select {
   flex-direction: row;
   align-items: center;
 }
-.item-02 {
+.company .item-02 {
   position: absolute;
   top: 25%;
   left: 30%;
@@ -845,7 +848,7 @@ select {
   flex-direction: row;
   align-items: flex-start;
 }
-.item-03 {
+.company.item-03 {
   position: absolute;
   top: 0%;
   left: 30%;
@@ -853,23 +856,23 @@ select {
   flex-direction: row;
   align-items: flex-start;
 }
-.item-img img {
+.company .item-img img {
   width: 19.2708vw;
   height: auto;
   margin-right: 3.125rem;
 }
-.item-txt {
+.company .item-txt {
   position: relative;
   width: 100%;
   max-width: 500px;
   z-index: 999;
 }
-.item-txt img {
+.company .item-txt img {
   width: 18.2291vw;
   height: 100px;
   object-fit: contain;
 }
-.item-txt p {
+.company .item-txt p {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
   font-size: 1.5625vw;
   padding-top: 1rem;
