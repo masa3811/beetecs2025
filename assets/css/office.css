@@ -13,26 +13,46 @@
 .office-sec .office-sec-img {
   
 }
-
-.office-sec .detail-cnt {
+.office-detail-cnt {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  background: #fbf6f4;
+  padding: 6rem 0;
+  text-align: left;
+  padding-left: 4.5rem;
+  background-image: url("../img/common/bg_hexagon.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 3.75rem;
+}
+.office-detail-in {
+  display: flex;
+  flex-wrap: wrap;
+}
+.office-sec .detail-cnt {
+
 } 
 .office-sec .detail-item {
-  width: calc(100% / 3 );
+width: calc(100% / 3 - 20px);
 }
 .office-sec .item-01 {
   position: relative;
   display: flex;
+  gap: 20px;
+  margin-top: 5rem;
 }
 .office-sec .item-img {
   width: 11.5625vw;
   
 }
 .office-sec .item-txt h3 {
-  
+  border: 1px solid #1a1a1a;
+  padding: 10px 15px;
+  text-align: center;
 }
-  
+.office-sec .item-txt p {
+  padding-top: 1rem;
+}
