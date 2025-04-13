@@ -198,12 +198,7 @@ font-size: clamp(14px, 0.5vw + 6px, 16px);
 .fz-40 {
  font-size: clamp(30px, 1vw + 24px, 40px); 
 }
-.fz-60 {
- font-size: clamp(45px, 1.36vw + 33.82px, 60px);
-}
-.fz-65 {
-font-size: clamp(40px, 2.27vw + 21.36px, 65px);
-}
+
 
 /* === 強調スタイル === */
 .font-wb {
@@ -229,16 +224,19 @@ font-size: clamp(40px, 2.27vw + 21.36px, 65px);
   text-align: right;
 }
 /* === 行間 === */
-.lh1 {
+.lh_1 {
   line-height: 1;
 }
-.lh1_2 {
+.lh1_12 {
   line-height: 1.2;
 }
-.lh1_5 {
+.lh1_135 {
+  line-height: 1.35;
+}
+.lh1_15 {
   line-height: 1.5;
 }
-.lh2 {
+.lh_2 {
   line-height: 2;
 }
 /* === メディアクエリ（PC用）=== */
