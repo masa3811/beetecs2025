@@ -71,7 +71,6 @@ body {
   vertical-align: middle;
   transition: transform 0.3s ease;
 }
-
 .btn-01:hover::before {
   transform: translateX(5px);
 }
@@ -101,7 +100,6 @@ body {
 .btn-02:hover::before {
   transform: translateX(5px);
 }
-
 /*パンくず*/
 .wp-pagenavi {
   clear: both;
@@ -528,7 +526,7 @@ select {
 }
 .mv .mv-cnt h1 {
   max-width: 990px;
-      font-size: 3.125vw;
+  font-size: 3.125vw;
   background-color: #000;
 }
 .mv .mv-cnt p {
@@ -565,7 +563,6 @@ select {
 .arrow-cnt img {
   transition: transform 0.3s ease;
 }
-
 .banner-item:hover .arrow-cnt img {
   transform: translateX(5px); /* 右に5px移動 */
 }
@@ -646,7 +643,6 @@ select {
 .news-icon img {
   transition: transform 0.3s ease; /* アニメーションをスムーズに */
 }
-
 .news-cnt:hover .news-icon img {
   transform: translateX(5px); /* 右に5px移動 */
 }
@@ -696,13 +692,12 @@ select {
   width: 100%;
 }
 .detail-img img {}
-
 .detail-item-03 > .detail-img > img {
   transform: translateY(150px);
 }
 .item-01 {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 25%;
   display: flex;
   flex-direction: row;
@@ -710,16 +705,16 @@ select {
 }
 .item-02 {
   position: absolute;
-  top: 30%;
-    left: 25%;
+  top: 25%;
+  left: 25%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
 .item-03 {
   position: absolute;
-  top: 0;
-    left: 25%;
+  top: 0%;
+  left: 25%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -734,20 +729,28 @@ select {
   max-width: 500px;
 }
 .item-txt img {
-width: 18.2291vw;
+  width: 18.2291vw;
   height: 100px;
   object-fit: contain;
-  
-    
 }
 .item-txt p {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
- font-size: 1.5625vw;
+  font-size: 1.5625vw;
   padding-top: 1rem;
   transform: skewX(-10deg);
 }
-
-.company .btn-cnt{
+.company .btn-cnt {
   margin: 0;
 }
+
+
+
+/*recruit*/
+.recruit {
+  padding: 2rem 0;
+  background-color: #1a1a1a;
+  
+}
+
+
 
