@@ -19,13 +19,11 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  background: #fbf6f4;
   padding: 6rem 0;
   text-align: left;
   padding-left: 4.5rem;
-  background-image: url("../img/common/bg_hexagon.png");
+  background: #fbf6f4 url(../img/common/bg_hexagon.png) no-repeat;;
   background-position: center center;
-  background-repeat: no-repeat;
   background-size: 3.75rem;
 }
 .office-detail-in {
