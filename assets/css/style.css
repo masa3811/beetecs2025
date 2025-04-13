@@ -666,7 +666,10 @@ select {
   font-size: 3.125vw;
   background-color: #000;
 }
-
+.kv .kv-cnt p {
+  font-size: 3.125vw;
+  color: #1a1a1a;
+}
 /* banner */
 .banner-cnt {
   display: flex;
