@@ -1,3 +1,39 @@
 @charset "utf-8";
 /* CSS Document */
 
+.recruit-sec {
+  
+}
+.recruit-sec h2 {
+  font-size: 3.3854vw;
+    transform: skewX(-10deg);
+}
+.recruit-sec-cnt {
+    padding: 5rem 0;
+}
+.recruit-sec-lead {
+  position: relative;
+}
+.recruit-sec-img {
+  padding: 5rem 0 0;
+}
+.recruit-sec-txt {
+  width: 40%;
+  position: absolute;
+  top: 20%;
+  right: 0;
+} 
+.recruit-bnr-item {
+  display: flex;
+  gap: 60px;
+  padding-top: 4.6875vw;
+}
+.recruit-bnr-cnt {
+  padding: 5.2083vw 0;
+  background-color: #fbf6f4;
+}
+
+.recruit-bnr-cnt h3 {
+  font-size: 2.0833vw;
+}
+

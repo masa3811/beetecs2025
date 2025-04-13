@@ -666,13 +666,6 @@ select {
   font-size: 3.125vw;
   background-color: #000;
 }
-.kv .kv-cnt p {
-  font-size: 3.3854vw;
-  color: #000;
-  margin-top: 1.0416vw;
-  padding-left: 1.5625vw;
-  transform: skewX(-10deg);
-}
 
 /* banner */
 .banner-cnt {
