@@ -39,41 +39,42 @@ $(function() {
     //ハンバーガーメニュー
     $(document).ready(function () {
       // 初期状態でアコーディオンの内容はすべて非表示にする
-      $('.accordion-content').hide();
+      $('#header .accordion-content').hide();
     
       // ハンバーガーメニュー開閉
-      $('#hamburger .icon').on('click', function () {
+      $('#header #hamburger .icon').on('click', function () {
         let isOpen = $('#hamburger-nav').css('display') === 'block'; // displayプロパティを確認
         
         if (!isOpen) {
           // メニューを表示 (最初に display: none; から display: flex; に変更)
-          $('#hamburger-nav').css('display', 'block').hide().slideDown(500);
-          $('.hamburger-icon.open').fadeOut(150); // 開いたアイコンをフェードアウト
+          $('#header #hamburger-nav').css('display', 'block').hide().slideDown(500);
+          $('#header .hamburger-icon.open').fadeOut(150); // 開いたアイコンをフェードアウト
           setTimeout(() => {
-            $('.hamburger-icon.close').fadeIn(150); // 閉じたアイコンをフェードイン
+            $('#header .hamburger-icon.close').fadeIn(150); // 閉じたアイコンをフェードイン
           }, 150);
         } else {
           // メニューを非表示
-          $('#hamburger-nav').slideUp(500, function () {
+          $('#header #hamburger-nav').slideUp(500, function () {
             $(this).css('display', 'none'); // メニューを非表示
           });
-          $('.hamburger-icon.close').fadeOut(150); // 閉じたアイコンをフェードアウト
+          $('#header .hamburger-icon.close').fadeOut(150); // 閉じたアイコンをフェードアウト
           setTimeout(() => {
-            $('.hamburger-icon.open').fadeIn(150); // 開いたアイコンをフェードイン
+            $('#header .hamburger-icon.open').fadeIn(150); // 開いたアイコンをフェードイン
           }, 150);
         }
       });
-    
-      // アコーディオン開閉
-      $('.accordion-header').on('click', function () {
-        const parent = $(this).closest('.accordion-item');
-        
-        // クリックしたアコーディオン項目をトグル（開く/閉じる）
-        parent.toggleClass('active');
-        parent.find('.accordion-content').stop(true, true).slideToggle(300);
-      });
-    });
-    
+
+  $('.accordion-header').on('click', function () {
+    const parent = $(this).closest('.accordion-item');
+
+    // アクティブ状態をトグル
+    parent.toggleClass('active');
+
+    // アコーディオンを開閉
+    parent.find('.accordion-content').stop(true, true).slideToggle(300);
+  });
+});
+
 
  
 

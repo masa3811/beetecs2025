@@ -126,8 +126,6 @@ body {
 .btn-03:hover::before {
   transform: translateX(5px);
 }
-
-
 /*パンくず*/
 .wp-pagenavi {
   clear: both;
@@ -342,18 +340,18 @@ select {
   margin-bottom: 0;
 }
 #header #global-nav ul li {
-  color: #000;
+  color: #1a1a1a;
   padding: 10px 20px;
   transition: background-color 0.3s, color 0.3s;
 }
 #header #global-nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: #1a1a1a;
   font-size: clamp(14px, 0.2503vw + 11.1965px, 16px);
   font-weight: bold;
 }
 #header #global-nav ul li:hover {
-  background-color: #000;
+  background-color: #1a1a1a;
   /* 背景色を反転 */
   color: #fff;
   /* 文字色を反転 */
@@ -361,6 +359,7 @@ select {
 #header #global-nav ul li:hover a {
   color: #fff;
   /* リンクの文字色も反転 */
+  opacity: 1!important;
 }
 #header .recruit a img {
   width: 70px;
@@ -434,26 +433,27 @@ select {
   color: #fff;
 }
 #header #hamburger-nav .menu li a {
+  font-size: 1rem;
   text-decoration: none;
   color: #fff;
   display: block;
 }
-#header #hamburger-nav .menu li.title {
-  font-size: 26px;
+#header #hamburger-nav .menu li.title a {
+  font-size: 26px!important;
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 .accordion-item {
-  position: relative;
   display: flex;
   flex-direction: column;
 }
+
 .accordion-header {
   position: relative;
-  padding-right: 30px;
   cursor: pointer;
 }
+
 .accordion-header::after {
   content: '';
   border-top: solid 2px #fff;
@@ -463,66 +463,117 @@ select {
   height: 7px;
   position: absolute;
   top: 50%;
-  right: 200px;
+  left: 100px;
   transform: translateY(-50%) rotate(135deg);
   transition: transform 0.3s ease;
 }
-#header #hamburger-nav .menu li .accordion-item .accordion-content {
-  visibility: hidden;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: visibility 0s, opacity 0.3s ease, height 0.3s ease;
+
+.accordion-item.active .accordion-header::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion-content {
+  display: none;
   padding: 10px;
-  background: #f9f9f9;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-top: 1px solid #ddd;
 }
+
 .accordion-content a {
   display: block;
+  color: #fff;
   margin: 10px 0;
 }
-#header #hamburger-nav .menu li .accordion-item .accordion-item.active .accordion-content {
-  visibility: visible;
-  opacity: 1;
-  height: auto;
-  display: block;
-}
+
 #header #hamburger-nav.fixed {
   width: 100%;
   position: fixed;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.footer {
-  background-color: #000;
-}
-.footer__box {
-  display: flex;
-  justify-content: center;
-  padding: 1em 0;
-}
-.footer__box p {
-  text-align: center;
+
+
+/*------------------------*/
+
+
+
+
+#footer {
   color: #fff;
+  background-color: #1a1a1a;
+  height: 100%;
 }
-.footer__link {
-  width: 33.3333333333%;
-  list-style: none;
-  text-align: left;
-  font-size: 14px;
-  font-weight: 400;
+#footer a {
+  color: #fff;
   text-decoration: none;
 }
-.footer__link li {
-  padding: 0.3em;
+#footer #hamburger {
+  display: flex;
+  justify-content: flex-end;
 }
-.footer__link a {
+
+#footer #hamburger-nav {
+  display: block;
+  width: 100%;
+  background: #000;
+  border-top: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 998;
+  padding: 80px 0;
+}
+#footer #hamburger-nav.active {
+  display: flex;
+  /* .active クラスが追加された時に表示 */
+}
+#footer #hamburger-nav .menu-cnt {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+#footer #hamburger-nav .menu {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+#footer #hamburger-nav .menu:nth-of-type(1) {
+  width: 25%;
+}
+#footer #hamburger-nav .menu:nth-of-type(2) {
+  width: 15%;
+}
+#footer #hamburger-nav .menu:nth-of-type(3) {
+  width: 40%;
+}
+#footer #hamburger-nav .menu:nth-of-type(4) {
+  width: 15%;
+}
+#footer #hamburger-nav .menu li {
+  padding: 10px 0;
   color: #fff;
 }
-.footer__link a:hover {
-  text-decoration: underline;
+#footer #hamburger-nav .menu li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
 }
+#footer #hamburger-nav .menu li.title {
+  font-size: 26px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.footer-copy {
+  background-color: #c78360;
+  color: #fff;
+}
+#footer .link-cnt a {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 20px;
+}
+/*-----------------------*/
+
 .link-cnt a {
   color: #fff;
   text-decoration: none;
@@ -553,6 +604,7 @@ select {
   top: 10rem;
 }
 .mv .mv-cnt h1 {
+  width: 50%;
   max-width: 990px;
   font-size: 3.125vw;
   background-color: #000;
@@ -560,8 +612,8 @@ select {
 .mv .mv-cnt p {
   font-size: 3.3854vw;
   color: #000;
-  margin-top: 2.125rem;
-  padding-left: 9.8958vw;
+  margin-top: 1.0416vw;
+  padding-left: 1.5625vw;
   transform: skewX(-10deg);
 }
 /* banner */
@@ -663,16 +715,15 @@ select {
 .news-icon img .news-cnt:hover {
   transform: translateX(5px);
 }
-.news-icon img:hover {}
 .news-th {
   font-weight: bold;
   margin-bottom: 0.3rem;
 }
 .news-icon img {
-  transition: transform 0.3s ease; /* アニメーションをスムーズに */
+  transition: transform 0.3s ease; 
 }
 .news-cnt:hover .news-icon img {
-  transform: translateX(5px); /* 右に5px移動 */
+  transform: translateX(5px); 
 }
 .news-td a {
   text-decoration: none;
@@ -688,8 +739,9 @@ select {
   font-weight: bold;
   border-bottom: 2px solid #333;
 }
+
+/*company*/
 .company {
-  margin-top: 160px;
   position: relative;
   background-image: url("../img/common/bg_hexagon.png");
   width: 100%;
@@ -726,7 +778,7 @@ select {
 .item-01 {
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 30%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -734,7 +786,7 @@ select {
 .item-02 {
   position: absolute;
   top: 25%;
-  left: 25%;
+  left: 30%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -742,7 +794,7 @@ select {
 .item-03 {
   position: absolute;
   top: 0%;
-  left: 25%;
+  left: 30%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -753,8 +805,10 @@ select {
   margin-right: 3.125rem;
 }
 .item-txt {
+  position: relative;
   width: 100%;
   max-width: 500px;
+  z-index: 999;
 }
 .item-txt img {
   width: 18.2291vw;
@@ -770,33 +824,84 @@ select {
 .company .btn-cnt {
   margin: 0;
 }
-
-
-
 /*recruit*/
 .recruit {
   color: #fff;
   padding: 2rem 0;
   background-color: #1a1a1a;
-  
 }
-.recruit-cnt {
-  
+.recruit-cnt {}
+.recruit-img {
+  position: relative;
+}
+.recruit-img .section-ttl {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+}
+.recruit-img .section-ttl p {
+  padding-top: 0 !important;
 }
 .recruit h2 {
   font-size: 3.3854vw;
   color: #fff;
-    transform: skewX(-10deg);
+  transform: skewX(-10deg);
 }
-.recruit p {
-  padding-top: 3.25rem; 
+.recruit p:first-of-type {
+  padding-top: 3.25rem;
 }
-
+.recruit p:last-of-type {
+  padding-top: 3.25rem;
+}
 .recruit-lead {
   padding: 100px 0;
 }
-
 .recruit .btn-cnt {
-  margin: 30px 0 0 ;
+  margin: 30px 0 0;
 }
+
+/*contact */
+.contact {
+  
+}
+.contact-cnt {
+  
+} 
+.contact-item-01 {
+  position: relative;
+  background-image: url("../img/common/bg_hexagon.png");
+  width: 100%;
+  background-position: center top; /*  x,y*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 1880/484;
+}
+
+.contact-item-02 {
+  position: relative;
+  background-image: url("../img/common/beetecs_50.png");
+  width: 100%;
+  background-position: center top; /*  x,y*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 1880/324;
+}
+
+.contact-item-01 .contact-img {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+}
+.contact-item-01 .contact-img img, .contact-item-02 .contact-img img {
+  max-width: 25vw;
+}
+
+.contact-item-02 .contact-img {
+   position: absolute;
+  top: -70%;
+  left: 45%; 
+}
+
+
+
 
