@@ -76,7 +76,6 @@ body {
 }
 .btn-02 {
   width: 22.5rem;
-  padding: 0;
   display: inline-block;
   color: #1a1a1a;
   text-decoration: none;
@@ -100,6 +99,35 @@ body {
 .btn-02:hover::before {
   transform: translateX(5px);
 }
+.btn-03 {
+  width: 33.750rem;
+  display: inline-block;
+  color: #1a1a1a;
+  background-color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1458vw;
+  border-radius: 3px;
+  text-align: center;
+  padding: 1.5rem 0;
+  border: 1px solid #fff;
+}
+.btn-03::before {
+  content: "";
+  display: inline-block;
+  width: 1.875vw;
+  height: 1.875vw;
+  margin: 0 20px 0 0;
+  background: url("../img/common/link_arrow-1.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+.btn-03:hover::before {
+  transform: translateX(5px);
+}
+
+
 /*パンくず*/
 .wp-pagenavi {
   clear: both;
@@ -747,10 +775,28 @@ select {
 
 /*recruit*/
 .recruit {
+  color: #fff;
   padding: 2rem 0;
   background-color: #1a1a1a;
   
 }
+.recruit-cnt {
+  
+}
+.recruit h2 {
+  font-size: 3.3854vw;
+  color: #fff;
+    transform: skewX(-10deg);
+}
+.recruit p {
+  padding-top: 3.25rem; 
+}
 
+.recruit-lead {
+  padding: 100px 0;
+}
 
+.recruit .btn-cnt {
+  margin: 30px 0 0 ;
+}
 
