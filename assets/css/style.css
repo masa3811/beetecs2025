@@ -71,10 +71,7 @@ body {
   vertical-align: middle;
   transition: transform 0.3s ease;
 }
-.btn-01:hover {
-  opacity: 1 !important;
-  cursor: pointer;
-}
+
 .btn-01:hover::before {
   transform: translateX(5px);
 }
@@ -98,7 +95,7 @@ body {
   background: url("../img/common/link_arrow-1.png") no-repeat;
   background-size: contain;
   vertical-align: middle;
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .btn-02:hover::before {
   transform: translateX(5px);
@@ -533,7 +530,7 @@ select {
 }
 .mv .mv-cnt p {
   color: #000;
-  margin-top: 3.125rem;
+  margin-top: 2.125rem;
   transform: skewX(-10deg);
 }
 /* banner */
@@ -559,6 +556,13 @@ select {
 .arrow-cnt img {
   max-width: 35px;
   padding-right: 0.625rem;
+}
+.arrow-cnt img {
+  transition: transform 0.3s ease;
+}
+
+.banner-item:hover .arrow-cnt img {
+  transform: translateX(5px); /* 右に5px移動 */
 }
 .news {
   position: relative;
@@ -689,6 +693,9 @@ select {
 .detail-item-01 > .detail-img > img {
   transform: translateY(-100px);
 }
+.detail-item-03 > .detail-img > img {
+  transform: translateY(150px);
+}
 .item-01 {
   position: absolute;
   top: 5rem;
@@ -707,7 +714,7 @@ select {
 }
 .item-03 {
   position: absolute;
-  top: -1rem;
+  top: 0;
     left: 25%;
   display: flex;
   flex-direction: row;
