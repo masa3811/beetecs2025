@@ -322,6 +322,7 @@ select {
 #header .wrap.fixed {
   position: fixed;
   background-color: #fff;
+  top: 0;
 }
 #header .logo {
   max-width: 310px;
@@ -848,7 +849,7 @@ select {
   flex-direction: row;
   align-items: flex-start;
 }
-.company.item-03 {
+.company .item-03 {
   position: absolute;
   top: 0%;
   left: 30%;
