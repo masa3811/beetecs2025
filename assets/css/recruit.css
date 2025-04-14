@@ -4,12 +4,15 @@
 .recruit-sec {
   
 }
-.recruit-sec h2 {
-  font-size: 3.3854vw;
-    transform: skewX(-10deg);
-}
+
 .recruit-sec-cnt {
     padding: 5rem 0;
+  text-align: center;
+}
+.recruit-sec-cnt h2 {
+  display: inline-block;
+font-size: 2.6041vw;
+    transform: skewX(-10deg);
 }
 .recruit-sec-lead {
   position: relative;

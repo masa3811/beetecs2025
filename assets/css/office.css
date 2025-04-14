@@ -5,29 +5,31 @@
   
 }
 .office-sec .office-sec-cnt {
-  
+  margin-top: 5.2083vw;
+}
+.office-sec .office-sec-cnt h2 {
+      font-size: 2.6041vw;
+      transform: skewX(-10deg);
 }
 .office-sec .office-sec-lead {
-  
+  margin-top: 100px;
 }
 .office-sec .office-sec-img {
   
 }
 .office-detail-cnt {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 6rem 0;
-  text-align: left;
-  padding-left: 4.5rem;
-  background: #fbf6f4 url(../img/common/bg_hexagon.png) no-repeat;;
-  background-position: center center;
-  background-size: 3.75rem;
-}
+    width: 100%;
+    padding: 6rem 0;
+    margin-top: 50px;
+    text-align: left;
+    background-color: #fbf6f4;
+    background-image: url(../img/common/bg_hexagon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
 .office-detail-in {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .office-sec .detail-cnt {
@@ -40,8 +42,13 @@ width: calc(100% / 3 - 20px);
   position: relative;
   display: flex;
   gap: 20px;
-  margin-top: 5rem;
+ 
 }
+
+.office-sec .detail-item:nth-child(n+4) {
+   margin-top: 5rem;
+}
+
 .office-sec .item-img {
   width: 11.5625vw;
   
