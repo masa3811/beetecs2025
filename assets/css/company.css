@@ -11,7 +11,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   aspect-ratio: 1880/484;
-  margin-top: 2.5rem;
   padding: 4.375rem 0;
 }
 .company-sec-cnt h2 {
@@ -36,7 +35,7 @@
     background-color: #fbf6f4;
     background-image: url(../img/common/bg_hexagon.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
 }
 .company-detail-cnt h2 {
   display: inline-block;
