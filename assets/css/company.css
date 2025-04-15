@@ -84,18 +84,21 @@
   margin-left: 80px;
 }
 .link-ttl .section-ttl {
-    text-align: left;
+  display: flex;
+  align-items: center;
+  text-align: left;
   padding-left: 4.5rem;
   background-image: url("../img/common/section_ttl_icon.png");
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 3rem;
+  min-height: 3rem; 
 }
 
 .link-item .btn-cnt {
   margin: 20px auto 0;
 }
-.link-item p {
+.link-item-p {
   margin-top: 20px;
 }
 .img-cnt {
