@@ -1,3 +1,49 @@
 @charset "utf-8";
 /* CSS Document */
 
+.business-sec{
+}
+.business-cnt-01{
+    text-align: center;
+  position: relative;
+  background-image: url("../img/common/bg_hexagon.png");
+  width: 100%;
+  background-position: center center; /*  x,y*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 1880/484;
+  padding: 4.375rem 0;
+}
+.font-wb.txt-center.lh1_135{
+}
+.business-sec-lead.inner-800{
+}
+.business-sec-img{
+
+}
+
+.business-cnt-02{
+    width: 100%;
+    padding: 6rem 0;
+    margin-top: 50px;
+    text-align: left;
+    background-color: #fbf6f4;
+    background-image: url(../img/common/bg_hexagon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.business-cnt-03{
+    text-align: center;
+  position: relative;
+  background-image: url("../img/common/bg_hexagon.png");
+  width: 100%;
+  background-position: center center; /*  x,y*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 1880/484;
+  padding: 4.375rem 0;
+}
+
+
+
