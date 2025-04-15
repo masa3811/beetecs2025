@@ -59,8 +59,9 @@ padding: 50px 0 80px;
     padding-bottom: 300px;
 }
 .company-link-cnt p {
-  
+  padding:  0 20px;
 }
+  
 .company-link-in {
     display: flex;
       text-align: center;
