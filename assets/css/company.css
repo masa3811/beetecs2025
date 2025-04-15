@@ -83,18 +83,27 @@ padding: 50px 0 80px;
 .link-item .link-ttl  {
   margin-left: 80px;
 }
+
 .link-ttl .section-ttl {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   text-align: left;
   padding-left: 4.5rem;
   background-image: url("../img/common/section_ttl_icon.png");
-  background-position: center left;
+  background-position: left bottom;
   background-repeat: no-repeat;
-  background-size: 3rem;
-  min-height: 3rem; 
+  background-size: 3.5rem;
+  min-height: 3.5rem;
 }
 
+.link-ttl .section-ttl p {
+  margin: 0;
+  line-height: 1;
+  padding: 0;
+}
+.link-item img {
+  margin-top: 20px;
+}
 .link-item .btn-cnt {
   margin: 20px auto 0;
 }
