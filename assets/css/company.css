@@ -1,5 +1,7 @@
 /* CSS Document */
-.company-sec {}
+.company-sec {
+  padding: 50px 0;
+}
 .company-sec-cnt {
   text-align: center;
   position: relative;
@@ -17,8 +19,6 @@
   font-size: 2.6041vw;
   transform: skewX(-10deg);
 }
-.font-wb.txt-center {}
-.company-sec-lead {}
 .company-sec-lead p {
   margin-top: 80px;
 }
@@ -30,9 +30,9 @@
 .company-sec-img .item-img {}
 .company-detail-cnt {
     width: 100%;
-    padding: 6rem 0;
+    padding: 50px 0;
     margin-top: 50px;
-    text-align: left;
+    text-align: center;
     background-color: #fbf6f4;
     background-image: url(../img/common/bg_hexagon.png);
     background-repeat: no-repeat;
@@ -42,15 +42,74 @@
   display: inline-block;
   font-size: 2.6041vw;
   transform: skewX(-10deg);
+  margin-top: 50px;
 }
 .company-detail-in .inner-1350 {}
 .company-detail-in .detail-item {}
 .item-01 {}
 .item-txt {}
 
-.item-img-cnt {
-  display: flex;
+.company-link-cnt {
+  position: relative;
+  margin-top: 100px;
+      width: 100%;
+    padding: 50px 0;
+    background-image: url("../img/company/bg_company.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-bottom: 300px;
 }
+.company-link-cnt p {
+  
+}
+.company-link-in {
+    display: flex;
+      text-align: center;
+  padding: 0 2%;
+}
+.link-item {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+}
+.link-item:nth-child(1) {
+  transform: translateY(0);
+}
+.link-item:nth-child(2) {
+  transform: translateY(25%);
+}
+.link-item:nth-child(3) {
+  transform: translateY(50%);
+}
+.link-item .link-ttl  {
+  margin-left: 80px;
+}
+.link-ttl .section-ttl {
+    text-align: left;
+  padding-left: 4.5rem;
+  background-image: url("../img/common/section_ttl_icon.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 3rem;
+}
+
+.link-item .btn-cnt {
+  margin: 20px auto 0;
+}
+.link-item p {
+  margin-top: 20px;
+}
+.img-cnt {
+  position: relative;
+}
+.logo-img {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    opacity: 0.05;
+    width: 22vw;
+}
+
 
 
 

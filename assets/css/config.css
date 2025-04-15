@@ -42,22 +42,18 @@ button {
 
 .inner-200 {
   width: min(90%, 200px);
-  width: 100%;
   margin: 0 auto;
 }
 .inner-300 {
   width: min(90%, 300px);
-  width: 100%;
   margin: 0 auto;
 }
 .inner-400 {
   width: min(90%, 400px);
-  width: 100%;
   margin: 0 auto;
 }
 .inner-500 {
   width: min(90%, 500px);
-  width: 100%;
   margin: 0 auto;
 }
 .inner-600 {
@@ -193,7 +189,10 @@ font-size: clamp(14px, 0.5vw + 6px, 16px);
   font-size: clamp(16px, 0.5vw + 8px, 20px);
 }
 .fz-22 {
-   font-size: clamp(18px, 1vw + 16px, 22px);;
+   font-size: clamp(18px, 1vw + 16px, 22px);
+}
+.fz-30 {
+   font-size: clamp(20px, 1vw + 16px, 30px);
 }
 .fz-40 {
  font-size: clamp(30px, 1vw + 24px, 40px); 
