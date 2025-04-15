@@ -858,7 +858,7 @@ select {
   z-index: 999;
 }
 .company .item-txt img {
-  width: 16vw;
+  width: 18vw;
   height: 100px;
   object-fit: contain;
 }
