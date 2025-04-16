@@ -25,17 +25,26 @@ font-size: 2.6041vw;
 
 .business-sec-lead.inner-800{
 }
-.business-cnt-01 .business-sec-img, .business-cnt-02 .business-sec-img, .business-cnt-02 .business-sec-img{
+.business-cnt-01 .business-sec-img, .business-cnt-02 .business-sec-img, .business-cnt-03 .business-sec-img{
 position: relative;
+  display: flex;
 }
 .business-cnt-01 .ttl-01 {
-
+      width: 50%;
+    height: 100%;
+  transform: translateX(-300px);
   
 }
-.business-cnt-01 .ttl-02 {
+.business-cnt-02 .ttl-02 {
+        width: 50%;
+    height: 100%;
+  transform: translateX(-300px);
   
 }
-.business-cnt-01 .ttl-03 {
+.business-cnt-03 .ttl-03 {
+        width: 50%;
+    height: 100%;
+  transform: translateX(-300px);
   
 }
 .business-cnt-01 .img-01 {
