@@ -1,3 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+.news-bg {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+  background-color: #fbf6f4;
+}
+.news-bg-in {
+  background-color: #fff;
+  padding: 50px;
+}
