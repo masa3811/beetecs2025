@@ -61,7 +61,6 @@ border: 1px solid #808080!important;
 #article .news {
 position: relative;
 padding-bottom: 70vw;  
-margin-top: -13vw;
 }
 #article .news .news-wrap{
 position: absolute;
@@ -70,6 +69,63 @@ left: 50%;
 transform: translateX(-50%);
 z-index: 999;
 }
+
+.contact-cnt {
+  padding: 100px 0 150px;
+}
+.contact-bnr {
+  display: flex;
+  gap: 30px;
+  margin-top: 70px;
+}
+.contact-txt {
+
+}
+.kv-cnt .bk-box {
+  margin-top: 30px;
+}
+.bk-box {
+  display: inline-block;
+  color: #fff!important;
+  font-size: 20px!important;
+  word-break: keep-all;
+  font-weight: bold;
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+      width: 420px!important;
+    text-align: center;
+}
+.contact-txt p:last-of-type {
+  margin: 20px 0 0 20px;
+}
+.bnr-item p {
+  margin-top: 20px;
+}
+.phone-number {
+  max-width: 750px;
+font-size: 1rem;
+    padding: 20px 0;
+    border: 1px solid #1a1a1a;
+    border-width: 1px 0;
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-number p{
+  font-size: 1.85rem!important;
+}
+
+
+
+
+
+
+
+
 
 
 .Pagination {
