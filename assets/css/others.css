@@ -52,9 +52,17 @@ border: 1px solid #808080!important;
   padding: 50px;
 }
 
-
-
-.clear{
-	clear:both;
+/*
+.news-outer {
+  position: relative;
+  background-image: url("../img/common/bg_hexagon.png");
+  width: 100%;
+  background-position: center center;   x,y
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 1880/484;
+  background-color: #fbf6f4;
+  padding: 4.375rem 0;
 }
+*/
 

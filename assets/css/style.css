@@ -737,6 +737,9 @@ select {
   margin-top: 2.5rem;
   padding: 4.375rem 0;
 }
+.news a {
+  text-decoration: none;
+}
 .news .tab-cnt {
   margin-top: 1.875rem;
 }
@@ -782,9 +785,15 @@ select {
   align-items: center;
   gap: 1rem;
   padding: 1.25rem 0;
-}
-.news-cnt:not(:last-child) .news-item {
   border-bottom: 1px solid #1a1a1a;
+}
+.content a.news-cnt .news-item {
+  border-bottom: 1px solid #1a1a1a;
+}
+
+/* 最後の .news-cnt のみ border を消す */
+.content a.news-cnt:last-of-type .news-item {
+  border-bottom: none;
 }
 .news-icon img {
   width: 1.875rem;
