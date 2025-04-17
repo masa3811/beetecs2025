@@ -5,7 +5,7 @@
 }
 .news-sec .btn-cnt {
   margin: 0!important;
-  padding: 50px 0;
+  padding: 100px 0;
   background-color: #fbf6f4;
 }
 .news-sec-cnt {
@@ -17,10 +17,7 @@
   text-align: center;
   background-color: #fbf6f4;
 }
-.news-bg .btn-cnt {
-/*  margin-top: 100px;*/
 
-}
 .news-bg .btn-cnt .btn-01{
   border: 0.5px solid #1a1a1a;
 }
