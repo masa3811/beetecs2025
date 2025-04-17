@@ -52,17 +52,53 @@ border: 1px solid #808080!important;
   padding: 50px;
 }
 
-/*
-.news-outer {
-  position: relative;
-  background-image: url("../img/common/bg_hexagon.png");
-  width: 100%;
-  background-position: center center;   x,y
-  background-repeat: no-repeat;
-  background-size: contain;
-  aspect-ratio: 1880/484;
-  background-color: #fbf6f4;
-  padding: 4.375rem 0;
+#article .news {
+position: relative;
+padding-bottom: 50vw;  
 }
-*/
+#article .news .news-wrap{
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 999;
+}
+
+
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+.Pagination-Item-Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border: solid 2px #111;
+  font-size: 14px;
+  color: #111;
+  font-weight: bold;
+  transition: all 0.15s linear;
+}
+.Pagination-Item-Link-Icon {
+  width: 20px;
+}
+.Pagination-Item-Link.isActive {
+  background: #111;
+  color: #fff;
+  pointer-events: none;
+}
+.Pagination-Item-Link:not(.isActive):hover {
+  background: #111;
+  color: #fff;
+}
+.Pagination > * + * {
+  margin-left: 12px;
+}
+
 
