@@ -102,6 +102,25 @@ $(function() {
 
 
 
+//ニュースの余白
+function adjustPadding() {
+  const newsBgIn = document.querySelector('.news-bg-in');
+  const newsBg = document.querySelector('.news-bg');
 
+  if (!newsBgIn || !newsBg) return;
+
+  const height = newsBgIn.getBoundingClientRect().height;
+
+  // 画面幅で余白を切り替え
+  const extraSpace = window.innerWidth < 600 ? 30 : 50;
+
+  const padding = height + extraSpace;
+  newsBg.style.paddingBottom = padding + 'px';
+}
+
+window.addEventListener('load', () => {
+  setTimeout(adjustPadding, 100);
+});
+window.addEventListener('resize', adjustPadding);
 
 
