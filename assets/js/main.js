@@ -109,18 +109,21 @@ function adjustPadding() {
 
   if (!newsBgIn || !newsBg) return;
 
-  const height = newsBgIn.getBoundingClientRect().height;
+  const height = newsBgIn.getBoundingClientRect().height;  // .news-bg-in の高さを取得
+  const halfHeight = height / 2;  // 高さの半分
 
-  // 画面幅で余白を切り替え
-  const extraSpace = window.innerWidth < 600 ? 30 : 50;
+  // 画面幅によって余裕のサイズを変更
+  const extraSpace = window.innerWidth < 600 ? 20 : 40;  // 600px 未満なら余裕20px、それ以上なら40px
 
-  const padding = height + extraSpace;
+  // 高さの半分 + 余裕を計算
+  const padding = halfHeight + extraSpace;
+
+  // 計算した余白を .news-bg に適用
   newsBg.style.paddingBottom = padding + 'px';
 }
 
 window.addEventListener('load', () => {
-  setTimeout(adjustPadding, 100);
+  setTimeout(adjustPadding, 100);  // ページ読み込み後に実行
 });
-window.addEventListener('resize', adjustPadding);
-
+window.addEventListener('resize', adjustPadding);  // リサイズ時にも調整
 
