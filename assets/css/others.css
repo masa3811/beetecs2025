@@ -54,11 +54,11 @@ border: 1px solid #808080!important;
 
 #article .news {
 position: relative;
-padding-bottom: 50vw;  
+padding-bottom: 70vw;  
 }
 #article .news .news-wrap{
 position: absolute;
-top: 30%;
+top: 30vw;
 left: 50%;
 transform: translate(-50%, -50%);
 z-index: 999;
