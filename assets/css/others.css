@@ -28,7 +28,6 @@ border: 1px solid #808080!important;
   left: 0;
   right: 0;
   background-color: #fff;
-  padding: 50px;
   z-index: 2;
 }
 .news-outer {
@@ -39,19 +38,18 @@ border: 1px solid #808080!important;
 
 .news-wrapper {
   text-align: left;
-  padding: 20px 0;
 }
 
 .news-wrapper .news-ttl {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: left;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #000;
+  padding: 20px 50px;
+  border-bottom: 2px solid #000;
   
 }
 .news-wrapper .news-txt {
   text-align: left;
-  padding-top: 1.5rem;
+  padding: 50px;
 }
 
 
