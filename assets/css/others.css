@@ -106,24 +106,65 @@
 .phone-number p {
   font-size: 1.5rem !important;
 }
-
-
-
-
-
-
-
-
-
+/*contact*/
+.table-contact {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.table-contactth, .table-contact td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  vertical-align: top;
+  text-align: left;
+}
+.table-contact th {
+  width: 30%;
+}
+.table-contact input[type="text"], .table-contact input[type="email"], .table-contactinput[type="tel"], .table-contactinput[type="date"], .table-contactinput[type="month"], .table-contacttextarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.table-contact textarea {
+  resize: vertical;
+}
+.table-contact .required::before {
+  content: " ※必須";
+  color: red;
+  font-weight: normal;
+}
+.table-contact .submit-row {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.table-contact button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.table-contact button:hover {
+  background-color: #005fa3;
+}
 /*Pagination*/
-
 .Pagination {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 100px auto;
 }
-
 .Pagination-Item-Link {
   display: flex;
   justify-content: center;

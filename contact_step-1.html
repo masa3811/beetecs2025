@@ -78,55 +78,97 @@
 
 <!-- mv -->
 <section class="kv">
-  <div class="kv-img"> <img src="assets/img/contact/kv_contact-pc.jpg" alt="キービジュアル画像"> </div>
+  <div class="kv-img"> </div>
   <div class="kv-cnt">
     <div class="header__breadcrumb-wrap pc-block" style="visibility: hidden;">
       <div class="header__breadcrumb">2025.00.00　|　リクルート</div>
     </div>
-    
-    
-    <p class="font-wb">お問い合わせ</p>
-    
-    <div class="phone-cnt txt-left inner-900">
-    <p class="bk-box">電話やFAX でのお問い合わせ</p>
-    <div class="phone-number"> 
-    <p class="txt-center">TEL 083-973-2829</p>
-      <p class="txt-center">FAX 083-973-5321</p>
-    </div>
+    <p class="font-wb">採用に関するお問い合わせ</p>
      </div>
-     </div>
-  </div>
 </section>
 <section class="contact-sec">
-<div class="contact-cnt">
-  <div class="contact-txt inner-900">
-  <p class="bk-box">メールフォームでのお問い合わせ</p>
-  <p>入力項目が異なりますので、いずれかをお選び下さい。</p>
+<div class="contact-cnt inner-900">
+  <div class="contact-txt">
+  <p>採用情報についてのお問い合わせをご希望の場合はこちらから</p>
   </div>
+<div class="inner-800">
+  <div class="contact-btn"><a href="#"><img src="assets/img/contact/contact_step1.png" alt=""></a></div>
 
-  
-<div class="contact-bnr inner-1100"> 
- <div class="bnr-item"> 
-<a href="#">
-<img src="assets/img/contact/contact_recruit.png" alt="">
-</a>
-<p>採用情報についてのお問い合わせを<br>ご希望の場合はこちらから</p>
-</div>
-<div class="bnr-item">
-<a href="#"><img src="assets/img/contact/contact_corporation.png" alt="">
-</a>
-<p>お取引についてのお問い合わせをご希望の<br>法人様はこちらから</p>
-</div>
-<div class="bnr-item">
-<a href="#"><img src="assets/img/contact/contact_public.png" alt="">
-</a>
-<p>弊社についてのお問い合わせをご希望の<br>個人の方はこちらから</p> 
-</div>
-  
-  
-  
-</div>
- 
+
+<form action="#" method="post">
+  <table class="table-contact">
+    <tr>
+      <th class="required">お名前</th>
+      <td><input type="text" name="name" required></td>
+    </tr>
+    <tr>
+      <th class="required">フリガナ</th>
+      <td><input type="text" name="furigana" required></td>
+    </tr>
+    <tr>
+      <th>生年月日</th>
+      <td><input type="date" name="birthday"></td>
+    </tr>
+    <tr>
+      <th class="required">性別</th>
+      <td>
+        <label><input type="radio" name="gender" value="male" required> 男性</label>
+        <label><input type="radio" name="gender" value="female"> 女性</label>
+      </td>
+    </tr>
+    <tr>
+      <th class="required">メールアドレス</th>
+      <td><input type="email" name="email" required></td>
+    </tr>
+    <tr>
+      <th>郵便番号</th>
+      <td>
+        〒 <input type="text" name="zip1" size="3" maxlength="3"> - <input type="text" name="zip2" size="4" maxlength="4">
+      </td>
+    </tr>
+    <tr>
+      <th class="required">住所</th>
+      <td><input type="text" name="address" required></td>
+    </tr>
+    <tr>
+      <th class="required">電話番号</th>
+      <td><input type="tel" name="phone" required></td>
+    </tr>
+    <tr>
+      <th class="required">最終学校名</th>
+      <td><input type="text" name="school" required></td>
+    </tr>
+    <tr>
+      <th class="required">卒業（予定）年月日</th>
+      <td><input type="month" name="grad_date" required></td>
+    </tr>
+    <tr>
+      <th class="required">説明会案内のメール</th>
+      <td>
+        <label><input type="radio" name="mail_info" value="yes" required> 希望する</label>
+        <label><input type="radio" name="mail_info" value="no"> 希望しない</label>
+      </td>
+    </tr>
+    <tr>
+      <th class="required">お問い合わせ内容</th>
+      <td><textarea name="inquiry" rows="5" required></textarea></td>
+    </tr>
+    <tr>
+      <th>プライバシーポリシーへの同意</th>
+      <td>
+        プライバシーポリシー（個人情報保護方針）のページを確認いただき、<br>
+        同意をいただける場合は以下にチェックを入れてください。<br>
+        <label><input type="checkbox" name="agree" required> 同意する</label>
+      </td>
+    </tr>
+  </table>
+
+  <div class="submit-row">
+    <button type="submit">入力内容を送信する</button>
+  </div>
+</form>
+
+ </div>
   </div>
 
 </section>
