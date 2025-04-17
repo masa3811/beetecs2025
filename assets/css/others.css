@@ -51,16 +51,23 @@ border: 1px solid #808080!important;
   text-align: left;
   padding: 50px;
 }
+26.0416
 
+
+#article .kv {
+  position: relative;
+  height: 26vw;
+}
 #article .news {
 position: relative;
 padding-bottom: 70vw;  
+margin-top: -13vw;
 }
 #article .news .news-wrap{
 position: absolute;
-top: 30vw;
+top: -13vw;
 left: 50%;
-transform: translate(-50%, -50%);
+transform: translateX(-50%);
 z-index: 999;
 }
 

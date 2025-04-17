@@ -127,3 +127,7 @@ window.addEventListener('load', () => {
 });
 window.addEventListener('resize', adjustPadding);  // リサイズ時にも調整
 
+
+
+
+
