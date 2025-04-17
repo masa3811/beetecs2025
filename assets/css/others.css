@@ -8,8 +8,8 @@
   padding: 100px 0;
   background-color: #fbf6f4;
 }
-.news-sec .btn-cnt .btn-01 {
-border: 1px solid #333;
+.news-sec .btn-cnt > .btn-01 {
+border: 1px solid #808080!important;
 }
 .news-bg {
   position: relative;
