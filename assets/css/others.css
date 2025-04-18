@@ -46,7 +46,7 @@
   text-align: left;
   padding: 50px;
 }
-26.0416 #article .kv {
+#article .kv {
   position: relative;
   height: 26vw;
 }
@@ -106,58 +106,125 @@
 .phone-number p {
   font-size: 1.5rem !important;
 }
+
 /*contact*/
 .table-contact {
   width: 100%;
   max-width: 800px;
-  margin: auto;
+  margin: 20px auto 0;
   border-collapse: collapse;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
-.table-contactth, .table-contact td {
+.table-contact th, .table-contact td {
   padding: 1rem;
   border: 1px solid #ccc;
-  vertical-align: top;
+  border-width: 1px 0;
+  vertical-align: middle;
   text-align: left;
 }
-.table-contact th {
-  width: 30%;
+.table-contact tr:nth-child(odd) {
+  background-color: #fbf6f4;
 }
-.table-contact input[type="text"], .table-contact input[type="email"], .table-contactinput[type="tel"], .table-contactinput[type="date"], .table-contactinput[type="month"], .table-contacttextarea {
+
+.table-contact th:nth-child(1) {
+  width: 10%;
+  
+}
+.table-contact th:nth-child(1) span {
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid red;
+  padding: 5px;
+  white-space: nowrap;
+  letter-spacing: 0.2em;
+}
+.table-contact th:nth-child(2) {
+  width: 25%;
+}
+.table-contact input[type="text"], .table-contact input[type="email"], .table-contact input[type="tel"], .table-contact input[type="date"], .table-contact input[type="month"], .table-contact textarea {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
   box-sizing: border-box;
+}
+.contact-btn {
+  width: 60%;
+  margin: 20px 0;
+}
+.post-number{
+  display: flex;
+  align-items: center;
+}
+.post-number input:first-of-type {
+  width: 20%;
+}
+.post-number input:last-of-type {
+  width: 30%;
 }
 .table-contact textarea {
   resize: vertical;
 }
-.table-contact .required::before {
-  content: " ※必須";
-  color: red;
-  font-weight: normal;
+
+.privacy-cnt {
+  margin-top: 50px;
 }
-.table-contact .submit-row {
+.privacy-check {
+  margin-top: 50px;
+}
+.submit-row {
   text-align: center;
   padding: 2rem 1rem;
   background: #fff;
-  border: 1px solid #ccc;
-  border-top: none;
 }
-.table-contact button {
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
-  background: #0078d7;
-  color: white;
-  border: none;
-  border-radius: 4px;
+#submit-btn {
+  width: 500px;
+  position: relative;
+  color: #ddd;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  padding: 30px;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+
+/* アクティブ状態 */
+#submit-btn.active {
+  color: #1a1a1a;
+  border: 1px solid #000;
   cursor: pointer;
+  pointer-events: auto;
 }
-.table-contact button:hover {
-  background-color: #005fa3;
+
+#submit-btn::after {
+  content: '';
+  border: 0;
+  border-top: solid 2px #aaa; 
+  border-right: solid 2px #aaa;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all 0.5s;
+  margin-left: 8px; 
 }
+
+/* アクティブなときの矢印を濃く */
+#submit-btn.active::after {
+  border-top: solid 2px #000;
+  border-right: solid 2px #000;
+}
+
+#submit-btn.active:hover::after {
+  right: 15px;
+}
+
+
+
 /*Pagination*/
 .Pagination {
   display: flex;

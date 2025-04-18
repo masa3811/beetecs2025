@@ -128,6 +128,17 @@ window.addEventListener('load', () => {
 window.addEventListener('resize', adjustPadding);  // リサイズ時にも調整
 
 
+//お問い合わせ　プライバシーチェック
+const checkbox = document.getElementById('agree-check');
+const button = document.getElementById('submit-btn');
 
-
+checkbox.addEventListener('change', () => {
+  if (checkbox.checked) {
+    button.classList.add('active');
+    button.classList.remove('inactive');
+  } else {
+    button.classList.remove('active');
+    button.classList.add('inactive');
+  }
+});
 
