@@ -49,28 +49,26 @@ $(function() {
 
     //ハンバーガーメニュー
     $(document).ready(function () {
-      // 初期状態でアコーディオンの内容はすべて非表示にする
       $('#header .accordion-content').hide();
     
       // ハンバーガーメニュー開閉
       $('#header #hamburger .icon').on('click', function () {
-        let isOpen = $('#hamburger-nav').css('display') === 'block'; // displayプロパティを確認
+        let isOpen = $('#hamburger-nav').css('display') === 'block'; 
         
         if (!isOpen) {
-          // メニューを表示 (最初に display: none; から display: flex; に変更)
           $('#header #hamburger-nav').css('display', 'block').hide().slideDown(500);
-          $('#header .hamburger-icon.open').fadeOut(150); // 開いたアイコンをフェードアウト
+          $('#header .hamburger-icon.open').fadeOut(150); 
           setTimeout(() => {
-            $('#header .hamburger-icon.close').fadeIn(150); // 閉じたアイコンをフェードイン
+            $('#header .hamburger-icon.close').fadeIn(150); 
           }, 150);
         } else {
           // メニューを非表示
           $('#header #hamburger-nav').slideUp(500, function () {
             $(this).css('display', 'none'); // メニューを非表示
           });
-          $('#header .hamburger-icon.close').fadeOut(150); // 閉じたアイコンをフェードアウト
+          $('#header .hamburger-icon.close').fadeOut(150);
           setTimeout(() => {
-            $('#header .hamburger-icon.open').fadeIn(150); // 開いたアイコンをフェードイン
+            $('#header .hamburger-icon.open').fadeIn(150); 
           }, 150);
         }
       });
@@ -109,23 +107,18 @@ function adjustPadding() {
 
   if (!newsBgIn || !newsBg) return;
 
-  const height = newsBgIn.getBoundingClientRect().height;  // .news-bg-in の高さを取得
-  const halfHeight = height / 2;  // 高さの半分
+  const height = newsBgIn.getBoundingClientRect().height;  
+  const halfHeight = height / 2;  
 
-  // 画面幅によって余裕のサイズを変更
-  const extraSpace = window.innerWidth < 600 ? 20 : 40;  // 600px 未満なら余裕20px、それ以上なら40px
-
-  // 高さの半分 + 余裕を計算
+  const extraSpace = window.innerWidth < 600 ? 20 : 40;  
   const padding = halfHeight + extraSpace;
-
-  // 計算した余白を .news-bg に適用
   newsBg.style.paddingBottom = padding + 'px';
 }
 
 window.addEventListener('load', () => {
-  setTimeout(adjustPadding, 100);  // ページ読み込み後に実行
+  setTimeout(adjustPadding, 100);  
 });
-window.addEventListener('resize', adjustPadding);  // リサイズ時にも調整
+window.addEventListener('resize', adjustPadding);  
 
 
 //お問い合わせ　プライバシーチェック
