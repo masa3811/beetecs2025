@@ -24,6 +24,9 @@ body {
     padding-left: 3.5rem;
     background-size: 2.5rem;
   }
+  .section-ttl p{
+    font-size: 26px;
+  }
 }
 /*button*/
 .btn-cnt {
@@ -964,6 +967,7 @@ select {
 }
 @media (max-width: 600px) {
   .company-cnt h2 {
+    font-size: 22px;
     padding: 20px 10px;
   }
 }
@@ -982,14 +986,10 @@ select {
   flex-direction: column;
   margin-top: -8.3333vw;
 }
-@media (max-width: 1120px) {
-  .company .detail-cnt {
-    padding-bottom: 33vw;
-  }
-}
+
 @media (max-width: 600px) {
   .company .detail-cnt {
-    padding-bottom: 170px;
+    padding-bottom: 2px;
   }
 }
 .company .detail-item-01, .detail-item-02, .detail-item-03 {
@@ -1022,6 +1022,23 @@ select {
   background-repeat: no-repeat;
   background-size: contain;
   aspect-ratio: 1880/484;
+}
+@media (max-width: 1120px) {
+  .company .detail-item-03 {
+    background-position: center 200px; /*  x,y*/
+    padding-bottom: 200px;
+}
+}
+@media (max-width: 600px) {
+    .company .detail-item-03 {
+    background-position: center 120px; /*  x,y*/
+}
+}
+@media (max-width: 600px) {
+    .company .detail-item-03 {
+      padding-bottom: 100px;
+  
+}
 }
 .company .detail-img img {}
 .company .detail-item-03 > .detail-img > img {
@@ -1056,26 +1073,34 @@ select {
 }
 @media (max-width: 1120px) {
   .company .item-01 {
-    left: 15%;
+ width: 70%;
+    justify-content: flex-start;
   }
   .company .item-02 {
-    top: 75%;
-    left: 15%;
+ width: 70%;
+        justify-content: flex-start;
+    
   }
   .company .item-03 {
-    top: 100%;
-    left: 15%;
+ width: 70%;
+        justify-content: flex-start;
+    margin-top: 2.5%;
   }
 }
 @media (max-width: 600px) {
   .company .item-01 {
-    left: 15px;
+width: 100%;
+    padding: 0 1em;
   }
   .company .item-02 {
-    left: 15px;
+width: 100%;
+        padding: 0 1em;
+    margin-top: 30px;
   }
   .company .item-03 {
-    left: 15px
+  width: 100%;
+        padding: 0 1em;
+        margin-top: 30px;
   }
 }
 .company .item-img img {
@@ -1098,6 +1123,11 @@ select {
   position: relative;
   width: 50%;
   z-index: 999;
+}
+@media (max-width: 600px) {
+  .company .item-txt {
+      width: 60%;
+  }
 }
 .company .item-txt img {
   min-width: 50%;
@@ -1128,7 +1158,7 @@ select {
 }
 @media (max-width: 600px) {
   .company .item-txt p {
-    font-size: 3vw;
+    font-size: 17px;
   }
 }
 .company .btn-cnt {
@@ -1179,10 +1209,12 @@ select {
 .contact {}
 .contact-cnt {
   padding: 60px 0;
+  
+  
 }
 @media (max-width: 600px) {
   .contact-cnt {
-    padding: 60px 1em 100px;
+    padding: 60px 1em 0;
   }
 }
 .contact-item-01 {
@@ -1203,10 +1235,21 @@ select {
   background-size: contain;
   aspect-ratio: 1880/324;
 }
+@media (max-width: 600px) {
+  .contact-item-02 {
+    background-position: center 100px; /*  x,y*/
+    padding-bottom: 185px;
+}
+}
 .contact-item-01 .contact-img {
   position: absolute;
   top: 10%;
   right: 50%;
+}
+@media (max-width: 600px) {
+  .contact-item-01 .contact-img {
+    top: -7px;
+}
 }
 .contact-item-01 .contact-img img, .contact-item-02 .contact-img img {
   max-width: 25vw;
@@ -1226,3 +1269,17 @@ select {
   top: -70%;
   left: 45%;
 }
+@media (max-width: 600px) {
+.contact-item-02 .contact-img {
+  position: absolute;
+  top: -20px;
+  }
+}
+
+
+
+
+
+
+
+
