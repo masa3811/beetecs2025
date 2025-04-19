@@ -41,52 +41,64 @@ button {
 }
 
 .inner-200 {
-  width: min(90%, 200px);
+  width: min(100%, 200px);
   margin: 0 auto;
+  padding: 0 1em;
 }
 .inner-300 {
-  width: min(90%, 300px);
+  width: min(100%, 300px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .inner-400 {
-  width: min(90%, 400px);
+  width: min(100%, 400px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .inner-500 {
-  width: min(90%, 500px);
+  width: min(100%, 500px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .inner-600 {
-  width: min(90%, 600px);
+  width: min(100%, 600px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .inner-700 {
-  width: min(90%, 700px);
+  width: min(100%, 700px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .inner-800 {
-  width: min(90%, 800px);
+  width: min(100%, 800px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .inner-900 {
-  width: min(90%, 900px);
+  width: min(100%, 900px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .inner-1000 {
-  width: min(90%, 1000px);
+  width: min(100%, 1000px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .inner-1100 {
-  width: min(90%, 1100px);
+  width: min(100%, 1100px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .inner-1200 {
-  width: min(90%, 1200px);
+  width: min(100%, 1200px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .inner-1350 {
-  width: min(90%, 1350px);
+  width: min(100%, 1350px);
   margin: 0 auto;
+    padding: 0 1em;
 }
 .w-100 {
   width: 100%;
