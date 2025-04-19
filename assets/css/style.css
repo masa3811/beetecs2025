@@ -78,6 +78,7 @@ font-size: clamp(18px, 22 / 1920 * 100vw, 22px);
 }
 @media (max-width: 1025px) {
  .btn-02 { 
+   font-size: 2vw;
    padding: 0.5rem 0;
 }
 }
@@ -973,15 +974,15 @@ select {
 }
 @media (max-width: 1120px) {
  .company .item-01 {
-  left: 20%;
+  left: 15%;
 }
 .company .item-02 {
   top: 75%;
-  left: 20%;
+  left: 15%;
 }
 .company .item-03 {
   top: 100%;
-  left: 20%;
+  left: 15%;
 }  
 }
 .company .item-img img {
@@ -1005,14 +1006,20 @@ select {
   width: 17vw;
   object-fit: contain;
 }
+@media (max-width: 1120px) {
+.company .item-txt img {  
+    width: 28vw;
+  }
+}
 .company .item-txt p {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
   font-size: 1.5vw;
   padding-top: 20px;
   transform: skewX(-10deg);
 }
-@media (max-width: 960px) {
+@media (max-width: 1120px) {
   .company .item-txt p {
+    font-size: 2.5vw;
       padding-top: 10px;
 }
 }
