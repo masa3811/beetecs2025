@@ -835,6 +835,12 @@ select {
   margin-top: 2.5rem;
   padding: 4.375rem 0;
 }
+@media (max-width: 1120px) {
+  .news {
+    padding: 5vw 0;
+  
+}
+}
 .news a {
   text-decoration: none;
 }

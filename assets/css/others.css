@@ -48,12 +48,12 @@
 }
 #article .kv {
   position: relative;
-  height: 26vw;
 }
 #article .news {
   position: relative;
-  padding-bottom: 70vw;
+ padding-bottom: 1200px;
 }
+
 #article .news .news-wrap {
   position: absolute;
   top: -13vw;

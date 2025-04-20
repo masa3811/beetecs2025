@@ -135,3 +135,30 @@ checkbox.addEventListener('change', () => {
   }
 });
 
+
+
+
+  function updatePaddingBottom() {
+    const news = document.querySelector('#article .news');
+    if (!news) return;
+
+    const width = window.innerWidth;
+    let padding = 60;
+
+    if (width <= 1700) padding = 70;
+    if (width <= 1600) padding = 75;
+    if (width <= 1500) padding = 80;
+    if (width <= 1400) padding = 90;
+    if (width <= 1300) padding = 100;
+    if (width <= 1200) padding = 110;
+    if (width <= 1100) padding = 120;
+
+    news.style.paddingBottom = padding + 'vw';
+    console.log(`現在のpadding-bottomは: ${padding}vw`);
+  }
+
+  window.addEventListener('load', updatePaddingBottom);
+  window.addEventListener('resize', updatePaddingBottom);
+
+
+
