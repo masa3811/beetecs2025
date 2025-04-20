@@ -67,9 +67,8 @@
 .img-s {
   padding-top: 80px;
 }
-.business-cnt-01 .desc {
+.business-cnt-01 .desc,.business-cnt-02 .desc ,.business-cnt-03 .desc  {
   text-align: left;
-  font-weight: bold;
   padding-top: 50px;
 }
 .skew-cnt {
