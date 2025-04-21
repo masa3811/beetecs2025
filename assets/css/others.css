@@ -172,7 +172,18 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-.contact-btn {
+
+.contact-sec {}
+.contact-sec-cnt {
+  padding: 150px 0;
+  
+}
+@media (max-width: 600px) {
+.contact-sec-cnt {
+    padding: 60px 1em 0;
+  }
+}
+.contact-sec-cnt .contact-btn {
   width: 60%;
   margin: 20px 0;
 }
