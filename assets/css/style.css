@@ -383,6 +383,11 @@ select {
 #header .logo {
   width: clamp(200px, 22vw, 310px);
 }
+@media (max-width: 810px) {
+ #header .logo { 
+   margin-top: -80px;
+}
+}
 @media (max-width: 281px) {
   #header .logo {
   width: 120px;
@@ -609,7 +614,7 @@ select {
   border-top: 1px solid #eee;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 998;
-  padding: 50px;
+  padding: 1rem;
 }
 #footer #hamburger-nav.active {
   display: flex;
@@ -625,6 +630,7 @@ select {
     flex-wrap: wrap;
     gap: 0;
     justify-content: space-around;
+    padding: 0;
   }
 }
 #footer #hamburger-nav .menu {
@@ -678,6 +684,13 @@ select {
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  #footer #hamburger-nav .menu li.title {
+      padding-bottom: 10px;
+  margin-top: 30px;
+    margin-bottom: 0;
+}
 }
 @media (max-width: 600px) {
   #footer #hamburger-nav .menu li.title a {
@@ -791,12 +804,23 @@ select {
   position: absolute;
   top: 1rem;
 }
+@media (max-width: 600px) {
+ .kv .kv-cnt {
+  top: -2rem;
+} 
+  
+}
 .kv .kv-cnt h1 {
   width: 50%;
   max-width: 990px;
   font-size: 3.125vw;
   background-color: #000;
   margin-top: 4vw;
+}
+@media (max-width: 810px) {
+  .kv .kv-cnt h1 {
+    margin-top: 0;
+  }
 }
 .kv .kv-cnt p {
   width: 50%;
@@ -874,7 +898,7 @@ select {
   text-decoration: none;
 }
 .news .tab-cnt {
-  margin-top: 1.875rem;
+  margin-top: 4rem;
 }
 .news .tab-area {
   display: flex;

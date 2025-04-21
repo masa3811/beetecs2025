@@ -9,6 +9,14 @@
   transform: skewX(-10deg);
   margin-top: 80px;
 }
+@media (max-width: 600px) {
+  .business-sec h2 {
+    font-size: 20px;
+  transform: skewX(-10deg);
+  margin-top: 50px;
+  
+}
+}
 .business-cnt-01 {
   text-align: center;
   position: relative;
@@ -20,24 +28,68 @@
   aspect-ratio: 1880/484;
   padding: 100px 0;
 }
+@media (max-width: 600px) {
+.business-cnt-01 {
+  padding: 50px 0;
+}  
+}
 .business-cnt-01 .business-sec-img, .business-cnt-02 .business-sec-img, .business-cnt-03 .business-sec-img {
   position: relative;
   display: flex;
+}
+
+@media (max-width: 810px) {
+.business-cnt-01 .business-sec-img, .business-cnt-02 .business-sec-img, .business-cnt-03 .business-sec-img {
+  padding: 0 2em;
+
+}
 }
 .business-cnt-01 .ttl-01 {
   width: 50%;
   height: 100%;
   transform: translateX(-300px);
 }
+@media (max-width: 1120px) {
+.business-cnt-01 .ttl-01 {
+  transform: translateX(-350px);
+}
+}
+@media (max-width: 600px) {
+ .business-cnt-01 .ttl-01 {
+  transform: translateX(-100px);
+}
+} 
+  
 .business-cnt-02 .ttl-02 {
   width: 50%;
   height: 100%;
   transform: translateX(-300px);
 }
+@media (max-width: 1120px) {
+ .business-cnt-02 .ttl-02 {
+  transform: translateX(-350px);
+} 
+}
+@media (max-width: 600px) {
+  .business-cnt-02 .ttl-02 {
+  transform: translateX(-100px);
+} 
+} 
+  
 .business-cnt-03 .ttl-03 {
   width: 50%;
   height: 100%;
   transform: translateX(-300px);
+}
+@media (max-width: 1120px) {
+ .business-cnt-03 .ttl-03 {
+  transform: translateX(-350px);
+}
+}
+@media (max-width: 600px) {
+ .business-cnt-03 .ttl-03 {
+  transform: translateX(-100px);
+}
 }
 .business-cnt-01 .img-01 {}
 .business-cnt-01 .img-02 {}
@@ -52,6 +104,8 @@
   background-image: url(../img/common/bg_hexagon.png);
   background-repeat: no-repeat;
   background-position: center 20%;
+  background-size: contain;
+  aspect-ratio: 1880/484;
 }
 .business-cnt-03 {
   text-align: center;
@@ -67,6 +121,11 @@
 .img-s {
   padding-top: 80px;
 }
+@media (max-width: 810px) {
+ .img-s {
+  padding: 1em;
+}  
+}
 .business-cnt-01 .desc,.business-cnt-02 .desc ,.business-cnt-03 .desc  {
   text-align: left;
   padding-top: 50px;
@@ -80,6 +139,11 @@
   left: -5%;
   /*  transform: skewX(-10deg);*/
 }
+@media (max-width: 1120px) {
+.skew-in {
+  left: 5%;  
+  }
+}
 .skew-txt {
   display: inline-block;
   font-size: 1.7vw;
@@ -89,3 +153,13 @@
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
   transform: skewX(-10deg);
 }
+@media (max-width: 1120px) {
+  .skew-txt {
+  font-size: 2.7vw;
+  }
+  
+}
+
+
+
+
