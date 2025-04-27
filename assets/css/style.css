@@ -686,6 +686,12 @@ select {
     font-size: 14px;
   }
 }
+ @media (max-width: 281px) {
+   #footer #hamburger-nav .menu li a {
+    font-size: 12px;
+  }
+}  
+   
 #footer #hamburger-nav .menu li.title {
   font-size: 26px;
   border-bottom: 1px solid #fff;
@@ -709,6 +715,12 @@ select {
   #footer #hamburger-nav .menu li.title a {
     font-size: 17px!important;
   }
+}
+ @media (max-width: 281px) {
+   #footer #hamburger-nav .menu li.title a {
+    font-size: 15px!important;
+  }  
+   
 }
 .footer-copy {
   background-color: #c78360;
