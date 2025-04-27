@@ -101,24 +101,31 @@ $(function() {
 
 
 //ニュースの余白
+
 function adjustPadding() {
   const newsBgIn = document.querySelector('.news-bg-in');
   const newsBg = document.querySelector('.news-bg');
 
   if (!newsBgIn || !newsBg) return;
 
-  const height = newsBgIn.getBoundingClientRect().height;  
-  const halfHeight = height / 2;  
-
-  const extraSpace = window.innerWidth < 600 ? 20 : 40;  
-  const padding = halfHeight + extraSpace;
-  newsBg.style.paddingBottom = padding + 'px';
+  if (window.innerWidth < 600) {
+    // スマホは固定で600pxにする
+    newsBg.style.paddingBottom = '600px';
+  } else {
+    // PCだけ元の計算式
+    const height = newsBgIn.getBoundingClientRect().height;
+    const halfHeight = height / 2 + 80;
+    const extraSpace = 40;
+    const padding = halfHeight + extraSpace;
+    newsBg.style.paddingBottom = padding + 'px';
+  }
 }
 
 window.addEventListener('load', () => {
-  setTimeout(adjustPadding, 100);  
+  setTimeout(adjustPadding, 100);
 });
-window.addEventListener('resize', adjustPadding);  
+window.addEventListener('resize', adjustPadding);
+
 
 
 //お問い合わせ　プライバシーチェック
