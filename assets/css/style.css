@@ -154,7 +154,8 @@ body {
   transform: translateX(5px);
 }
 .btn-04 {
-  width: 22.5rem;
+/*  width: 22.5rem;*/
+    width: clamp(330px, 18.75vw, 360px);
   padding: 1.5rem 0;
   display: inline-block;
   color: #1a1a1a;
