@@ -4,7 +4,12 @@
 .recruit-sec {
   
 }
-
+ @media (max-width: 600px) {
+ .recruit-sec {
+  padding: 0 1em;
+}  
+   
+}
 .recruit-sec-cnt {
     padding: 5rem 0;
   text-align: center;
@@ -14,18 +19,62 @@
 font-size: 2.6041vw;
     transform: skewX(-10deg);
 }
+  @media (max-width: 769px) {
+ .recruit-sec-cnt h2 {
+   font-size: 26px;
+}   
+    
+}
+  @media (max-width: 281px) {
+    .recruit-sec-cnt h2 {
+   font-size: 19px;
+}    
+    
+}
 .recruit-sec-lead {
   position: relative;
 }
 .recruit-sec-img {
   padding: 5rem 0 0;
 }
+  @media (max-width: 769px) {
+ .recruit-sec-img {
+  padding: 10rem 0 0;
+}    
+    
+}
+  @media (max-width: 600px) {
+     .recruit-sec-img {
+  padding: 20rem 0 0;
+}    
+}
+  @media (max-width: 281px) {
+     .recruit-sec-img {
+  padding: 25rem 0 0;
+}    
+}
 .recruit-sec-txt {
   width: 40%;
   position: absolute;
   top: 20%;
-  right: 0;
+  right: 16px;
+  line-height: 1.6;
 } 
+  @media (max-width: 769px) {
+ .recruit-sec-txt {
+  top: 10%;   
+    
+    }
+}
+  @media (max-width: 600px) {
+  .recruit-sec-txt {
+  top: 10%;  
+    right: 0;
+    width: 100%;
+    
+    }   
+    
+}
 .recruit-bnr-item {
   display: flex;
   gap: 60px;
