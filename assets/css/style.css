@@ -388,6 +388,13 @@ select {
    margin-top: -80px;
 }
 }
+
+@media (max-width: 600px) {
+   #header .logo { 
+   margin-top: 0;
+}
+}
+
 @media (max-width: 281px) {
   #header .logo {
   width: 120px;
@@ -831,7 +838,12 @@ select {
 .kv .kv-cnt p {
   font-size:4vw;  
   }
-  
+}
+@media (max-width: 600px) {
+  .kv .kv-cnt p {
+  font-size:8vw;  
+  }
+} 
 }
 /* banner */
 .banner-cnt {
