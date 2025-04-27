@@ -692,6 +692,12 @@ select {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
+@media (max-width: 769px) {
+ #footer #hamburger-nav .menu li.title {
+  font-size: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   #footer #hamburger-nav .menu li.title {
       padding-bottom: 10px;
@@ -701,7 +707,7 @@ select {
 }
 @media (max-width: 600px) {
   #footer #hamburger-nav .menu li.title a {
-    font-size: 16px!important;
+    font-size: 17px!important;
   }
 }
 .footer-copy {
