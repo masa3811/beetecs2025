@@ -864,6 +864,7 @@ select {
   width: 50%;
   font-size: 2.3437vw;
   color: #1a1a1a;
+  white-space: nowrap;
 }
 @media (max-width: 1120px) {
 .kv .kv-cnt p {
@@ -875,7 +876,7 @@ select {
   font-size:8vw;  
   }
 } 
-}
+
 /* banner */
 .banner-cnt {
   display: flex;
