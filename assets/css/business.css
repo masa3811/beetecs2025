@@ -44,6 +44,13 @@
 
 }
 }
+@media (max-width: 600px) {
+.business-cnt-01 .business-sec-img, .business-cnt-02 .business-sec-img, .business-cnt-03 .business-sec-img {
+  padding: 0 ;
+
+}
+}  
+
 .business-cnt-01 .ttl-01 {
   width: 50%;
   height: 100%;
@@ -56,7 +63,7 @@
 }
 @media (max-width: 600px) {
  .business-cnt-01 .ttl-01 {
-  transform: translateX(-100px);
+  transform: translateX(-170px);
 }
 } 
   
@@ -72,7 +79,7 @@
 }
 @media (max-width: 600px) {
   .business-cnt-02 .ttl-02 {
-  transform: translateX(-100px);
+  transform: translateX(-170px);
 } 
 } 
   
@@ -88,7 +95,7 @@
 }
 @media (max-width: 600px) {
  .business-cnt-03 .ttl-03 {
-  transform: translateX(-100px);
+  transform: translateX(-170px);
 }
 }
 .business-cnt-01 .img-01 {}
