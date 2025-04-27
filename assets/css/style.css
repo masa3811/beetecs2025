@@ -402,7 +402,7 @@ select {
 }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 769px) {
    #header .logo { 
    margin-top: 0;
 }
@@ -869,6 +869,7 @@ select {
 @media (max-width: 1120px) {
 .kv .kv-cnt p {
   font-size:4vw;  
+  margin: 0 20px;
   }
 }
 @media (max-width: 600px) {
