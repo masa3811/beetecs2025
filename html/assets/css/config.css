@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+/* === ベーススタイル === */
+html, body { 
+  overflow-x: hidden;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #333333;
+}
+a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+ul, ol, li {
+  list-style: none;
+  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+}
+th, td {
+  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inner-200 {
+  width: min(100%, 200px);
+  margin: 0 auto;
+  padding: 0 1em;
+}
+.inner-300 {
+  width: min(100%, 300px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.inner-400 {
+  width: min(100%, 400px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.inner-500 {
+  width: min(100%, 500px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.inner-600 {
+  width: min(100%, 600px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.inner-700 {
+  width: min(100%, 700px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.inner-800 {
+  width: min(100%, 800px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.inner-900 {
+  width: min(100%, 900px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.inner-1000 {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.inner-1100 {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.inner-1200 {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.inner-1350 {
+  width: min(100%, 1350px);
+  margin: 0 auto;
+    padding: 0 1em;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.inline-block {
+  display: inline-block;
+}
+
+/* === メディアクエリ === */
+.sp-only,
+.tab-only,
+.pc-only {
+  display: none;
+}
+
+/* スマホ用 */
+@media (max-width: 600px) {
+  .sp-only {
+    display: block;
+  }
+  .tab-only,
+  .pc-only {
+    display: none;
+  }
+}
+
+/* タブレット用 */
+@media (min-width: 601px) and (max-width: 820px) {
+  .tab-only {
+    display: block;
+  }
+  .sp-only,
+  .pc-only {
+    display: none;
+  }
+}
+
+/* PC用 */
+@media (min-width: 1120px) {
+  .pc-only {
+    display: block;
+  }
+  .sp-only,
+  .tab-only {
+    display: none;
+  }
+}
+
+
+
+/* === 改行 === */
+br.sp,
+br.tab,
+br.pc {
+  display: none;
+}
+
+/* SP*/
+@media (max-width: 600px) {
+  br.sp {
+    display: block;
+  }
+  br.pc, br.tab {
+    display: none;
+  }
+}
+/* TAB */
+@media (min-width: 601px) and (max-width: 820px) {
+  br.tab {
+    display: block;
+  }
+  br.sp, br.pc {
+    display: none;
+  }
+}
+/* PC */
+@media (min-width: 1120px) {
+  br.pc {
+    display: block;
+  }
+  br.sp, br.tab {
+    display: none;
+  }
+}
+
+/* === フォントサイズ（レスポンシブ対応） === */
+.fz-16 {
+font-size: clamp(14px, 0.5vw + 6px, 16px); 
+}
+.fz-20 {
+  font-size: clamp(16px, 0.5vw + 8px, 20px);
+}
+.fz-22 {
+   font-size: clamp(18px, 1vw + 16px, 22px);
+}
+.fz-30 {
+   font-size: clamp(20px, 1vw + 16px, 30px);
+}
+.fz-40 {
+ font-size: clamp(30px, 1vw + 24px, 40px); 
+}
+
+
+/* === 強調スタイル === */
+.font-wb {
+  font-weight: bold;
+}
+.font-wn {
+  font-weight: normal;
+}
+.underline {
+  text-decoration: underline;
+}
+.underline-none {
+  text-decoration: none;
+}
+/* === 文字揃え === */
+.txt-left {
+  text-align: left;
+}
+.txt-center {
+  text-align: center;
+}
+.txt-right {
+  text-align: right;
+}
+/* === 行間 === */
+.lh_1 {
+  line-height: 1;
+}
+.lh1_12 {
+  line-height: 1.2;
+}
+.lh1_135 {
+  line-height: 1.35;
+}
+.lh1_15 {
+  line-height: 1.5;
+}
+.lh_2 {
+  line-height: 2;
+}
+/* === メディアクエリ（PC用）=== */
+@media (min-width: 1120px) {
+  .txt-left-p {
+    text-align: left;
+  }
+  .txt-center-p {
+    text-align: center;
+  }
+  .txt-right-p {
+    text-align: right;
+  }
+  .fz-xs-p {
+    font-size: 1rem;
+  }
+  .fz-s-p {
+    font-size: 1.2rem;
+  }
+  .fz-m-p {
+    font-size: 1.6rem;
+  }
+  .fz-l-p {
+    font-size: 2rem;
+  }
+  .fz-xl-p {
+    font-size: 2.5rem;
+  }
+}
+table.table {
+  width: 100%;
+  text-align: left;
+  /*border-collapse: separate; */
+  border-spacing: 10px;
+  background-color: #FFF;
+}
+table.table th {
+  padding: 1em 0 1em 4em;
+  border: 1px #727171 dotted;
+  border-width: 1px 0 1px 0;
+  line-height: 180%;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: normal;
+  width: 35%;
+}
+table.table td {
+  padding: 1em 0;
+  border: 1px #727171 dotted;
+  border-width: 1px 0 1px 0;
+  line-height: 180%;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: #FFF;
+  word-break: break-all;
+  font-size: 16px;
+}
+table.table tr th a {
+  text-decoration: none;
+  color: #888888;
+}

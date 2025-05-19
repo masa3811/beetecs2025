@@ -792,7 +792,7 @@ select {
 .mv .mv-cnt {
   width: 100%;
   position: absolute;
-  top: 13rem;
+  top: 10rem;
 }
 @media (max-width: 960px) {
   .mv .mv-cnt {
@@ -804,7 +804,6 @@ select {
   max-width: 990px;
   font-size: 3.125vw;
   background-color: #000;
-  padding: 10px;
 }
 .mv .mv-cnt p {
   display: inline-block;
