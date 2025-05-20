@@ -1244,6 +1244,7 @@ width: 100%;
   position: relative;
   width: 50%;
   z-index: 999;
+  margin-top: 30px;
 }
 @media (max-width: 600px) {
   .company .item-txt {
