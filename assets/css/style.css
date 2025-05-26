@@ -989,9 +989,11 @@ select {
     padding: 0 10px;
   }
 }
+/*
 .news .content-area .content {
   display: none;
 }
+*/
 .news .content-area .content.show {
   display: block;
   animation: fadeIn 0.3s ease-in-out;
@@ -1056,9 +1058,11 @@ select {
     word-break: break-all;
   }
 }
+/*
 .news.content {
   display: none;
 }
+*/
 .news.content.show {
   display: block;
 }
