@@ -883,6 +883,7 @@ select {
 .banner-cnt {
   display: flex;
   margin-top: 3.125rem;
+  margin-bottom: 100px;
 }
 @media (max-width: 600px) {
   .banner-cnt {
