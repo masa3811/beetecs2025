@@ -28,115 +28,55 @@ get_header();
 
 <!-- ニュース -->
 <section class="news">
-<div class="inner-1000">
-  <div class="section-ttl">
-    <p class="fz-40 font-wb">ニュース</p>
-  </div>
-</div>
-<div class="news-wrap inner-800">
-<div class="tab-cnt">
-<div class="tab-area">
-  <div class="tab active">すべて</div>
-  <div class="tab">お知らせ</div>
-  <div class="tab">リクルート</div>
-</div>
-<div class="content-area"> 
-  <!-- タブ1: すべて -->
-  <div class="content show"> 
-    <a href="single.html" class="news-cnt">
-    <div class="news-item">
-      <div class="news-icon"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン"> </div>
-      <div class="news-text">
-        <div class="news-th">2025.00.00　|　リクルート</div>
-        <div class="news-td">WEB会社説明会のご案内</div>
-      </div>
+  <div class="inner-1000">
+    <div class="section-ttl">
+      <p class="fz-40 font-wb">ニュース</p>
     </div>
-    </a> 
-    <a class="news-cnt">
-    <div class="news-item">
-      <div class="news-icon"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン"> </div>
-      <div class="news-text">
-        <div class="news-th">2025.00.00　|　お知らせ</div>
-        <div class="news-td">○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</div>
-      </div>
+  </div>
+  <div class="news-wrap inner-800">
+    <div class="content-area"> 
+      <?php
+      $args = array(
+        'posts_per_page' => 3,
+        'post_type' => 'post',
+        'post_status' => 'publish',
+      );
+      $news_query = new WP_Query($args);
+
+      if ( $news_query->have_posts() ) :
+        while ( $news_query->have_posts() ) : $news_query->the_post();
+          // 投稿日を取得（例：2025.05.26）
+          $date = get_the_date('Y.m.d');
+          // カテゴリー取得（最初のカテゴリ名）
+          $categories = get_the_category();
+          $category_name = !empty($categories) ? esc_html($categories[0]->name) : 'お知らせ';
+          // 投稿タイトルの抜粋
+          $excerpt = get_the_excerpt();
+      ?>
+      <a class="news-cnt" href="<?php the_permalink(); ?>">
+        <div class="news-item">
+          <div class="news-icon">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン">
+          </div>
+          <div class="news-text">
+            <div class="news-th"><?php echo $date . ' | ' . $category_name; ?></div>
+            <div class="news-td"><?php echo wp_strip_all_tags( mb_strimwidth( $excerpt, 0, 70, '…' ) ); ?></div>
+          </div>
+        </div>
+      </a>
+      <?php
+        endwhile;
+        wp_reset_postdata();
+      else:
+      ?>
+      <p>ニュース記事がありません。</p>
+      <?php endif; ?>
     </div>
-    </a> 
-    <a class="news-cnt">
-    <div class="news-item">
-      <div class="news-icon"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン"> </div>
-      <div class="news-text">
-        <div class="news-th">2025.00.00　|　お知らせ</div>
-        <div class="news-td">○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</div>
-      </div>
-    </div>
-    </a> 
   </div>
-  
-  <!-- タブ2: お知らせ -->
-  <div class="content">
-  <a class="news-cnt">
-      <div class="news-item">
-        <div class="news-icon"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン"> </div>
-        <div class="news-text">
-          <div class="news-th">2025.00.00　|　お知らせ</div>
-          <div class="news-td"><a href="#">○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</a></div>
-        </div>
-      </div>
-     </a>
-  <a class="news-cnt">
-      <div class="news-item">
-        <div class="news-icon"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン"> </div>
-        <div class="news-text">
-          <div class="news-th">2025.00.00　|　お知らせ</div>
-          <div class="news-td"><a href="#">○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</a></div>
-        </div>
-      </div>
-     </a>
-  <a class="news-cnt">
-      <div class="news-item">
-        <div class="news-icon"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン"> </div>
-        <div class="news-text">
-          <div class="news-th">2025.00.00　|　お知らせ</div>
-          <div class="news-td"><a href="#">○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</a></div>
-        </div>
-      </div>
-    </a>
-  </div>
-  
-  <!-- タブ3: リクルート -->
-  <div class="content">
-  <a class="news-cnt">
-      <div class="news-item">
-        <div class="news-icon"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン"> </div>
-        <div class="news-text">
-          <div class="news-th">2025.00.00　|　リクルート</div>
-          <div class="news-td"><a href="single.html">WEB会社説明会のご案内</a></div>
-        </div>
-      </div>
-    </a>
-      <a class="news-cnt">
-      <div class="news-item">
-        <div class="news-icon"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン"> </div>
-        <div class="news-text">
-          <div class="news-th">2025.00.00　|　リクルート</div>
-          <div class="news-td"><a href="#">○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</a></div>
-        </div>
-      </div>
-    </a>
-   <a class="news-cnt">
-      <div class="news-item">
-        <div class="news-icon"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン"> </div>
-        <div class="news-text">
-          <div class="news-th">2025.00.00　|　リクルート</div>
-          <div class="news-td"><a href="#">○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</a></div>
-        </div>
-      </div>
-    </a>
-  </div>
-</div>
-<!-- .content-area END -->
-<div class="btn-cnt"> <a href="#" class="btn-01">ニュースの一覧を見る</a> </div>
+  <!-- .content-area END -->
+  <div class="btn-cnt"> <a href="<?php echo esc_url(home_url('/')); ?>/news" class="btn-01">ニュースの一覧を見る</a> </div>
 </section>
+
 <section class="company">
   <div class="inner-1000">
     <div class="section-ttl">

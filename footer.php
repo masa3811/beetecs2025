@@ -40,7 +40,7 @@
      </div>
     <p class="footer-copy txt-center">&copy; ©BEETECS　All rights reserved.</p>
   <div class="to-top">
-  <img src="assets/img/common/to-top.png" alt="トップに戻る">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/to-top.png" alt="トップに戻る">
 </div>
   
 </footer>

@@ -66,13 +66,14 @@ $des="。
     <div class="logo"> <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.png" alt="ロゴ"></a> </div>
     <nav id="global-nav">
       <ul id="menu">
-        <li><a href="index.html">TOP</a></li>
-        <li><a href="company.html">会社案内</a></li>
-        <li><a href="archive.html">ニュース</a></li>
-        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="<?php echo home_url(); ?>">TOP</a></li>
+        <li><a href="<?php echo home_url(); ?>/company/">会社案内</a></li>
+        <li><a href="<?php echo home_url(); ?>/business/">事業案内</a></li>
+        <li><a href="<?php echo home_url(); ?>/archive/">ニュース</a></li>
+        <li><a href="<?php echo home_url(); ?>/contact/">お問い合わせ</a></li>
       </ul>
     </nav>
-    <div class="recruit"><a href="recruit.html"s><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/recruit_icon.png" alt="" class="" /></a></div>
+    <div class="recruit"><a href="<?php echo home_url(); ?>/recruit/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/recruit_icon.png" alt="" class="" /></a></div>
     
     <!-- ハンバーガー -->
     <div id="hamburger">
@@ -80,7 +81,7 @@ $des="。
       <div id="hamburger-nav">
         <div class="menu-cnt inner-1200">
           <ul class="menu">
-            <li class="title"><a href="company.html">会社案内</a></li>
+            <li class="title"><a href="company.php">会社案内</a></li>
             <li><a href="#">会社概要</a></li>
             <li><a href="#">企業理念</a></li>
             <li class="accordion-item">
@@ -99,13 +100,13 @@ $des="。
             <li><a href="#">リクルート</a></li>
           </ul>
           <ul class="menu">
-            <li class="title"><a href="#">お問い合わせ</a></li>
+            <li class="title"><a href="contact.php">お問い合わせ</a></li>
             <li><a href="#">採用に関するお問い合わせ</a></li>
             <li><a href="#">法人様向けお問い合わせ</a></li>
             <li><a href="#">一般向けお問い合わせ</a></li>
           </ul>
           <ul class="menu">
-            <li class="title"><a href="#">採用情報</a></li>
+            <li class="title"><a href="recruit.php">採用情報</a></li>
             <li><a href="#">リクルート動画</a></li>
           </ul>
         </div>

@@ -215,68 +215,17 @@ function exp_length($length)
 add_filter('excerpt_mblength', 'exp_length');
 
 
-/**
- * カスタム投稿タイプ「item」のアーカイブページの記事表示件数を変更する
- */
-function change_posts_per_page($query) //WP設定では100件になっている
+/*----------------------------------------------------------*/
+/* 投稿アーカイブページの表示設定 */
+/*----------------------------------------------------------*/
+function post_has_archive($args, $post_type)
 {
-    if (is_admin() || ! $query->is_main_query()) {
-        return;
-    }
-    if ($query->is_archive('results')) { //カスタム投稿タイプを指定
-        $query->set('posts_per_page', '12'); //表示件数を指定
-    }
+  if ('post' == $post_type) {
+    $args['rewrite'] = true;
+    $args['has_archive'] = 'news'; //URLとして使いたい文字列
+  }
+  return $args;
 }
-add_action('pre_get_posts', 'change_posts_per_page');
+add_filter('register_post_type_args', 'post_has_archive', 10, 2);
 
 
-
-/* =================================
-管理画面「イベント」に変更
-================================= */
-function Change_menulabel()
-{
-    global $menu;
-    global $submenu;
-    $name = 'イベント';
-    $menu[5][0] = $name;
-    $submenu['edit.php'][5][0] = $name.'一覧';
-    $submenu['edit.php'][10][0] = '新しい'.$name;
-}
-function Change_objectlabel()
-{
-    global $wp_post_types;
-    $name = 'イベント';
-    $labels = &$wp_post_types['post']->labels;
-    $labels->name = $name;
-    $labels->singular_name = $name;
-    $labels->add_new = _x('追加', $name);
-    $labels->add_new_item = $name.'の新規追加';
-    $labels->edit_item = $name.'の編集';
-    $labels->new_item = '新規'.$name;
-    $labels->view_item = $name.'を表示';
-    $labels->search_items = $name.'を検索';
-    $labels->not_found = $name.'が見つかりませんでした';
-    $labels->not_found_in_trash = 'ゴミ箱に'.$name.'は見つかりませんでした';
-}
-add_action('init', 'Change_objectlabel');
-add_action('admin_menu', 'Change_menulabel');
-
-//管理画面でタクソノミー絞り込みを追加（施工事例）
-add_action('restrict_manage_posts', 'add_custom_taxonomies_term_filter');
-function add_custom_taxonomies_term_filter()
-{
-    global $post_type;
-    if ($post_type == 'results') {
-        $taxonomy = 'resultstype';
-        wp_dropdown_categories(array(
-          'show_option_all' => 'すべてのカテゴリー',
-          'orderby' => 'name',
-          'selected' => get_query_var($taxonomy),
-          'hide_empty' => 0,
-          'name' => $taxonomy,
-          'taxonomy' => $taxonomy,
-          'value_field' => 'slug',
-        ));
-    }
-}
