@@ -1,48 +1,46 @@
 <!-- フッター -->
 <footer id="footer">
   <div class="footer__box">
-     <div id="hamburger">
+    <div id="hamburger">
       <div id="hamburger-nav">
         <div class="menu-cnt inner-1200">
           <ul class="menu">
-            <li class="title"><a href="#">会社案内</a></li>
-            <li><a href="#">会社概要</a></li>
-            <li><a href="#">企業理念</a></li>
+            <li class="title">会社案内</li>
+            <li><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>#company-overview">会社概要</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/business/' ) ); ?>#company-philosophy">企業理念</a></li>
+            <li><a href="<?php echo home_url('/business/'); ?>">事業案内</a></li>
             <li class="accordion-item">
-              <div class="accordion-header">事業案内 </div>
-              <div class="accordion-content"> <a href="#">事業案内1</a> <a href="#">事業案内2</a> </div>
+              <div class="accordion-header">物流拠点</div>
+              <div class="accordion-content"> 
+                <p>宇部営業所</p> 
+                <p>防府営業所</p>  
+                <p>徳山営業所</p>  
+                <p>下関営業所</p>  
+              </div>
             </li>
-            <li class="accordion-item">
-              <div class="accordion-header"> 営業所</div>
-              <div class="accordion-content"> <a href="#">営業所1</a> <a href="#">営業所2</a> </div>
-            </li>
-            <li><a href="#">株式会社三和</a></li>
+          <li><a href="https://www.sanwa-co.jp/" target="_blank">株式会社三和</a></li>
           </ul>
           <ul class="menu">
-            <li class="title"><a href="#">ニュース</a></li>
-            <li><a href="#">お知らせ</a></li>
-            <li><a href="#">リクルート</a></li>
+            <li class="title">ニュース</li>
+            <li><a href="<?php echo esc_url(home_url('/')); ?>news">お知らせ</a></li>
           </ul>
           <ul class="menu">
-            <li class="title"><a href="#">お問い合わせ</a></li>
-            <li><a href="#">採用に関するお問い合わせ</a></li>
-            <li><a href="#">法人様向けお問い合わせ</a></li>
-            <li><a href="#">一般向けお問い合わせ</a></li>
+            <li class="title">お問い合わせ</li>
+            <li><a href="<?php echo esc_url(home_url('/contact/recruit')); ?>">採用に関するお問い合わせ</a></li>
+            <li><a href="<?php echo esc_url(home_url('/contact/corporation')); ?>">法人様向けお問い合わせ</a></li>
           </ul>
           <ul class="menu">
-            <li class="title"><a href="#">採用情報</a></li>
+            <li class="title">採用情報</li>
+            <li><a href="<?php echo home_url('/recruit/'); ?>">リクルート</a></li>
             <li><a href="#">リクルート動画</a></li>
           </ul>
         </div>
-        <div class="link-cnt inner-1200"><a href="#">サイトについて</a><a href="#">プライバシーポリシー</a><br class="sp"><a href="#">サイトマップ</a></div>
+        <div class="link-cnt inner-1200"><a href="#">サイトについて</a><a href="#">プライバシーポリシー</a><a href="#">サイトマップ</a></div>
       </div>
     </div>
-     </div>
-    <p class="footer-copy txt-center">&copy; ©BEETECS　All rights reserved.</p>
-  <div class="to-top">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/to-top.png" alt="トップに戻る">
-</div>
-  
+  </div>
+  <p class="footer-copy txt-center">&copy; BEETECS　All rights reserved.</p>
+  <div class="to-top"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/to-top.png" alt="トップに戻る"> </div>
 </footer>
   
 

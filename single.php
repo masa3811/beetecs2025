@@ -15,38 +15,32 @@
     <div class="news-sec-cnt">
       <div class="news-bg">
         <div class="news-bg-in inner-800">
-          <div class="header__breadcrumb-wrap pc-block txt-left" style="visibility:visible; padding: 20px 50px 0;">
-            <div class="header__breadcrumb"> <?php echo get_the_date('Y.m.d'); ?>　|　
-              <?php the_category(', '); ?>
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+         
+          <div class="news-outer">
+            <div class="news-wrapper">
+              <article><p><?php the_time('Y.m.d'); ?></p>
+                <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+                </a>
+                <p class="news-txt">
+                  <?php the_content(); ?>
+                </p>
+              </article>
             </div>
           </div>
-          <div class="news-outer">
-            <?php if (have_posts()): while (have_posts()): the_post(); ?>
-            <article <?php post_class(); ?>>
-              <?php
-              $categories = get_the_category();
-              if ( !empty( $categories ) ) {
-                echo '<div class="post-category">' . esc_html( $categories[ 0 ]->name ) . '</div>';
-              }
-              ?>
-              <h2 class="news-ttl"> <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-                </a> </h2>
-              <div class="news-txt">
-                <?php the_content(); ?>
-              </div>
-            </article>
-            <?php endwhile; endif; ?>
-          </div>
+          <?php endwhile; else : ?>
+          <p>投稿が見つかりませんでした。</p>
+          <?php endif; ?>
         </div>
+        </div>  
       </div>
-    </div>
-    <div class="btn-cnt"> <a href="<?php echo esc_url(home_url('/')); ?>/news" class="btn-01">ニュースの一覧を見る</a>
-ニュースの一覧を見る</a>
-</div>
-  </section>
+   
   <div>
     <?php if (function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
   </div>
+
+  <div class="btn-cnt"> <a href="<?php echo esc_url(home_url('/')); ?>news" class="btn-01">ニュースの一覧を見る</a> </div>
+</section>
 </main>
 <?php get_footer(); ?>

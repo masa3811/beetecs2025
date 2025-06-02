@@ -33,11 +33,19 @@
   right: 0;
   background-color: #fff;
   z-index: 2;
+  padding-bottom: 40px;
+  border: 1px solid #ddd;
 }
 .news-outer {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* 縦中央 */
+padding: 20px;
+}
+@media (max-width: 600px) {
+ .news-outer { 
+  border: 1px solid #ddd;
+}
+}
+.bb-1 {
+  border-bottom: 1px solid #ddd;
 }
 .news-wrapper {
   text-align: left;
@@ -63,7 +71,7 @@
 }
 .news-wrapper .news-txt {
   text-align: left;
-  padding: 50px;
+  padding: 10px;
 }
 #single .news-wrapper .news-txt {
   text-align: left;
@@ -433,6 +441,16 @@ font-size: 14px;
     right: 15px;
   }
   /*Pagination*/
+.wp-pagenavi {
+    clear: both;
+    background-color: #fbf6f4;
+}
+.ptb-1 {
+  padding: 100px 0;
+   background-color: #fbf6f4;
+}
+
+
   .Pagination {
     display: flex;
     justify-content: center;

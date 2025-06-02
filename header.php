@@ -63,13 +63,13 @@ $des="。
 <header id="header">
 
   <div class="wrap">
-    <div class="logo"> <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.png" alt="ロゴ"></a> </div>
+    <div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.png" alt="ロゴ"></a> </div>
     <nav id="global-nav">
       <ul id="menu">
         <li><a href="<?php echo home_url(); ?>">TOP</a></li>
         <li><a href="<?php echo home_url(); ?>/company/">会社案内</a></li>
         <li><a href="<?php echo home_url(); ?>/business/">事業案内</a></li>
-        <li><a href="<?php echo home_url(); ?>/archive/">ニュース</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>news">ニュース</a></li>
         <li><a href="<?php echo home_url(); ?>/contact/">お問い合わせ</a></li>
       </ul>
     </nav>
@@ -81,32 +81,33 @@ $des="。
       <div id="hamburger-nav">
         <div class="menu-cnt inner-1200">
           <ul class="menu">
-            <li class="title"><a href="company.php">会社案内</a></li>
+            <li class="title">会社案内</li>
             <li><a href="#">会社概要</a></li>
             <li><a href="#">企業理念</a></li>
+            <li><a href="<?php echo home_url('/business/'); ?>">事業案内</a></li>
             <li class="accordion-item">
-              <div class="accordion-header">事業案内 </div>
-              <div class="accordion-content"> <a href="business.html">事業案内1</a> <a href="#">事業案内2</a> </div>
+              <div class="accordion-header">活動拠点</div>
+              <div class="accordion-content"> 
+                <a href="#">宇部営業所</a> 
+                <a href="#">防府営業所</a> 
+                <a href="#">徳山営業所</a> 
+                <a href="#">下関営業所</a> 
+              </div>
             </li>
-            <li class="accordion-item">
-              <p class="accordion-header">営業所</p>
-              <div class="accordion-content"> <a href="office.html">営業所一覧</a> <a href="#">営業所1</a> </div>
-            </li>
-            <li><a href="#">株式会社三和</a></li>
+          <li><a href="https://www.sanwa-co.jp/" target="_blank">株式会社三和</a></li>
           </ul>
           <ul class="menu">
-            <li class="title"><a href="#">ニュース</a></li>
-            <li><a href="#">お知らせ</a></li>
-            <li><a href="#">リクルート</a></li>
+            <li class="title">ニュース</li>
+            <li><a href="<?php echo esc_url(home_url('/')); ?>news">お知らせ</a></li>
           </ul>
           <ul class="menu">
-            <li class="title"><a href="contact.php">お問い合わせ</a></li>
+            <li class="title">お問い合わせ</li>
             <li><a href="#">採用に関するお問い合わせ</a></li>
             <li><a href="#">法人様向けお問い合わせ</a></li>
-            <li><a href="#">一般向けお問い合わせ</a></li>
           </ul>
           <ul class="menu">
-            <li class="title"><a href="recruit.php">採用情報</a></li>
+            <li class="title">採用情報</li>
+            <li><a href="<?php echo home_url('/recruit/'); ?>">リクルート</a></li>
             <li><a href="#">リクルート動画</a></li>
           </ul>
         </div>

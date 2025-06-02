@@ -7,24 +7,14 @@ get_header();
 <section class="mv">
   <div class="mv-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/mv_img.jpg" alt="メインビジュアル画像"> </div>
   <div class="mv-cnt">
-    <h1 class="font-wb">新たな物流サービスの提供</h1>
-    <p class="font-wb">ビーテクスのラストワンマイルが建設現場を変える。</p>
+    <h1 class="font-wb">ビーテクスが建設現場の</h1>
+    <p class="font-wb">ラストワンマイルを変える。</p>
   </div>
 </section>
       <div class="header__breadcrumb-wrap pc-block" style="visibility: hidden;">
     <div class="header__breadcrumb">TOP　＞　〇〇〇〇</div>
     </div>
-<section class="banner inner-1350">
-  <div class="banner-cnt"> <a class="banner-item"> <img class="banner-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_bnr.jpg" alt="">
-    <div class="arrow-cnt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-2.png" alt="">
-      <p class="fz-20 font-wb">株式会社三和</p>
-    </div>
-    </a> <a class="banner-item"> <img class="banner-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/recruit_bnr.jpg" alt="">
-    <div class="arrow-cnt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="">
-      <p class="fz-20 font-wb">採用情報</p>
-    </div>
-    </a> </div>
-</section>
+
 
 <!-- ニュース -->
 <section class="news">
@@ -49,7 +39,7 @@ get_header();
           $date = get_the_date('Y.m.d');
           // カテゴリー取得（最初のカテゴリ名）
           $categories = get_the_category();
-          $category_name = !empty($categories) ? esc_html($categories[0]->name) : 'お知らせ';
+          $category_name = !empty($categories) ? esc_html($categories[0]->name) : '';
           // 投稿タイトルの抜粋
           $excerpt = get_the_excerpt();
       ?>
@@ -59,8 +49,8 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="アイコン">
           </div>
           <div class="news-text">
-            <div class="news-th"><?php echo $date . ' | ' . $category_name; ?></div>
-            <div class="news-td"><?php echo wp_strip_all_tags( mb_strimwidth( $excerpt, 0, 70, '…' ) ); ?></div>
+            <p class="news-th"><?php echo $date ?></p>
+            <p class="news-td"><?php echo wp_strip_all_tags( mb_strimwidth( $excerpt, 0, 70, '…' ) ); ?></p>
           </div>
         </div>
       </a>
@@ -74,7 +64,7 @@ get_header();
     </div>
   </div>
   <!-- .content-area END -->
-  <div class="btn-cnt"> <a href="<?php echo esc_url(home_url('/')); ?>/news" class="btn-01">ニュースの一覧を見る</a> </div>
+  <div class="btn-cnt"> <a href="<?php echo esc_url(home_url('/')); ?>news" class="btn-01">ニュースの一覧を見る</a> </div>
 </section>
 
 <section class="company">
@@ -84,14 +74,15 @@ get_header();
     </div>
   </div>
   <div class="company-cnt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_img-pc.jpg" alt="">
-    <h2 class="font-wb txt-center">新たなニーズと<br class="sp">新たなマーケットに応える。</h2>
+    <h2 class="font-wb txt-center">建材物流のプロフェッショナルとして、<br class="sp">確かな品質と迅速な配送を。</h2>
   </div>
   <div class="desc-cnt">
     <p class="desc inner-700 lh2">ビーテクスは<br>
-      工務店などの建設会社に代わって<br class="pc">
-      建材や設備機器の「発注、配送、倉庫管理」をはじめ「設置・施工」に至るまでの工程を<br class="pc">
-      「物流」と「施工」の機能をハイブリッドに併せ持つ<br class="pc">
-      住宅関連の新たなマーケットを開拓するプロ集団です。</p>
+      建設現場に不可欠な建材を「必要なときに、必要な場所へ、確実に」お届けする建材物流の専門企業です。
+多種多様な建材の取り扱いから、最適な在庫管理、スピーディーな配送まで一貫してサポートいたします。
+培ってきた物流ノウハウとネットワークを活かし、建設現場の工程管理をスムーズに改善。
+また、安全・品質管理にも徹底的にこだわり、安心してお任せいただけるパートナーであることを目指しています。
+</p>
   </div>
   <div class="detail-cnt">
     <div class="detail-item-01">
@@ -100,7 +91,7 @@ get_header();
         <div class="item-txt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_ttl-1.png" alt="">
           <p class="font-wb lh1_135">無駄なくタイミングの良い<br>
             プロの物流サービス。</p>
-          <a class="btn-02">建材課を詳しく見る</a></div>
+          </div>
       </div>
     </div>
     <div class="detail-item-02">
@@ -109,20 +100,11 @@ get_header();
         <div class="item-txt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_ttl-2.png" alt="">
           <p class="font-wb lh1_135">運送、設置、施工を<br>
             ワンストップで。</p>
-          <a class="btn-02">インテリア課を詳しく見る</a></div>
-      </div>
-    </div>
-    <div class="detail-item-03">
-      <div class="item-03">
-        <div class="item-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_img-3.png" alt=""> </div>
-        <div class="item-txt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_ttl-3.png" alt="">
-          <p class="font-wb lh1_135">常に進化し続ける<br>
-            キッチン廻りに対応。</p>
-          <a class="btn-02">住宅設備課を詳しく見る</a></div>
+          </div>
       </div>
     </div>
   </div>
-  <div class="btn-cnt"> <a href="#" class="btn-01">会社案内を見る</a> </div>
+  <div class="btn-cnt"> <a href="<?php echo home_url('/company/'); ?>" class="btn-01">会社案内を見る</a> </div>
 </section>
 <section class="recruit">
   <div class="recruit-cnt">
@@ -135,7 +117,7 @@ get_header();
       <h2 class="font-wb txt-center">ラストワンマイルを実現する人材を募集しています。</h2>
       <p class="txt-center">ビーテクスとともに自身と家族と社会のためのラストワンマイルを実現する仲間を募集します。</p>
       <p class="txt-center">詳細はこちらから</p>
-      <div class="btn-cnt"> <a href="#" class="btn-03">採用情報を詳しく見る</a> </div>
+      <div class="btn-cnt"> <a href="<?php echo home_url('/recruit/'); ?>" class="btn-03">採用情報を詳しく見る</a> </div>
     </div>
   </div>
 </section>
@@ -151,6 +133,17 @@ get_header();
   </div>
 </section>
   
+<section class="banner inner-1350">
+  <div class="banner-cnt"> <a href="<?php echo home_url('//'); ?>" class="banner-item" target="_blank"> <img class="banner-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_bnr.jpg" alt="">
+    <div class="arrow-cnt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-2.png" alt="">
+      <p class="fz-20 font-wb">株式会社三和</p>
+    </div>
+    </a> <a href="<?php echo home_url('/recruit/'); ?>" class="banner-item"> <img class="banner-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/recruit_bnr.jpg" alt="">
+    <div class="arrow-cnt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-1.png" alt="">
+      <p class="fz-20 font-wb">採用情報</p>
+    </div>
+    </a> </div>
+</section>
 
 <?php
 get_footer();

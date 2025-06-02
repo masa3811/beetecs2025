@@ -1,14 +1,13 @@
-
 <?php
 get_header();
 
-$paged = get_query_var('paged') ? get_query_var('paged') : 1;
-$newslist = new WP_Query(array(
-  'post_type'      => 'post',  
+$paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+$newslist = new WP_Query( array(
+  'post_type' => 'post',
   'posts_per_page' => 8,
-  'post_status'    => 'publish',
-  'paged'          => $paged
-));
+  'post_status' => 'publish',
+  'paged' => $paged
+) );
 ?>
 <main>
   <section class="kv">
@@ -26,41 +25,49 @@ $newslist = new WP_Query(array(
     <div class="news-sec-cnt">
       <div class="news-bg">
         <div class="news-bg-in inner-800">
-          <div class="header__breadcrumb-wrap pc-block txt-left" style="visibility:visible; padding: 20px 50px 0;">
-            <div class="header__breadcrumb">
-              <?php post_type_archive_title(); ?>
+          <?php
+          // ページ番号取得
+          $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
+          // クエリ設定（カテゴリなし・すべての投稿を取得）
+          $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => 5,
+            'paged' => $paged
+          );
+          $the_query = new WP_Query( $args );
+
+          if ( $the_query->have_posts() ):
+            while ( $the_query->have_posts() ): $the_query->the_post();
+          ?>
+          <div class="news-outer bb-1">
+            <div class="news-wrapper">
+              <article>
+                <p>
+                  <?php the_time('Y.m.d'); ?>
+                </p>
+                <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+                </a>
+                <p class="news-txt"> <?php echo wp_trim_words( get_the_content(), 30, '…' ); ?> </p>
+              </article>
             </div>
           </div>
-          <div class="news-outer">
-            <?php
-            if ( $newslist->have_posts() ):
-              while ( $newslist->have_posts() ): $newslist->the_post();
-            ?>
-            <article <?php post_class(); ?>>
-              <?php
-              $categories = get_the_category();
-              if ( !empty( $categories ) ) {
-                echo '<div class="post-category">' . esc_html( $categories[ 0 ]->name ) . '</div>';
-              }
-              ?>
-              <h2 class="news-ttl"><a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-                </a></h2>
-              <div class="news-txt">
-                <?php the_content(); ?>
-              </div>
-            </article>
-            <?php
-            endwhile;
-            endif;
-            ?>
-          </div>
+          <?php
+          endwhile;
+          else :
+            echo '<p>投稿が見つかりませんでした。</p>';
+          endif;
+          wp_reset_postdata();
+          ?>
         </div>
-      </div>
+        <!-- .news-bg-in --> 
+         </div>
+      <!-- .news-bg --> 
     </div>
-    <div class="btn-cnt"> <a href="<?php echo home_url(); ?>" class="btn-01">トップへ戻る</a> </div>
-  </section>
-  <div>
+    <!-- .news-sec-cnt --> 
+
+  <div class="ptb-1">
     <?php
     if ( function_exists( 'wp_pagenavi' ) ) {
       wp_pagenavi( array( 'query' => $newslist ) );
@@ -68,5 +75,8 @@ $newslist = new WP_Query(array(
     wp_reset_postdata();
     ?>
   </div>
+    
+
+</section>
 </main>
 <?php get_footer(); ?>

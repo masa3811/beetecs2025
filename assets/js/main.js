@@ -114,7 +114,7 @@ function adjustPadding() {
   } else {
     // PCだけ元の計算式
     const height = newsBgIn.getBoundingClientRect().height;
-    const halfHeight = height / 2 + 80;
+    const halfHeight = height / 2;
     const extraSpace = 40;
     const padding = halfHeight + extraSpace;
     newsBg.style.paddingBottom = padding + 'px';

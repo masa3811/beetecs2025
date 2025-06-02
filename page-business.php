@@ -8,7 +8,8 @@ get_header();
   <div class="kv-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/business/kv_business-pc.jpg" alt="キービジュアル画像"> </div>
   <div class="kv-cnt">
     <p class="font-wb">事業案内</p>
-    <h1 class="font-wb">物流から施工までノンストップ</h1>
+    <h1 class="font-wb w-100">建材に特化した物流ソリューションを通じて、<br>&emsp;業務効率の向上とコスト最適化を実現します。
+</h1>
   </div>
 </section>
 <div class="header__breadcrumb-wrap pc-block" style="visibility: hidden;">
@@ -18,7 +19,7 @@ get_header();
   <h2 class="font-wb txt-center lh1_135">「物流」と「施工」の機能を<br class="sp">ハイブリッドに併せ持ち<br>
     新たなニーズ、<br class="sp">新たなマーケットに応えます。</h2>
   
-  
+  <div id="company-philosophy"></div>
     <div class="company-detail-cnt">
     <div class="inner-1000">
       <div class="section-ttl">
@@ -40,8 +41,8 @@ get_header();
       <div class="business-sec-img"><img class="img-01" src="<?php echo get_template_directory_uri(); ?>/assets/img/business/function_img-01.png" alt=""><img class="ttl-01" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_ttl-1.png" alt=""></div>
       <div class="skew-cnt"><div class="skew-in"><h3 class="skew-txt">無駄なく<br class="sp-only">タイミングの良い<br>
         プロの物流サービス。</h3></div></div>
-      <p class="desc inner-600">建材課は、得意先様からご注文頂いた建材や設備機器をジャストインタイム、かつ親切・丁寧に現場に納
-        材致します。</p>
+      <p class="desc inner-700">多様な建材ニーズに対応可能な調達ネットワーク、安定した供給体制、そして現場に合わせた柔軟な配送プランにより、建材の保管・積替・配送といった物流業務を一括で対応し、本来のコア業務に専念できる環境をご提供します。<br>また、企業間取引において重要な「納期遵守」「品質管理」「契約対応」にも万全の体制で対応。建材物流のパートナーとして、御社の業務に貢献いたします。
+</p>  
     </div>
   </div>
   <div class="business-cnt-02">
@@ -49,37 +50,14 @@ get_header();
       <div class="business-sec-img"><img class="img-02" src="<?php echo get_template_directory_uri(); ?>/assets/img/business/function_img-02.png" alt=""><img class="ttl-02" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_ttl-2.png" alt=""></div>
      <div class="skew-cnt"><div class="skew-in"><h3 class="skew-txt">運送、設置、施工を<br>
 ワンストップで。</h3></div></div>
-      <p class="desc inner-600">インテリア課では主に、インテリア家具の運送、納品、組み立て作業と、カーテン施工を行って
-        おります。新築やリフォームの戸建て物件をはじめ、店舗や病院、マンションへの家具納品とカー
-        テン施工など、幅広い現場の作業と管理を行っております。
-        商品の運送と同じタイミングで設置・施工を行う事により荷主様との打ち合わせもワンストップ
-        で行え、更に機能的な配送システムの構築に日々取り組んでいます。
-        私たちが納品や施工を行うタイミングは物件が完成し施主様にお引き渡しをする時期なので、慎
-        重に作業を行わないといけないというプレッシャーはありますが、施主様や荷主様から頂くお喜
-        びの言葉が私達の励みとやりがいになっています。
-        日々の経験と得た知識を自身のスキルアップに繋げ、すべてのお客様に満足して頂ける会社を目
-        指し努力しています。</p>
+      <p class="desc inner-700">建材の調達から配送、在庫管理、現場納品までを一括で対応するワンストップサービスを提供しております。
+分散しがちな各工程を一元管理することで、業務の効率化・コスト削減・納期短縮を実現します。</p>
     </div>
     <div class=" img-s inner-800"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/business/function_img-02-1.png" alt=""></div>
   </div>
-  <div class="business-cnt-03">
-    <div class="business-sec-lead inner-800">
-      <div class="business-sec-img"><img class="tt-03" src="<?php echo get_template_directory_uri(); ?>/assets/img/business/function_img-03.png" alt=""><img class="ttl-03" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_ttl-3.png" alt=""></div>
-      <div class="skew-cnt"><div class="skew-in"><h3 class="skew-txt">常に進化し続ける<br>
-キッチン廻りに対応。</h3></div></div>
-      <p class="desc inner-600">住宅設備課では現在はシステムキッチンの配送と同時施工を行っております。<br>
-        <br>
-        新築・リフォームなどの様々な現場での施工はもとより、事前に現場の下見にお伺いし監督様・
-        大工様と打ち合わせをさせて頂き間違いのない施工を心掛けています。
-        システムキッチンの施工は一度覚えたら終わりではなく次々とメーカー様が新しい商品を開発さ
-        れるので日々、勉強して経験を積まなければいけません。
-        施工が難しい現場もありますが、自分たちの今までの知識や技術が活かせ、結果施主様や工務店
-        様に喜んで頂ける事にやりがいを感じます。これからも知識と経験を積み上げ、関係する皆様に
-        喜んで頂ける会社を目指していきます。</p>
-    </div>
-    <div class="img-s inner-500"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/business/function_img-03-1.png" alt=""></div>
-  </div>
+
 </section>
+
 
 </main>
 <!--main end-->

@@ -102,6 +102,7 @@ button {
 }
 .w-100 {
   width: 100%!important;
+  max-width: 100%!important;
 }
 .w-50 {
   width: 50%;

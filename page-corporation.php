@@ -3,11 +3,12 @@ get_header();
 ?>
 
 <main>
+<!-- kv -->
 
 <section class="contact-step-sec">
 <div class="contact-step-cnt inner-900">
   <div class="contact-txt">
-  <p class="font-wb">採用情報についてのお問い合わせをご希望の場合はこちらから</p>
+  <p class="font-wb">お問い合わせをご希望の場合はこちらから</p>
   </div>
 <div class="inner-800">
   <div class="contact-btn"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/contact_step1.png" alt=""></div>

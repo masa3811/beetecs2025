@@ -215,6 +215,8 @@ function exp_length($length)
 add_filter('excerpt_mblength', 'exp_length');
 
 
+
+
 /*----------------------------------------------------------*/
 /* 投稿アーカイブページの表示設定 */
 /*----------------------------------------------------------*/
@@ -227,5 +229,15 @@ function post_has_archive($args, $post_type)
   return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+
+/*----------------------------------------------------------*/
+/* 親ページ表示 */
+/*----------------------------------------------------------*/
+
+function mytheme_setup() {
+  add_theme_support('page-attributes');
+}
+add_action('after_setup_theme', 'mytheme_setup');
 
 
