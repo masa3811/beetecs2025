@@ -26,8 +26,8 @@
           </ul>
           <ul class="menu">
             <li class="title">お問い合わせ</li>
-            <li><a href="<?php echo esc_url(home_url('/contact/recruit')); ?>">採用に関するお問い合わせ</a></li>
-            <li><a href="<?php echo esc_url(home_url('/contact/corporation')); ?>">法人様向けお問い合わせ</a></li>
+            <li><a href="<?php echo esc_url(home_url('/contact/c-recruit')); ?>">採用に関するお問い合わせ</a></li>
+            <li><a href="<?php echo esc_url(home_url('/contact/c-corporation')); ?>">法人様向けお問い合わせ</a></li>
           </ul>
           <ul class="menu">
             <li class="title">採用情報</li>

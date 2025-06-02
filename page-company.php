@@ -5,7 +5,12 @@ get_header();
 <main>
 <!-- kv -->
 <section class="kv">
-  <div class="kv-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/kv_company-pc.jpg" alt="キービジュアル画像"> </div>
+  <div class="kv-img"> 
+    <picture>
+<source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/kv_company-sp.jpg" alt="メインビジュアル画像">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/kv_company-pc.jpg" alt="トップ画像">
+</picture>
+
   <div class="kv-cnt">
     <p class="font-wb">会社案内</p>
     <h1 class="font-wb">最適なソリューション</h1>
@@ -43,7 +48,7 @@ get_header();
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/company_profile-02.png" alt="">
       <p class="link-item-p inner-400 txt-left">山口県に営業所があります。
         中国地方全域をカバーしています。</p>
-      <div class="btn-cnt"><a href="office.html" class="btn-01">営業所を見る</a></div>
+      <div class="btn-cnt"><a href="<?php echo esc_url( home_url( '/office/' ) ); ?>" class="btn-01">営業所を見る</a></div>
     </div>
     <div class="link-item">
       <div class="link-ttl">

@@ -5,7 +5,13 @@ get_header();
 
 
 <section class="mv">
-  <div class="mv-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/mv_img.jpg" alt="メインビジュアル画像"> </div>
+  <div class="mv-img">
+  <picture>
+  <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/common/mv_img-sp.jpg" alt="メインビジュアル画像">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/mv_img-pc.jpg" alt="トップ画像">
+</picture>
+   </div>
+  
   <div class="mv-cnt">
     <h1 class="font-wb">ビーテクスが建設現場の</h1>
     <p class="font-wb">ラストワンマイルを変える。</p>

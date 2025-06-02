@@ -5,7 +5,13 @@ get_header();
 <main>
 <!-- kv -->
 <section class="kv">
-  <div class="kv-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/kv_contact-pc.jpg" alt="キービジュアル画像"> </div>
+  
+<picture>
+<source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/contact/kv_contact-sp.jpg" alt="メインビジュアル画像">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/kv_contact-pc.jpg" alt="トップ画像">
+</picture>
+    
+  </div>
   <div class="kv-cnt">
     <div class="header__breadcrumb-wrap pc-block" style="visibility: hidden;">
       <div class="header__breadcrumb">2025.00.00　|　リクルート</div>

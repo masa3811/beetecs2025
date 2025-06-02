@@ -402,11 +402,6 @@ select {
 }
 }
 
-@media (max-width: 769px) {
-   #header .logo { 
-   margin-top: 0;
-}
-}
 
 @media (max-width: 281px) {
   #header .logo {
@@ -499,6 +494,12 @@ select {
   z-index: 998;
   padding: 50px;
 }
+@media (max-width: 600px) {
+  #header #hamburger-nav {
+  padding: 1em;
+  }
+  
+}
 #header #hamburger-nav.active {
   display: flex;
   /* .active クラスが追加された時に表示 */
@@ -565,6 +566,11 @@ select {
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+#header #hamburger-nav .menu li.title {  
+    font-size: 18px !important;
+}
 }
 @media (max-width: 600px) {
   #header #hamburger-nav .menu li.title a {
@@ -720,7 +726,7 @@ select {
 }
 @media (max-width: 769px) {
  #footer #hamburger-nav .menu li.title {
-  font-size: 20px;
+  font-size: 18px;
   }
 }
 

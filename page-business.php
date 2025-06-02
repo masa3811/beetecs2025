@@ -5,7 +5,13 @@ get_header();
 <main>
 <!-- kv -->
 <section class="kv">
-  <div class="kv-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/business/kv_business-pc.jpg" alt="キービジュアル画像"> </div>
+  <div class="kv-img">
+    
+<picture>
+<source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/business/kv_business-sp.jpg" alt="メインビジュアル画像">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/img/business/kv_business-pc.jpg" alt="トップ画像">
+</picture>
+    
   <div class="kv-cnt">
     <p class="font-wb">事業案内</p>
     <h1 class="font-wb w-100">建材に特化した物流ソリューションを通じて、<br>&emsp;業務効率の向上とコスト最適化を実現します。

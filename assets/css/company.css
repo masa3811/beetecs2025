@@ -208,6 +208,7 @@ table {
   .table-1 th {
     display: block;
     width: 100%;
+     border-width: 1px 1px 1px 1px;
   }
   .table-1 td {
     display: block;

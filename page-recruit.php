@@ -4,110 +4,35 @@ get_header();
 
 <main>
 
-<section class="contact-step-sec">
-<div class="contact-step-cnt inner-900">
-  <div class="contact-txt">
-  <p class="font-wb">採用情報についてのお問い合わせをご希望の場合はこちらから</p>
+<section class="kv">
+  <div class="kv-img"> 
+  <picture>
+  <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/kv_recruit-sp.jpg" alt="メインビジュアル画像">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/kv_recruit-pc.jpg" alt="トップ画像">
+  </picture>
   </div>
-<div class="inner-800">
-  <div class="contact-btn"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/contact_step1.png" alt=""></div>
-<p>以下のフォームに必要事項をご記入の上、「入力内容を確認する」を押してください</p>
-
-<form action="#" method="post">
-  <table class="table-contact">
-    <tr>
-      <th><span>必須</span></th>
-      <th class="required">お名前</th>
-      <td><input type="text" name="name" required></td>
-    </tr>
-    <tr>
-      <th><span>必須</span></th>
-      <th class="required">フリガナ</th>
-      <td><input type="text" name="furigana" required></td>
-    </tr>
-    <tr>
-      <th><span>必須</span></th>
-      <th>生年月日</th>
-      <td><input type="date" name="birthday"></td>
-    </tr>
-    <tr>
-      <th><span>必須</span></th>
-      <th class="required">性別</th>
-      <td>
-        <label><input type="radio" name="gender" value="male" required> 男性</label>
-        <label><input type="radio" name="gender" value="female"> 女性</label>
-      </td>
-    </tr>
-    <tr>
-      <th><span>必須</span></th>
-      <th class="required">メールアドレス</th>
-      <td><input type="email" name="email" required></td>
-    </tr>
-    <tr>
-     <th></th>
-      <th>郵便番号</th>
-      <td class="post-number">
-        〒 &emsp;<input type="text" name="zip1" size="3" maxlength="3">&emsp; -&emsp; <input type="text" name="zip2" size="4" maxlength="4">
-      </td>
-    </tr>
-    <tr>
-      <th><span>必須</span></th>
-      <th class="required">住所</th>
-      <td><input type="text" name="address" required></td>
-    </tr>
-    <tr>
-      <th><span>必須</span></th>
-      <th class="required">電話番号</th>
-      <td><input type="tel" name="phone" required></td>
-    </tr>
-    <tr>
-      <th><span>必須</span></th>
-      <th class="required">最終学校名</th>
-      <td><input type="text" name="school" required></td>
-    </tr>
-    <tr>
-      <th><span>必須</span></th>
-      <th class="required">卒業（予定）年月日</th>
-      <td><input type="month" name="grad_date" required></td>
-    </tr>
-    <tr>
-      <th><span>必須</span></th>
-      <th class="required">説明会案内のメール</th>
-      <td>
-        <label><input type="radio" name="mail_info" value="yes" required> 希望する</label>
-        <label><input type="radio" name="mail_info" value="no"> 希望しない</label>
-      </td>
-    </tr>
-    <tr>
-      <th><span>必須</span></th>
-      <th class="required">お問い合わせ内容</th>
-      <td><textarea name="inquiry" rows="5" required></textarea></td>
-    </tr>
-  </table>
- 
-<div class="privacy-cnt">
-  <p>
-    プライバシーポリシー（個人情報保護方針）のページを確認いただき、<br>
-    同意をいただける場合は以下にチェックを入れてください。
-  </p>
-  <div class="privacy-check inner-500">
-    <label>
-      <input type="checkbox" name="agree" id="agree-check" required>
-      プライバシーポリシーに同意する
-    </label>
- 
-  <div class="submit-row">
-   <button id="submit-btn" class="inactive" type="button">入力内容を送信する</button>
+  <div class="kv-cnt">
+    <p class="font-wb">採用情報</p>
+    <h1 class="font-wb">ラストワンマイルをその手で</h1>
   </div>
-   </div>
-</div>
-
-  
-</form>
-
- </div>
+</section>
+      <div class="header__breadcrumb-wrap pc-block" style="visibility: hidden;">
+    <div class="header__breadcrumb">TOP　＞　〇〇〇〇</div>
+    </div>
+<section class="recruit-sec">
+  <div class="recruit-sec-cnt inner-1350">
+    <h2 class="font-wb txt-left lh1_135">自身と家族と社会のために<br>ラストワンマイルを実現する仲間を募集します。</h2>
+    <div class="recruit-sec-lead inner-1200">
+      <div class="recruit-sec-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/recruit_center_img-pc.png" alt=""></div>
+      <p class="recruit-sec-txt txt-left">私たちビーテクスは<br>
+        住宅関連資材メーカーや、住宅設備機器メーカー、取引商社等からの運送需要に応えるとともに、従来の事業範囲に止まらず、設備機器の施工という、新たなマーケットの開拓とそのニーズに対応し、得意先が望む最適なソリューションをワンストップで提供しています。<br>
+        ラストワンマイルをその手で実現する人材を募集しています。</p>
+    </div>
   </div>
-
+  <div class="recruit-bnr-cnt">
+    <h3 class="txt-center">採用はこちらから</h3>
+    <div class="recruit-bnr-item inner-800"> <a href="recruit.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/mynav_bnr-2026.png" alt=""></a> <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/mynav_bnr-2027.png" alt=""></a> </div>
+  </div>
 </section>
 </main>
 <!--main end-->
