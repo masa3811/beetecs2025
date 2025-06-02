@@ -32,7 +32,6 @@
           <ul class="menu">
             <li class="title">採用情報</li>
             <li><a href="<?php echo home_url('/recruit/'); ?>">リクルート</a></li>
-            <li><a href="#">リクルート動画</a></li>
           </ul>
         </div>
         <div class="link-cnt inner-1200"><a href="#">サイトについて</a><a href="#">プライバシーポリシー</a><a href="#">サイトマップ</a></div>
