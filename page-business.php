@@ -14,7 +14,7 @@ get_header();
     
   <div class="kv-cnt">
     <p class="font-wb">事業案内</p>
-    <h1 class="font-wb w-100">建材に特化した物流ソリューションを通じて、<br>&emsp;業務効率の向上とコスト最適化を実現します。
+    <h1 class="font-wb w-100">建材に特化した<br class="sp-only">物流ソリューションを通じて、<br>&emsp;業務効率の向上とコスト最適化を実現します。
 </h1>
   </div>
 </section>
@@ -34,13 +34,15 @@ get_header();
       <h2 class="font-wb txt-center lh1_135">キーワード「 Bee = 蜂 」</h2>
     </div>
     <div class="img-cnt inner-1200">
-      <div class="item-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/company_philosophy-01.png" alt=""> </div>
-      <div class="logo-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/company_logo-b.png" alt=""></div>
+      <div class="item-img">     
+      <picture>
+      <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/company_philosophy-sp.png" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/company_philosophy-pc.png" alt="">
+      </picture>
     </div>
   </div>
   
-  
-  
+
   
   <div class="business-cnt-01">
     <div class="business-sec-lead inner-800">

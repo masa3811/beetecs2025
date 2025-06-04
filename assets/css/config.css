@@ -70,6 +70,11 @@ button {
   margin: 0 auto;
     padding: 0 1em;
 }
+@media (max-width: 600px) {
+ .inner-700 {
+  padding: 0;
+} 
+}
 .inner-800 {
   width: min(100%, 800px);
   margin: 0 auto;
@@ -79,6 +84,11 @@ button {
   width: min(100%, 900px);
   margin: 0 auto;
     padding: 0 1em;
+}
+@media (max-width: 600px) {
+ .inner-900 {
+  padding: 0;
+} 
 }
 .inner-1000 {
   width: min(100%, 1000px);

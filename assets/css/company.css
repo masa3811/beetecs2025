@@ -58,11 +58,23 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 600px) {
+  .company-detail-cnt .item-img {
+    padding: 1em;
+  }
+}
+
 .company-detail-cnt h2 {
   display: inline-block;
   font-size: 2.6041vw;
   transform: skewX(-10deg);
   margin-top: 50px;
+}
+@media (max-width: 600px) {
+  .company-detail-cnt h2 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
 }
 @media (max-width: 281px) {
   .company-detail-cnt h2 {

@@ -927,16 +927,16 @@ select {
 }
 @media (max-width: 600px) {
  .kv .kv-cnt {
-  top: 100px;
+  top: 80px;
 } 
   
 }
 .kv .kv-cnt h1 {
   width: 50%;
   max-width: 990px;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   background-color: #000;
-  margin-top: 4vw;
+  margin-top: 3vw;
   padding: 20px;
   line-height: 1.5;
 }
@@ -957,7 +957,7 @@ select {
 }
 .kv .kv-cnt p {
   width: 50%;
-  font-size: 2.3437vw;
+  font-size: 2vw;
   color: #1a1a1a;
   white-space: nowrap;
 }
@@ -969,7 +969,8 @@ select {
 }
 @media (max-width: 600px) {
   .kv .kv-cnt p {
-  font-size:8vw;  
+  font-size:8vw; 
+    text-align: left;
   }
 } 
 
@@ -1189,7 +1190,7 @@ select {
   margin-top: 3.125rem;
 }
 .company-cnt h2 {
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   padding: 3.125rem 0;
   transform: skewX(-10deg);
 }
@@ -1413,7 +1414,7 @@ width: 100%;
   padding-top: 0 !important;
 }
 .recruit h2 {
-  font-size: 3.3854vw;
+  font-size: 3vw;
   color: #fff;
   transform: skewX(-10deg);
 }
@@ -1433,6 +1434,9 @@ width: 100%;
 }
 .recruit .btn-cnt {
   margin: 30px 0 0;
+  padding: 1.5em 0 0;
+    word-break: auto-phrase;
+    font-size: 25px;
 }
 /*contact */
 .contact {}

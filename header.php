@@ -1,6 +1,6 @@
 <?php
-$des="。
-"
+$des="ビーテクスは、建設現場に不可欠な建材を「必要なときに、必要な場所へ、確実に」お届けする建材物流の専門企業です。多種多様な建材の取り扱いから、最適な在庫管
+理、スピーディーな配送まで一貫してサポートいたします。"
 ; ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ $des="。
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="email=no,telephone=no,address=no">
 	<meta name="robots" content="none">
-	<meta name="keywords" content="">
+	<meta name="keywords" content="ビーテクス、山口県、建材物流、建築資材配送、建設業向け物流、建設現場運送、ラストワンマイル、建材物流マネジメント、ワンストッサービス、現場直送、三和">
 	<meta name="description" content="<?php echo $des; ?>">
 	<meta property="og:type" content="website">
 	<meta property="og:title"

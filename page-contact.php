@@ -23,7 +23,7 @@ get_header();
     <div class="phone-cnt txt-left inner-900">
     <p class="bk-box">電話でのお問い合わせ</p>
     <div class="phone-number"> 
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/phone-number.png" alt="トップ画像">
+    <a href="tel:0839768181"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/phone-number.png" alt=""></a>
     </div>
      </div>
      </div>
