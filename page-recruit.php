@@ -21,7 +21,7 @@ get_header();
     </div>
 <section class="recruit-sec">
   <div class="recruit-sec-cnt inner-1350">
-    <h2 class="font-wb txt-left lh1_135">自身と家族と社会のために<br>ラストワンマイルを実現する仲間を募集します。</h2>
+    <h2 class="font-wb txt-left lh1_135">自身と家族と社会のために<br>ラストワンマイルを実現する<br class="sp-br">仲間を募集します。</h2>
     <div class="recruit-sec-lead inner-1200">
       <div class="recruit-sec-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/recruit_center_img-pc.png" alt=""></div>
       <p class="recruit-sec-txt txt-left">私たちビーテクスは<br>

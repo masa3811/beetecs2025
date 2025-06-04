@@ -5,6 +5,13 @@ body {
   color: #333333;
   line-height: 1.8;
 }
+@media screen and (min-width: 768px){
+a[href*="tel:"] {
+    pointer-events: none;
+    cursor: default; 
+    text-decoration: none;
+}
+}
 .section-ttl {
   display: flex;
   align-items: center;
@@ -28,6 +35,18 @@ body {
     font-size: 26px;
   }
 }
+
+.t-desc p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+@media (max-width: 600px) {
+  .t-desc p {
+  font-size: 15px;
+  line-height: 1.6;
+} 
+}
+
 /*button*/
 .btn-cnt {
   text-align: center;
@@ -398,10 +417,9 @@ select {
 }
 @media (max-width: 810px) {
  #header .logo { 
-   margin-top: -80px;
+   margin-top: 0;
 }
 }
-
 
 @media (max-width: 281px) {
   #header .logo {
@@ -509,6 +527,11 @@ select {
   gap: 60px;
   margin-bottom: 50px;
 }
+@media (max-width: 600px) {
+ #header #hamburger-nav .menu-cnt {
+  gap: 30px;
+}  
+}
 #header #hamburger-nav .menu {
   list-style: none;
   margin: 0;
@@ -544,6 +567,14 @@ select {
     width: 40%;
   }
 }
+@media (max-width: 600px) {
+   #header #hamburger-nav .menu:nth-of-type(3) {
+    width: 52%;
+  }
+  #header #hamburger-nav .menu:nth-of-type(4) {
+    width: 28%;
+  } 
+}
 #header #hamburger-nav .menu li {
   font-size: 1.5rem;
   padding: 10px 0;
@@ -557,7 +588,7 @@ select {
 }
 @media (max-width: 600px) {
   #header #hamburger-nav .menu li a {
-   font-size: 14px;
+   font-size: 13px;
   
 }
 }
@@ -645,7 +676,7 @@ select {
 }
 @media (max-width: 600px) {
   #footer #hamburger-nav {
-   padding: 16px;
+   padding: 1em 1em 2em;
 }
 }
 #footer #hamburger-nav.active {
@@ -660,7 +691,7 @@ select {
 @media (max-width: 600px) {
   #footer #hamburger-nav .menu-cnt {
     flex-wrap: wrap;
-    gap: 0;
+    gap: 30px;
     justify-content: space-around;
     padding: 0;
   }
@@ -696,6 +727,14 @@ select {
   #footer #hamburger-nav .menu:nth-of-type(4) {
     width: 40%;
   }
+}
+@media (max-width: 600px) {
+  #footer #hamburger-nav .menu:nth-of-type(3) {
+    width: 52%;
+  }
+  #footer #hamburger-nav .menu:nth-of-type(4) {
+    width: 28%;
+  }   
 }
 #footer #hamburger-nav .menu li {
   font-size: 1.5rem;
@@ -752,15 +791,20 @@ select {
   background-color: #c78360;
   color: #fff;
 }
+  #footer .link-cnt  {
+    display: flex;
+    justify-content: center;
+  }
 #footer .link-cnt a {
   font-size: 1.5rem;
   color: #ddd;
   text-decoration: none;
   padding-right: 20px;
 }
+
 @media (max-width: 600px) {
   #footer .link-cnt a {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 /*-----------------------*/
@@ -785,6 +829,11 @@ select {
   text-decoration: none;
   padding-right: 20px;
 }
+@media (max-width: 600px) {
+ .link-cnt a {
+  font-size: 12px;
+}  
+}
 /* mv */
 .mv {
   display: flex;
@@ -807,27 +856,45 @@ select {
 .mv .mv-cnt {
   width: 100%;
   position: absolute;
-  top: 13rem;
+  top: 20rem;
 }
 @media (max-width: 960px) {
   .mv .mv-cnt {
     top: 7rem;
   }
 }
+@media (max-width: 600px) {
+  .mv .mv-cnt {
+    top: 180px;
+  }
+}
 .mv .mv-cnt h1 {
   width: 50%;
   max-width: 990px;
-  font-size: 3.125vw;
+  font-size: 3vw;
   background-color: #000;
   padding: 10px;
 }
+@media (max-width: 600px) {
+ .mv .mv-cnt h1 {
+  width: 90%;
+  font-size: 26px;
+  padding: 10px;
+}   
+}
 .mv .mv-cnt p {
   display: inline-block;
-  font-size: 3.3854vw;
+  font-size: 3vw;
   color: #000;
   margin-top: 1.0416vw;
   transform: skewX(-10deg);
 }
+@media (max-width: 600px) {
+  .mv .mv-cnt p {
+  font-size: 22px;
+}
+}
+  
 /* kv */
 .kv {
   position: relative;
@@ -860,23 +927,33 @@ select {
 }
 @media (max-width: 600px) {
  .kv .kv-cnt {
-  top: -2rem;
+  top: 100px;
 } 
   
 }
 .kv .kv-cnt h1 {
   width: 50%;
   max-width: 990px;
-  font-size: 3.125vw;
+  font-size: 2.5vw;
   background-color: #000;
   margin-top: 4vw;
   padding: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 @media (max-width: 810px) {
   .kv .kv-cnt h1 {
     margin-top: 0;
   }
+}
+@media (max-width: 600px) {
+.kv .kv-cnt h1 {
+  width: 90%;
+  font-size: 20px;
+  background-color: #000;
+  margin-top: 4vw;
+  padding: 20px;
+  line-height: 1.5;
+}   
 }
 .kv .kv-cnt p {
   width: 50%;
@@ -1112,7 +1189,7 @@ select {
   margin-top: 3.125rem;
 }
 .company-cnt h2 {
-  font-size: 3vw;
+  font-size: 2.5vw;
   padding: 3.125rem 0;
   transform: skewX(-10deg);
 }

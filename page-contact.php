@@ -21,10 +21,9 @@ get_header();
     <p class="font-wb">お問い合わせ</p>
     
     <div class="phone-cnt txt-left inner-900">
-    <p class="bk-box">電話やFAX でのお問い合わせ</p>
+    <p class="bk-box">電話でのお問い合わせ</p>
     <div class="phone-number"> 
-    <p class="txt-center">TEL 083-973-2829</p>
-      <p class="txt-center">FAX 083-973-5321</p>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/phone-number.png" alt="トップ画像">
     </div>
      </div>
      </div>
@@ -40,13 +39,13 @@ get_header();
   
 <div class="contact-bnr inner-800"> 
 <div class="bnr-item"> 
-<a href="<?php echo esc_url(home_url('/contact/recruit')); ?>">
+<a href="<?php echo esc_url(home_url('/contact/c-recruit')); ?>">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/contact_recruit.png" alt="">
 </a>
 <p>採用情報についてのお問い合わせを<br>ご希望の場合はこちらから</p>
 </div>
 <div class="bnr-item">
-<a href="<?php echo esc_url(home_url('/contact/corporation')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/contact_corporation.png" alt="">
+<a href="<?php echo esc_url(home_url('/contact/c-corporation')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/contact_corporation.png" alt="">
 </a>
 <p>お取引についてのお問い合わせをご希望の<br>法人様はこちらから</p>
 </div>

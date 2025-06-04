@@ -3,19 +3,14 @@ get_header();
 ?>
 
 <main>
-<!-- kv -->
-<section class="kv">
-<div class="kv-cnt">
-<p class="font-wb w-80">採用に関するお問い合わせ</p>
-</div> 
-</section> 
+
 <section class="contact-step-sec">
 <div class="contact-step-cnt inner-900">
   <div class="contact-txt">
   <p class="font-wb">採用情報についてのお問い合わせをご希望の場合はこちらから</p>
   </div>
 <div class="inner-800">
-  <div class="contact-btn"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/contact_step1.png" alt=""></div>
+  <div class="contact-btn"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/contact_step2.png" alt=""></div>
 <p>以下のフォームに必要事項をご記入の上、「入力内容を確認する」を押してください</p>
 
   

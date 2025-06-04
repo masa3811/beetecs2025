@@ -34,7 +34,7 @@
             <li><a href="<?php echo home_url('/recruit/'); ?>">リクルート</a></li>
           </ul>
         </div>
-        <div class="link-cnt inner-1200"><a href="#">サイトについて</a><a href="#">プライバシーポリシー</a><a href="#">サイトマップ</a></div>
+        <div class="link-cnt inner-1200"><a href="<?php echo esc_url( home_url( '/usersguide/' ) ); ?>">サイトについて</a><a href="<?php echo esc_url( home_url( '/privacy/' ) ); ?>">プライバシーポリシー</a><a href="#">サイトマップ</a></div>
       </div>
     </div>
   </div>

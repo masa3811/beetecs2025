@@ -110,7 +110,7 @@ get_header();
       </div>
     </div>
   </div>
-  <div class="btn-cnt"> <a href="<?php echo home_url('/company/'); ?>" class="btn-01">会社案内を見る</a> </div>
+  <div class="btn-cnt"> <a href="<?php echo home_url('/business/'); ?>" class="btn-01">事業案内を見る</a> </div>
 </section>
 <section class="recruit">
   <div class="recruit-cnt">
@@ -131,16 +131,16 @@ get_header();
 <section class="contact">
   <div class="contact-cnt">
     <div class="contact-item-01">
-      <a class="contact-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/contact_tel.png" alt=""> </a>
+      <a href="tel:0839768181" class="contact-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/contact_tel.png" alt=""> </a>
     </div>
     <div class="contact-item-02">
-      <a class="contact-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/contact_mail.png" alt=""> </a>
+      <a href="<?php echo home_url('/contact/'); ?>" class="contact-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/contact_mail.png" alt=""> </a>
     </div>
   </div>
 </section>
   
 <section class="banner inner-1350">
-  <div class="banner-cnt"> <a href="<?php echo home_url('//'); ?>" class="banner-item" target="_blank"> <img class="banner-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_bnr.jpg" alt="">
+  <div class="banner-cnt"> <a href="https://www.sanwa-co.jp" class="banner-item" target="_blank"> <img class="banner-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_bnr.jpg" alt="">
     <div class="arrow-cnt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/link_arrow-2.png" alt="">
       <p class="fz-20 font-wb">株式会社三和</p>
     </div>

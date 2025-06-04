@@ -58,7 +58,19 @@ $des="。
 	<link rel="stylesheet"
 		href="<?php echo get_template_directory_uri(); ?>/style.css?<?php echo date_i18n("YmdHis") ?>" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0J43FWT03M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-0J43FWT03M');
+</script>
+  
+</head>
+  
 <body id="top">
 <header id="header">
 
@@ -82,16 +94,16 @@ $des="。
         <div class="menu-cnt inner-1200">
           <ul class="menu">
             <li class="title">会社案内</li>
-            <li><a href="#">会社概要</a></li>
-            <li><a href="#">企業理念</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>#company-overview">会社概要</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/business/' ) ); ?>#company-philosophy">企業理念</a></li>
             <li><a href="<?php echo home_url('/business/'); ?>">事業案内</a></li>
             <li class="accordion-item">
               <div class="accordion-header">活動拠点</div>
               <div class="accordion-content"> 
-                <a href="#">宇部営業所</a> 
-                <a href="#">防府営業所</a> 
-                <a href="#">徳山営業所</a> 
-                <a href="#">下関営業所</a> 
+                <p>宇部営業所</p> 
+                <p>防府営業所</p>  
+                <p>徳山営業所</p>  
+                <p>下関営業所</p>  
               </div>
             </li>
           <li><a href="https://www.sanwa-co.jp/" target="_blank">株式会社三和</a></li>
@@ -102,16 +114,15 @@ $des="。
           </ul>
           <ul class="menu">
             <li class="title">お問い合わせ</li>
-            <li><a href="#">採用に関するお問い合わせ</a></li>
-            <li><a href="#">法人様向けお問い合わせ</a></li>
+            <li><a href="<?php echo esc_url(home_url('/contact/c-recruit')); ?>">採用に関するお問い合わせ</a></li>
+            <li><a href="<?php echo esc_url(home_url('/contact/c-corporation')); ?>">法人様向けお問い合わせ</a></li>
           </ul>
           <ul class="menu">
             <li class="title">採用情報</li>
             <li><a href="<?php echo home_url('/recruit/'); ?>">リクルート</a></li>
-            <li><a href="#">リクルート動画</a></li>
           </ul>
         </div>
-        <div class="link-cnt inner-1200"><a href="#">サイトについて</a><a href="#">プライバシーポリシー</a><a href="#">サイトマップ</a></div>
+        <div class="link-cnt inner-1200"><a href="<?php echo esc_url( home_url( '/usersguide/' ) ); ?>">サイトについて</a><a href="<?php echo esc_url( home_url( '/privacy/' ) ); ?>">プライバシーポリシー</a><a href="#">サイトマップ</a></div>
       </div>
     </div>
   </div>

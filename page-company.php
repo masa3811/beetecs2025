@@ -46,9 +46,9 @@ get_header();
         </div>
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/company_profile-02.png" alt="">
-      <p class="link-item-p inner-400 txt-left">山口県に営業所があります。
+      <p class="link-item-p inner-400 txt-left">山口県に物流拠点があります。
         中国地方全域をカバーしています。</p>
-      <div class="btn-cnt"><a href="<?php echo esc_url( home_url( '/office/' ) ); ?>" class="btn-01">営業所を見る</a></div>
+      <div class="btn-cnt"><a href="<?php echo esc_url( home_url( '/office/' ) ); ?>" class="btn-01">物流拠点を見る</a></div>
     </div>
     <div class="link-item">
       <div class="link-ttl">
