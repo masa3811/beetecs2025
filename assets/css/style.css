@@ -1198,6 +1198,7 @@ select {
   .company-cnt h2 {
     font-size: 22px;
     padding: 20px 10px;
+    line-height: 1.5;
   }
 }
 .company .desc-cnt {
@@ -1209,6 +1210,11 @@ select {
   display: inline-block;
   text-align: left;
 }
+@media (max-width: 600px) {
+  .company .desc-cnt .desc {
+  padding: 1em;
+}
+}
 .company .detail-cnt {
   position: relative;
   display: flex;
@@ -1218,7 +1224,7 @@ select {
 
 @media (max-width: 600px) {
   .company .detail-cnt {
-    padding-bottom: 2px;
+    padding: 1em;
   }
 }
 .company .detail-item-01, .detail-item-02, .detail-item-03 {
@@ -1324,7 +1330,8 @@ width: 100%;
   .company .item-02 {
 width: 100%;
         padding: 0 1em;
-    margin-top: 30px;
+    margin-top: 0;
+    align-items: flex-end;
   }
   .company .item-03 {
   width: 100%;
@@ -1371,7 +1378,7 @@ width: 100%;
 }
 @media (max-width: 600px) {
   .company .item-txt img {
-    width: 32vw;
+    min-width: 80%;
   }
 }
 .company .item-txt p {
@@ -1388,11 +1395,16 @@ width: 100%;
 }
 @media (max-width: 600px) {
   .company .item-txt p {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 .company .btn-cnt {
   margin: 0;
+}
+@media (max-width: 600px) {
+ .company .btn-cnt {
+  margin: 50px 0 0;
+} 
 }
 /*recruit*/
 .recruit {
@@ -1427,6 +1439,12 @@ width: 100%;
 }
 .recruit-lead {
   padding: 100px 0;
+}
+
+@media (max-width: 600px) {
+.recruit-lead {
+  padding: 50px 0;
+}    
 }
 .recruit-lead p:first-of-type {
   padding: 1rem;

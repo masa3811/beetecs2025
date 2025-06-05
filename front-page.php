@@ -80,7 +80,7 @@ get_header();
     </div>
   </div>
   <div class="company-cnt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_img-pc.jpg" alt="">
-    <h2 class="font-wb txt-center">建材物流のプロフェッショナルとして、<br class="sp">確かな品質と迅速な配送を。</h2>
+    <h2 class="font-wb txt-center">建材物流の<br class="sp-only">プロフェッショナルとして、<br class="sp-only">確かな品質と迅速な配送を。</h2>
   </div>
   <div class="desc-cnt">
     <p class="desc inner-700 lh2">ビーテクスは<br>
@@ -95,7 +95,7 @@ get_header();
       <div class="item-01">
         <div class="item-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_img-1.png" alt=""> </div>
         <div class="item-txt"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/company_ttl-1.png" alt="">
-          <p class="font-wb lh1_135">無駄なくタイミングの良い<br>
+          <p class="font-wb lh1_135">無駄なくタイミングの良い<br class="pc-only">
             プロの物流サービス。</p>
           </div>
       </div>
