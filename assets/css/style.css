@@ -12,6 +12,22 @@ a[href*="tel:"] {
     text-decoration: none;
 }
 }
+.site-main {
+  padding: 80px 0;
+}
+.site-main ul{
+  margin: 0 0 12px 24px;
+  line-height: 24px;
+}
+.site-main ul li{
+ font-size: 16px;
+}
+.type1 {
+  margin-bottom: 50px;
+}
+.type2 {
+  margin-bottom: 10px;
+}
 .section-ttl {
   display: flex;
   align-items: center;
@@ -969,7 +985,7 @@ select {
 }
 @media (max-width: 600px) {
   .kv .kv-cnt p {
-  font-size:8vw; 
+  font-size: 20px; 
     text-align: left;
   }
 } 
@@ -1422,6 +1438,16 @@ width: 100%;
   right: 27%;
   width: 50%;
 }
+@media (max-width: 600px) {
+ .recruit-img .section-ttl {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 50%;
+    left: -160px;
+} 
+}
+  
 .recruit-img .section-ttl p {
   padding-top: 0 !important;
 }

@@ -36,6 +36,7 @@ img {
 ul, ol, li {
   list-style: none;
   font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+  line-height: 1.8;
 }
 th, td {
   font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);

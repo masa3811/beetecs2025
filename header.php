@@ -33,6 +33,7 @@ $des="ビーテクスは、建設現場に不可欠な建材を「必要なと�
 	<link rel="stylesheet" type="text/css"
 		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 	<link rel="stylesheet"
 		href="<?php echo get_template_directory_uri(); ?>/assets/css/business.css?<?php echo date_i18n("YmdHis") ?>">

@@ -45,7 +45,7 @@ FAX（083）976-8080<br></p>
 <div class="detail-item">
 <div class="item-01">
 <div class="item-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/office/office_ube.png" alt=""> </div>
-<div class="item-txt"><h3>宇部営業所</h3><p class="font-wb lh1_135">〒754-0002<br>
+<div class="item-txt"><h3>宇部営業所</h3><p class="font-wb lh1_135">〒755―0151<br>
 山口県宇部市西岐波区<br>
 宇部臨空頭脳パーク13番</p>
 </div>
