@@ -12,6 +12,7 @@
             <li class="accordion-item">
               <div class="accordion-header">物流拠点</div>
               <div class="accordion-content"> 
+                <p>小郡営業所</p> 
                 <p>宇部営業所</p> 
                 <p>防府営業所</p>  
                 <p>徳山営業所</p>  
