@@ -35,7 +35,7 @@ get_header();
 <div class="item-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/office/office_main.png" alt=""> </div>
 <div class="item-txt"><h3>本社</h3><p class="font-wb lh1_135">〒754-0002<br>
 山口県山口市<br>
-小郡下郷795-5<br>
+小郡下郷796-5<br>
 TEL（083）976-8181<br>
 FAX（083）976-8080<br></p>
 </div>
@@ -47,7 +47,7 @@ FAX（083）976-8080<br></p>
 <div class="item-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/office/office_main.png" alt=""> </div>
 <div class="item-txt"><h3>小郡営業所</h3><p class="font-wb lh1_135">〒754-0002<br>
 山口県山口市<br>
-小郡下郷795-5<br>
+小郡下郷796-5<br>
 TEL（083）973-1133<br>
 FAX（083）973-1642<br></p>
 </div>
