@@ -58,7 +58,7 @@ get_header();
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/company_profile-03.png" alt="">
       <p class="link-item-p inner-400 txt-left">建材流通の在り方を常に探求し続けている140年の歴史を持つ建材流通会社です。　</p>
-      <div class="btn-cnt"><a href="https://www.sanwa-co.jp/" class="btn-04">株式会社三和</a></div>
+      <div class="btn-cnt"><a href="https://www.sanwa-co.jp/" class="btn-04" target="_blank">株式会社三和</a></div>
     </div>
   </div>
 </div>

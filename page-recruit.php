@@ -21,7 +21,7 @@ get_header();
     </div>
 <section class="recruit-sec">
   <div class="recruit-sec-cnt inner-1350">
-    <h2 class="font-wb txt-left lh1_135">自身と家族と社会のために<br>ラストワンマイルを実現する<br class="sp-br">仲間を募集します。</h2>
+    <h2 class="font-wb txt-left lh1_135">自身と家族と社会のために<br>ラストワンマイルを実現する<br class="sp-only">仲間を募集します。</h2>
     <div class="recruit-sec-lead inner-1200">
       <div class="recruit-sec-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/recruit_center_img-pc.png" alt=""></div>
       <p class="recruit-sec-txt txt-left">私たちビーテクスは<br>
@@ -31,7 +31,9 @@ get_header();
   </div>
   <div class="recruit-bnr-cnt">
     <h3 class="txt-center">採用はこちらから</h3>
-    <div class="recruit-bnr-item inner-800"> <a href="recruit.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/mynav_bnr-2026.png" alt=""></a> <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/mynav_bnr-2027.png" alt=""></a> </div>
+    <div class="recruit-bnr-item inner-800"> 
+		<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/mynav_bnr-2026.png" alt=""></a> 
+		<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/mynav_bnr-2027.png" alt=""></a> </div>
   </div>
 </section>
 </main>

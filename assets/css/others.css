@@ -179,7 +179,7 @@
 @media (max-width: 600px) {
   .bk-box {
     width: 100% !important;
-    s
+	text-align: center!important;
   }
 }
 @media (max-width: 281px) {
@@ -214,6 +214,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	padding: 0 1em;
   }
 }
 @media (max-width: 281px) {

@@ -12,15 +12,14 @@
 @media (max-width: 600px) {
   .business-sec h2 {
     font-size: 20px;
-  transform: skewX(-10deg);
-  margin-top: 50px;
-  
-}
+    transform: skewX(-10deg);
+    margin-top: 50px;
+  }
 }
 @media (max-width: 281px) {
   .business-sec h2 {
-    font-size: 15px;   
-}
+    font-size: 15px;
+  }
 }
 .business-cnt-01 {
   text-align: center;
@@ -34,48 +33,43 @@
   padding: 100px 0;
 }
 @media (max-width: 600px) {
-.business-cnt-01 {
-  padding: 50px 0;
-}  
+  .business-cnt-01 {
+    padding: 50px 0;
+  }
 }
 .business-cnt-01 .business-sec-img, .business-cnt-02 .business-sec-img, .business-cnt-03 .business-sec-img {
   position: relative;
   display: flex;
 }
-
 @media (max-width: 810px) {
-.business-cnt-01 .business-sec-img, .business-cnt-02 .business-sec-img, .business-cnt-03 .business-sec-img {
-  padding: 0 2em;
-
-}
+  .business-cnt-01 .business-sec-img, .business-cnt-02 .business-sec-img, .business-cnt-03 .business-sec-img {
+    padding: 0 2em;
+  }
 }
 @media (max-width: 600px) {
-.business-cnt-01 .business-sec-img, .business-cnt-02 .business-sec-img, .business-cnt-03 .business-sec-img {
-  padding: 0 ;
-
+  .business-cnt-01 .business-sec-img, .business-cnt-02 .business-sec-img, .business-cnt-03 .business-sec-img {
+    padding: 0;
+  }
 }
-}  
-
 .business-cnt-01 .ttl-01 {
   width: 50%;
   height: 100%;
   transform: translateX(-300px);
 }
 @media (max-width: 1120px) {
-.business-cnt-01 .ttl-01 {
-  transform: translateX(-350px);
-}
+  .business-cnt-01 .ttl-01 {
+    transform: translateX(-350px);
+  }
 }
 @media (max-width: 600px) {
- .business-cnt-01 .ttl-01 {
-  transform: translateX(-170px);
+  .business-cnt-01 .ttl-01 {
+    transform: translateX(-170px);
+  }
 }
-} 
- @media (max-width: 281px) {
-   .business-cnt-01 .ttl-01 {
-  transform: translateX(-100px);
-} 
-   
+@media (max-width: 281px) {
+  .business-cnt-01 .ttl-01 {
+    transform: translateX(-100px);
+  }
 }
 .business-cnt-02 .ttl-02 {
   width: 50%;
@@ -83,42 +77,39 @@
   transform: translateX(-300px);
 }
 @media (max-width: 1120px) {
- .business-cnt-02 .ttl-02 {
-  transform: translateX(-350px);
-} 
+  .business-cnt-02 .ttl-02 {
+    transform: translateX(-350px);
+  }
 }
 @media (max-width: 600px) {
   .business-cnt-02 .ttl-02 {
-  transform: translateX(-170px);
-} 
-} 
- @media (max-width: 281px) {
-   .business-cnt-02 .ttl-02 {
-  transform: translateX(-120px);
-}   
-   
+    transform: translateX(-170px);
+  }
 }
-  
+@media (max-width: 281px) {
+  .business-cnt-02 .ttl-02 {
+    transform: translateX(-120px);
+  }
+}
 .business-cnt-03 .ttl-03 {
   width: 50%;
   height: 100%;
   transform: translateX(-300px);
 }
 @media (max-width: 1120px) {
- .business-cnt-03 .ttl-03 {
-  transform: translateX(-350px);
-}
+  .business-cnt-03 .ttl-03 {
+    transform: translateX(-350px);
+  }
 }
 @media (max-width: 600px) {
- .business-cnt-03 .ttl-03 {
-  transform: translateX(-170px);
+  .business-cnt-03 .ttl-03 {
+    transform: translateX(-170px);
+  }
 }
-}
- @media (max-width: 281px) {
-   .business-cnt-03 .ttl-03 {
-  transform: translateX(-130px);
-}   
-   
+@media (max-width: 281px) {
+  .business-cnt-03 .ttl-03 {
+    transform: translateX(-130px);
+  }
 }
 .business-cnt-01 .img-01 {}
 .business-cnt-01 .img-02 {}
@@ -136,6 +127,11 @@
   background-size: contain;
   aspect-ratio: 1880/484;
 }
+@media (max-width: 600px) {
+  .business-cnt-02 {
+    padding: 100px 0;
+  }
+}
 .business-cnt-03 {
   text-align: center;
   position: relative;
@@ -151,19 +147,19 @@
   padding-top: 80px;
 }
 @media (max-width: 810px) {
- .img-s {
-  padding: 1em;
-   margin-top: 50px!important;
-}  
+  .img-s {
+    padding: 1em;
+    margin-top: 50px !important;
+  }
 }
-.business-cnt-01 .desc,.business-cnt-02 .desc ,.business-cnt-03 .desc  {
+.business-cnt-01 .desc, .business-cnt-02 .desc, .business-cnt-03 .desc {
   text-align: left;
   padding-top: 50px;
 }
- @media (max-width: 281px) {
-   .business-cnt-01 .desc,.business-cnt-02 .desc ,.business-cnt-03 .desc {
-     padding: 50px 0 0;
-   }  
+@media (max-width: 281px) {
+  .business-cnt-01 .desc, .business-cnt-02 .desc, .business-cnt-03 .desc {
+    padding: 50px 0 0;
+  }
 }
 .skew-cnt {
   position: relative;
@@ -175,14 +171,14 @@
   /*  transform: skewX(-10deg);*/
 }
 @media (max-width: 1120px) {
-.skew-in {
-  left: 5%;  
+  .skew-in {
+    left: 5%;
   }
 }
 @media (max-width: 600px) {
   .skew-in {
     bottom: 0;
-}
+  }
 }
 .skew-txt {
   display: inline-block;
@@ -195,18 +191,16 @@
 }
 @media (max-width: 1120px) {
   .skew-txt {
-  font-size: 2.7vw;
+    font-size: 2.7vw;
   }
-  
 }
 @media (max-width: 600px) {
   .skew-txt {
-  font-size: 15px;
+    font-size: 15px;
   }
 }
- @media (max-width: 281px) {
+@media (max-width: 281px) {
   .skew-txt {
-  font-size: 13px;
+    font-size: 13px;
   }
 }
-

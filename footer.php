@@ -50,9 +50,28 @@
 </script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.inview.min.js"></script>
 <script>
   AOS.init();
 </script>
+
+  <script>
+    $(function () {
+      $('.inview-target').one('inview', function (event, isInView) {
+        if (isInView) {
+          const $el = $(this);
+          const delay = $el.data('delay') || 0;
+          const animation = $el.data('animate') || 'fadeIn';
+
+          setTimeout(() => {
+            $el
+              .addClass('animate__animated animate__' + animation)
+              .css('opacity', 1);
+          }, delay);
+        }
+      });
+    });
+  </script>
 
 <?php wp_footer(); ?>
 </body>

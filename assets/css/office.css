@@ -24,6 +24,11 @@
 .office-sec .office-sec-lead {
   margin-top: 100px;
 }
+  @media (max-width: 600px) {
+.office-sec .office-sec-lead {
+  margin-top: 50px;
+}	  
+}
 .office-sec .office-sec-img {
   
 }
@@ -39,7 +44,7 @@
     }
   @media (max-width: 600px) {
   .office-detail-cnt {
-    padding: 1rem 0 5rem; 
+    padding: 0 0 100px;
     
     
     }
@@ -71,7 +76,8 @@ width: calc(100% / 2 - 20px);
   @media (max-width: 600px) {
   .office-sec .detail-item {  
   width: 100%;
-    margin-top: 60px;
+  margin-top: 60px;
+  min-height: 140px;
   
 }
 }
