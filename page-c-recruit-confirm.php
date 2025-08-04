@@ -14,7 +14,7 @@ get_header();
 <p>以下のフォームに必要事項をご記入の上、「入力内容を確認する」を押してください</p>
 
   
-  <?php echo do_shortcode('[contact-form-7 id="44ba1ee" title="採用に関するお問い合わせ"]'); ?>
+  <?php echo do_shortcode('[contact-form-7 id="9c7c70a" title="採用に関するお問い合わせ　確認"]'); ?>
 
 
  </div>

@@ -7,7 +7,7 @@ get_header();
 <section class="contact-step-sec">
 <div class="contact-step-cnt inner-900">
   <div class="contact-txt">
-  <p class="font-wb">法人様向けお問い合わせはこちらから</p>
+  <p class="font-wb">法人様向けお問い合わせ</p>
   </div>
 <div class="inner-800">
   <div class="contact-btn"><img src="assets/img/contact/contact_step3.png" alt=""></div>
